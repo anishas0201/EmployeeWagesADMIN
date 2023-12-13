@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body" style="width: 100%;padding-left: 1%; padding-right: 1%;">
+            <div class="container-fluid">
+                <div class="row" id="">
+
+                    <div class="col-6">
+                        <h3>Salary Components</h3>
+                    </div>
+                    <div class="col-6" style="text-align: right;">
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="addcompntbtn">
+                                Add Component
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="new-Earning.html">Earning</a></li>
+                                <li><a class="dropdown-item" href="#">Correction</a></li>
+                                <li><a class="dropdown-item" href="new_Post-tax-deduction.html">Post-Tax Deduction</a></li>
+                                <li><a class="dropdown-item" href="new-Pre-tax-deduction.html">Pre-Tax Deduction</a></li>
+                              </ul>
+                        </div>
+                    </div>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="salarycomponents_Earnings.html" id="anchorbtn">Earnings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="salarycomponents_deductions.html" id="anchorbtn1">Deduction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="salarycomponents_reimbursements.html"
+                                id="anchorbtn">Reimbursements</a>
+                        </li>
+                    </ul>
+                    <div class="container-fluid"> <br>
+                        <div class="card" id="approvalspage_margins">
+                    <div class="table-responsive">
+                        <table class="table table-borderless">
+                            <thead style="border-top: 1px solid #cccccc; border-bottom: 1px solid #cccccc;">
+                                <tr>
+                                    <th>NAME</th>
+                                    <th>DEDUCTION TYPE</th>
+                                    <th>DEDUCTION FREQUENCY</th>
+                                    <th>STATUS</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Pre-Tax Deductions <i class="bi bi-info-circle"></i></th>
+                                </tr>
+                                <tr>
+                                    <td id="txtblue">Voluntary Provident Fund</td>
+                                     <td id="fot_font_size1">Voluntary Provident Fund</td>
+                                     <td id="fot_font_size1">Recurring</td>
+                                    <td id="inactivecolor">Inactive</td>
+                                     <td id="fot_font_size1">
+                                        <div class="dropdown">
+                                            <button class="btn-group" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false" id="threedotdropdown">
+                                                <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="edit-pre_tax_deduction.html">Edit</a></li>
+                                                <li><a class="dropdown-item" href="#">Mark as Active</a></li>
+                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th> <br><br>Post-Tax Deductions <i class="bi bi-info-circle"></i></th>
+                                </tr>
+                                <tr>
+                                    <td id="txtblue">Notice Pay Deduction</td>
+                                     <td id="fot_font_size1">Notice Pay Deduction</td>
+                                     <td id="fot_font_size1">One Time</td>
+                                    <td id="activecolor">Active</td>
+                                     <td id="fot_font_size1">
+                                        <div class="dropdown">
+                                            <button class="btn-group" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false" id="threedotdropdown">
+                                                <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="edit-post_tax_deduction.html">Edit</a></li>
+                                                <li><a class="dropdown-item" href="#">Mark as Active</a></li>
+                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="txtblue">Withheld Salary</td>
+                                     <td id="fot_font_size1">Withheld Salary</td>
+                                     <td id="fot_font_size1">One Time</td>
+                                    <td id="activecolor">Active</td>
+                                     <td id="fot_font_size1">
+                                        <div class="dropdown">
+                                            <button class="btn-group" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false" id="threedotdropdown">
+                                                <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="#">Mark as Active</a></li>
+                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div></div>
+                </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/graph.css" />
+    <link rel="stylesheet" href="assets/css/employeestatus.css" />
+    <link rel="stylesheet" href="hrmsassets/css/admin.min.css" />
+    <link rel="stylesheet" href="hrmsassets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+          <div class="main-body" style="width: 100%;" >
+            <div class="container-fluid">
+                <h3>Taxes</h3>
+                <hr>
+               
+                <!-- row 1 start -->
+                <div class="card" id="card_body22">
+                    <h5>Organisation Tax Details</h5>
+                    <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <label>PAN<span class="required">*</span></label>
+                        <input type="text" class="form-control" placeholder="AAAAAA0000A" id="pan_input_field">
+                    </div>
+        
+                    <div class="col-md-6">
+                        <label>TAN</label>
+                        <input type="text" class="form-control" placeholder="AAAAAA0000A">
+                    </div>
+        
+                </div>
+                <!--row 1 end  -->
+                <br>
+                <!-- row 2 start-->
+                <div class="row">
+                    <div class="col-md-6">
+                        <label> TDS circle / AO code <img src="assets/img/alert.png" id="alertimg"></label>
+        
+                        <div class="row">
+        
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" placeholder="AAA" id="aaa">
+                            </div>
+                            /
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" placeholder="AA" id="aa">
+                            </div>
+                            /
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" placeholder="000" id="ooo">
+                            </div>
+                            /
+                            <div class="col-md-2">
+                                <input type="text" class="form-control" placeholder="00" id="oo">
+                            </div>
+                        </div>
+        
+                    </div>
+        
+                    <div class="col-md-6">
+                        <label> Tax Payment Frequency <img src="/assets/img/alert.png" id="alertimg"></label>
+        
+                        <select id="tax_payment_dropdown" class="dropdown_box form-control " name="empContribution">
+                            <option value="#">Monthly</option>
+                            <option value="#">Option 2</option>
+                            <option value="#">Option 3</option>
+                            <option value="#">Option 4</option>
+        
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <br><br>
+        
+        
+                <!--  -->
+                <h5>Tax Deductor Details</h5><br>
+                <label for="#">Deductor's Type</label>
+                <div class="row">
+                    <div class="col-md-2" id="employee_check_btn">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Employee
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Non-Employee
+                            </label>
+                        </div>
+                    </div>
+        
+        
+                </div>
+                <br>
+                <!--  -->
+                <!--  -->
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="#" >Deductor's Name</label>
+                        <select id="Select_tac_deductor" class="dropdown_box form-control " name="empContribution">
+                            <option value="#">Select a Tax Deductor </option>
+                            <option value="#">Select a Tax Deductor 2</option>
+                            <option value="#">Select a Tax Deductor 3</option>
+                            <option value="#">Select a Tax Deductor 4</option>
+        
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label> Deductor's Father Name </label>
+        
+                        <select id="tax_payment_dropdown" class="dropdown_box form-control " name="empContribution">
+                            <option value="#"></option>
+                            <option value="#">Option 2</option>
+                            <option value="#">Option 3</option>
+                            <option value="#">Option 4</option>
+        
+                        </select>
+                    </div>
+        
+                </div>
+                <div class="col-md-12">
+                    <hr>
+                </div>
+                <div class="row">
+                    <div class="col-md-9">
+                        <button type="button" class="btn" id="SaveBtn">Save</button>
+                    </div>
+        
+                    <div class="col-md-3">
+                        <p id="manditoryfields"><span class="required">*</span> indicates manditory field</p>
+                    </div>
+                </div>
+        
+        </div>
+        
+            </div>
+
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/graph.js"></script>
+    <script src="assets/js/syncro.min.js"></script>
+    <script src="assets/js/PaymentStatus.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/sidebar.js" ></script>
+</body>
+
+</html>

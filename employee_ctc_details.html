@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/graph.css" />
+    <link rel="stylesheet" href="assets/css/employeestatus.css" />
+    <link rel="stylesheet" href="hrmsassets/css/admin.min.css" />
+    <link rel="stylesheet" href="hrmsassets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body" style="width: 100%;">
+            <div class="container-fluid">
+                <br>
+                <div class="col-md-12">
+                    <div class="row">
+
+
+                        <div class="col-md-10" style="padding-top: 5px;">
+                            <a href="customize_reports.html" id="Customize_reports_ancor"><img
+                                    src="assets/img/gear-solid.svg" width="15px">
+                                Customize Report</a>
+                        </div>
+
+                        <div class="col-md-2">
+                            <div class="dropdown">
+                                <button class="btn  dropdown-toggle" id="expoert_btn" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Export as
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#" download="#">PDF</a></li>
+                                    <li><a class="dropdown-item" href="#" download="#">XLS (Microsoft Excel)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="COL-MD-12">
+                    <br>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-12" style="justify-content: center; display: flex;">
+                                <h4><br>
+                                    Employee' CTC Details
+                                </h4>
+
+                            </div>
+                            <div class="col-md-12" style="justify-content: center; display: flex;">
+                                <p id="fot_font_size">As of August, 2023</p>
+                            </div>
+
+                        </div>
+                        <div class="col-md-12" style="justify-content: center; display: flex;">
+                            <div class="container-fluid" style="padding-right: 288px; padding-left: 378px; border-top: 1px solid #80808038;">
+                                <p id="for_full_border">Earnings</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th id="colorr">Employee ID</th>
+                                        <th id="colorr">Employee Name</th>
+                                        <th id="cola">Basic</th>
+                                        <th id="cola">House Rent Allowance</th>
+                                        <th id="cola">Fixed Allowance</th>
+                                        <th id="colorr">Gross Pay</th>
+                                        <th id="colorr">Monthly CTC</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1230</th>
+                                        <td id="for_right_border">
+                                            <p id="fot_font_size">Kriti Prakash Tendulkar</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹2,500.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                        <td id="for_left_border">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1231</th>
+                                        <td id="for_right_border">
+                                            <p id="fot_font_size">Pankaj Vijay Tete</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹2,500.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹2,500.00</p>
+                                        </td>
+                                        <td id="for_left_border">
+                                            <p id="fot_font_size">₹10,000.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹10,000.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1229</th>
+                                        <td id="for_right_border">
+                                            <p id="fot_font_size">Hemant Jagdish Kamble</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹2,500.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                        <td id="for_left_border">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1234</th>
+                                        <td id="for_right_border">
+                                            <p id="fot_font_size">Uday Rajesh Shimpi</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹2,500.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                        <td id="for_left_border">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1232</th>
+                                        <td id="for_right_border">
+                                            <p id="fot_font_size">Priyanshu Sahu</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹2,500.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                        <td id="for_left_border">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1233</th>
+                                        <td id="for_right_border">
+                                            <p id="fot_font_size">Rahul Kumar Singh</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹2,500.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                        <td id="for_left_border">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1235</th>
+                                        <td id="for_right_border">
+                                            <p id="fot_font_size">Rupesh Sen</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹2,500.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                        <td id="for_left_border">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1238</th>
+                                        <td id="for_right_border">
+                                            <p id="fot_font_size">Pavan Arjun Kalsarpe</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹2,500.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                        <td id="for_left_border">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1243</th>
+                                        <td id="for_right_border">
+                                            <p id="fot_font_size">Sonu Kumar</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹2,500.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                        <td id="for_left_border">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1242</th>
+                                        <td id="for_right_border">
+                                            <p id="fot_font_size">Kumar Vivek</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹2,500.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                        <td id="for_left_border">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1244</th>
+                                        <td id="for_right_border">
+                                            <p id="fot_font_size">Kunal Kumar Sharma</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹2,500.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                        <td id="for_left_border">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">1241</th>
+                                        <td id="for_right_border">
+                                            <p id="fot_font_size">Vivek Kumar Swami</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹2,500.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹1250.00</p>
+                                        </td>
+                                        <td id="for_left_border">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                         <td id="fot_font_size1">
+                                            <p id="fot_font_size">₹5000.00</p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                            
+                    <div class="col-md-11">
+                        <br>
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Previous">
+                                  <span aria-hidden="true">&laquo;</span>
+                                </a>
+                              </li>
+                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                              <li class="page-item">
+                                <a class="page-link" href="#" aria-label="Next">
+                                  <span aria-hidden="true">&raquo;</span>
+                                </a>
+                              </li>
+                            </ul>
+                          </nav>
+                    </div>
+                    <div class="col-md-1"><br>
+                        <a href="reports.html"><button class="btn"id="btn_cancel">Cancel</button></a>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/graph.js"></script>
+    <script src="assets/js/syncro.min.js"></script>
+    <script src="assets/js/PaymentStatus.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

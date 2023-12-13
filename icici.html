@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/graph.css" />
+    <link rel="stylesheet" href="assets/css/employeestatus.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body">
+
+            <div class="row" id="">
+                <div class="col-md-12">
+                    <nav class="navbar1 navbar-light bg-light">
+
+                        <div>
+
+                            <a class="navbar-brand1 " href="index.html"><img src="../assets/img/dashboard.svg" alt=""
+                                    style="margin: 0 7px 5px 0;">Dashboard</a>
+
+                            <a class="navbar-brand1 active1" href="employees.html"><img src="../assets/img/Vector.svg"
+                                    style="margin: 0 7px 5px 0;">Employees</a>
+
+                            <a class="navbar-brand1" href="/payrun.html"><img src="../assets/img/payrun.png"
+                                    style="margin: 0 7px 5px 0; height: 22px;">Pay Runs</a>
+
+                            <button class="btnbody btn-secondarybody dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../assets/img/Group 271.svg" alt=""> Approvals
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/allclaims.html">Reimbursement</a></li>
+                                <li><a class="dropdown-item" href="/allinvestment.html">Proof Of Investments</a></li>
+                                <li><a class="dropdown-item" href="/allrevision.html">Salary Revision </a></li>
+                            </ul>
+
+
+                            <a class="navbar-brand1" href="../reports.html"><img src="../assets/img/Group 270.svg"
+                                    style="margin: 0 7px 5px 0;">Reports</a>
+
+                        </div>
+
+                        <div id="greeting">
+
+                            Good to see you, Mr.Pawas Goyal&#128075;
+
+                        </div>
+
+                    </nav>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <h3><img src="./assets/img/icici.jpg" width="200px" height="100px"> Direct Deposit</h3>
+                            </div>
+                            <br>
+                            <div class="card" id="card_margin">
+                                <div class="container" style="padding: 15px 0;margin: 0 25px;">
+                                    <div class="row">
+
+                                        <div class="col-md-9"
+                                            style="border-right: 1px solid rgba(128, 128, 128, 0.267);">
+
+                                            <div>
+                                                <h5><b>Sign in your ICICI Bank Credentials</b>
+                                                </h5>
+                                                New to ICICI bank ?
+                                                <a href="#" style="color: blue; text-decoration: none;">Request for a
+                                                    New
+                                                    Account</a>
+                                            </div>
+                                            <div>
+                                                <br>
+                                                <h5>CIB Portal Login ID<span class="text-danger">*</span></h5>
+                                            </div>
+                                            <label style="color: gray;">Use self created Login ID. if not created, use
+                                                CorporateID.UserID</label><br>
+                                            <input type="text"
+                                                style="width: 70%; border-top-left-radius: 7px; border-bottom-left-radius: 7px;"
+                                                class="form-control"><br>
+
+                                            <Label><b>Corp ID</b><span class="text-danger">*</span></Label>
+                                            <input type="text"
+                                                style="width: 70%; border-top-left-radius: 7px; border-bottom-left-radius: 7px;"
+                                                class="form-control">
+
+                                            <br>
+
+                                            <Label><b>User ID</b><span class="text-danger">*</span></Label>
+                                            <input type="text"
+                                                style="width: 70%;border-top-left-radius: 7px; border-bottom-left-radius: 7px;"
+                                                class="form-control">
+                                            <br><br>
+
+                                            <b>Note:</b>This is a user-level integration. Other users of your
+                                            organization
+                                            will not be able to initiate payments
+                                            <br>
+                                            on behalf of you.
+                                            <br><br>
+                                            By clicking on <b>SAVE</b>,you agree with our <a href="#"
+                                                style="color: blue; text-decoration: none">Terms and
+                                                Conditions</a><br><br>
+
+                                            <button type="button" class="btn btn-primary" id="savebtn">Save</button>
+
+
+
+                                            <a href="configurenow.html"><button type="button" class="btn btn-light"
+                                                id="btn_cancel">Cancel</button></a>
+                                        </div>
+
+
+
+
+
+
+                                        <div class="col-md-3">
+                                            <b>Transaction Charges</b>
+                                            <p id="fot_font_size">
+                                                Transaction charges are applicable are as per your agreement
+                                                with ICICI Bank. No additional fee will be charged by Zoho.
+                                            </p>
+
+                                            <b>Benefits</b>
+                                            <ul>
+                                                <li>Initiate payments directly from Zoho Payroll without logging into
+                                                    ICICI Bank CIB portal.</li>
+
+                                                <li>Payment status gets automatically updated in Zoho Books.</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/include.js"></script>
+        <script src="assets/js/graph.js"></script>
+        <script src="assets/js/syncro.min.js"></script>
+        <script src="assets/js/PaymentStatus.js"></script>
+        <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

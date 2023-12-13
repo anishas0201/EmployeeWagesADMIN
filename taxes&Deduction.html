@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/anisha.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/graph.css" />
+  <link rel="stylesheet" href="assets/css/employeestatus.css" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <title>Employee</title>
+</head>
+
+<body>
+  <div import="includes/header.html"></div>
+  <div class="wrapper">
+    <div import="includes/sidebar.html"></div>
+    <div class="main-body" style="width: 100%;">
+      <div class="row" id="">
+        <div class="col-md-12">
+          <nav class="navbar1 navbar-light bg-light">
+
+            <div>
+
+              <a class="navbar-brand1 " href="index.html"><img src="../assets/img/dashboard.svg" alt=""
+                  style="margin: 0 7px 5px 0;">Dashboard</a>
+
+              <a class="navbar-brand1 " href="employees.html"><img src="../assets/img/Vector.svg"
+                  style="margin: 0 7px 5px 0;">Employees</a>
+
+              <a class="navbar-brand1 active1" href="/payrun.html"><img src="../assets/img/payrun.png"
+                  style="margin: 0 7px 5px 0; height: 22px;">Pay Runs</a>
+              <button class="btnbody btn-secondarybody dropdown-toggle " type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="../assets/img/Group 271.svg" alt=""> Approvals
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/allclaims.html">Reimbursement</a></li>
+                <li><a class="dropdown-item" href="/allinvestment.html">Proof Of Investments</a>
+                </li>
+                <li><a class="dropdown-item" href="/allrevision.html">Salary Revision </a></li>
+              </ul>
+
+
+              <a class="navbar-brand1 " href="../reports.html"><img src="../assets/img/Group 270.svg"
+                  style="margin: 0 7px 5px 0;">Reports</a>
+
+            </div>
+
+            <div id="greeting">
+
+              Good to see you, Mr.Pawas Goyal&#128075;
+
+            </div>
+
+          </nav>
+        </div>
+        <div class="container-fluid">
+          <br>
+          <div class="row" style="margin-right: 3%;">
+
+
+            <br>
+            <div class="card" id="card_margin" style="margin-left: 2%;margin-right: 3%;">
+              <h4 style="margin-top: 1%;">Create Payrun</h4>
+              <div class="row">
+                <div class="col-md-4" style="padding: 1%;">
+                  <div class="card" style="padding: 8%;background-color:#ebfaeb;">
+                    <h6>Period : <b>September 2023</b> | 30 Base Days</h6>
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h4>₹0.00</h4>
+                        <p>Payroll Cost</p>
+                      </div>
+                      <div class="col-md-6">
+                        <h4>₹0.00</h4>
+                        <p>Employee's Net Pay</p>
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="col-md-4" style="padding: 1%;">
+                  <div class="card" style="padding-left: 10%;
+                        padding-top: 3%;">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <p>Pay Day</p>
+                        <h4>&nbsp; 10</h4>
+                        <p>OCT,2023 </p>
+                        <p>Employees</p>
+
+                      </div>
+                      <div class="col-md-8">
+                        <h6>Taxes & Deductions</h6>
+                        <p style="margin-top: 9%;">Taxes</p>
+                        <p>Pre-Tax Deductions</p>
+                        <p>Post-Tax Deductions <b style="margin-left: 15%;">₹0.00</b></p>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+
+
+              </div> <br><br>
+
+
+              <ul class="nav" style="margin-left: 1%;">
+
+                <li class="nav-item">
+
+                  <a class="nav-link" href="payrun_1.html" id="nav_epf1">Employee Summary</a>
+
+                </li>
+
+                <li class="nav-item">
+
+                  <a class="nav-link" href="#" id="nav_epf">Taxes & Deductions</a>
+
+                </li>
+                <li class="nav-item">
+
+                  <a class="nav-link" href="reImbursement.html" id="nav_epf1">Reimbursements</a>
+
+                </li>
+
+              </ul>
+              <br>
+
+
+              <div class="card">
+                <div class="row">
+
+                  <div class="col-md-9">
+
+                    <h5 style="margin-top: 1%;margin-left: 1%;">Tax Details</h5>
+
+                  </div>
+
+                  <div class="col-md-3" style="padding-left: 7%;padding-top: 1%;padding-bottom: 1%;">
+
+                    <a class="btn btn-sm btn-primary" id="savebtn" href="#">Submit for Approval</a>
+
+                    <a class="btn btn-sm" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                      id="dotdotdot">
+
+                      • • •
+
+                    </a>
+
+                    <ul class="dropdown-menu">
+
+                      <li><a class="dropdown-item" href="#">option 1</a></li>
+
+                      <li><a class="dropdown-item" href="#">option 2</a></li>
+
+
+
+                    </ul>
+
+                  </div>
+
+
+
+                </div>
+
+                <table class="table table-hover">
+                  <thead>
+                    <tr style="background-color: #cccccc;">
+                      <th scope="col" style="border-bottom: 1px solid #cccccc;">TAX NAME</th>
+                      <th scope="col" style="border-bottom: 1px solid #cccccc;">PAID BY EMPLOYER </th>
+                      <th scope="col" style="border-bottom: 1px solid #cccccc;">PAID BY EMPLOYEE</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Income Tax</td>
+                      <td>₹ 0.00</td>
+                      <td>₹ 0.00</td>
+                    </tr>
+                    <tr>
+                      <td>MH Professional Tax(Head Office)</td>
+                      <td>₹ 0.00</td>
+                      <td>₹ 0.00</td>
+                    </tr>
+                    <tr>
+                      <td>MH Professional Tax(Head Office,Goregaon West,Mumbai)</td>
+                      <td>₹ 0.00</td>
+                      <td>₹ 0.00</td>
+                    </tr>
+                    <tr>
+                      <td>MP Professional Tax(MP State Highway 22,Gadarwara,Madhya Pradesh)</td>
+                      <td>₹ 0.00</td>
+                      <td>₹ 0.00</td>
+                    </tr>
+                    <tr>
+                      <td><b>Total</b></td>
+                      <td><b>₹ 0.00</b></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+                <h5 style="margin-top: 1%;margin-left: 1%;">Pre-Tax Deductions</h5>
+
+                <table class="table table-hover">
+                  <thead>
+                    <tr style="background-color: #cccccc;">
+                      <th scope="col" style="border-bottom: 1px solid #cccccc;">DEDUCTION NAME</th>
+                      <th scope="col" style="border-bottom: 1px solid #cccccc;">EMPLOYER'S CONTRIBUTION </th>
+                      <th scope="col" style="border-bottom: 1px solid #cccccc;">EMPLOYEE'S CONTRIBUTION</th>
+
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>EPF Contribution</td>
+                      <td>₹ 0.00</td>
+                      <td>₹ 0.00</td>
+                    </tr>
+                    <tr>
+                      <td>Employer EDLI Contribution</td>
+                      <td>₹ 0.00</td>
+                      <td>₹ 0.00</td>
+                    </tr>
+                    <tr>
+                      <td>Employer EPF Admin Charges</td>
+                      <td>₹ 0.00</td>
+                      <td>₹ 0.00</td>
+                    </tr>
+                    <tr>
+                      <td>Employee State Insurance</td>
+                      <td>₹ 0.00</td>
+                      <td>₹ 0.00</td>
+                    </tr>
+                    <tr>
+                      <td><b>Total</b></td>
+                      <td><b>₹ 0.00</b></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <h5 style="margin-top: 1%;margin-left: 1%;">Post-Tax Deductions</h5>
+                <table class="table table-hover">
+                  <thead>
+                    <tr style="background-color: #cccccc;">
+                      <th scope="col" style="border-bottom: 1px solid #cccccc;">DEDUCTION NAME</th>
+                      <th scope="col" style="border-bottom: 1px solid #cccccc;padding-left: 7%;">EMPLOYER'S CONTRIBUTION
+                      </th>
+                      <th scope="col" style="border-bottom: 1px solid #cccccc;padding-left: 4%;">EMPLOYEE'S CONTRIBUTION
+                      </th>
+
+
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <td colspan="3">
+                      <center style="color: gray;">There are no deductions present in this payrun</center>
+                    </td>
+                  </tbody>
+                </table>
+
+
+
+
+
+              </div>
+              <br>
+
+
+
+
+
+
+
+            </div> <br>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/graph.js"></script>
+  <script src="assets/js/syncro.min.js"></script>
+  <script src="assets/js/PaymentStatus.js"></script>
+  <script src="assets/js/sidebar.js"></script>
+</body>

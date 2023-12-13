@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/graph.css" />
+    <link rel="stylesheet" href="assets/css/employeestatus.css" />
+    <link rel="stylesheet" href="hrmsassets/css/admin.min.css" />
+    <link rel="stylesheet" href="hrmsassets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body" style="width: 100%;">
+            <div class="container-fluid">
+                <br>
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>This Year</option>
+                                <option value="1">This Month</option>
+                                <option value="2">This Quater</option>
+                                <option value="3">Previous Month</option>
+                                <option value="4">Previous Quater</option>
+                                <option value="5">Previous Year</option>
+                                <option value="6">Custom</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-8" style="padding-top: 5px;">
+                            <a href="customize_reports.html" id="Customize_reports_ancor"><img src="assets/img/gear-solid.svg" width="15px">
+                                Customize Report</a>
+                        </div>
+
+                        <div class="col-md-2">
+                            <div class="dropdown">
+                                <button class="btn  dropdown-toggle" id="expoert_btn" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Export as
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#" download="#">PDF</a></li>
+                                    <li><a class="dropdown-item" href="#" download="#">XLS (Microsoft Excel)</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="COL-MD-12">
+                    <br>
+                    <div class="card">
+                        <div class="row">
+                            <div class="col-md-12" style="justify-content: center; display: flex;">
+                                <h4><br>
+                                    Payroll Summary
+                                </h4>
+
+                            </div>
+                            <div class="col-md-12" style="justify-content: center; display: flex;">
+                                <p id="fot_font_size">01/04/2023 to 31/03/2024</p>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card" id="organisation_card1">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Pay Components</th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                                <th scope="col"></th>
+                                                <th scope="col">Amount (₹)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+
+                                                 <td id="fot_font_size1">Earning<p id="fot_font_size">No data to display</p>
+                                                </td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                            </tr>
+                                            <tr>
+                                                 <td id="fot_font_size1">Statutories<p id="fot_font_size">No statutories were included during
+                                                        this period</p>
+                                                </td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                            </tr>
+                                            <tr>
+                                                 <td id="fot_font_size1">Deduction<p id="fot_font_size">No deduction were applied in this
+                                                        period</p>
+                                                </td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                            </tr>
+                                            <tr>
+                                                 <td id="fot_font_size1">Taxes<p id="fot_font_size">No date to display</p>
+                                                </td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                            </tr>
+                                            <tr>
+                                                 <td id="fot_font_size1">Reimburstments<p id="fot_font_size">No date to display</p>
+                                                </td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                            </tr>
+                                            <tr>
+                                                 <td id="fot_font_size1"><b>Net Pay</b>
+                                                </td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1"></td>
+                                                 <td id="fot_font_size1">₹0.00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+
+                            </div>
+                        </div>
+                        <div class="row">
+                            
+                            <div class="col-md-9"></div>
+                            <div class="col-md-3"><br>
+                                <a href="reports.html"><button class="btn" id="btn_cancel">Cancel</button></a>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/graph.js"></script>
+    <script src="assets/js/syncro.min.js"></script>
+    <script src="assets/js/PaymentStatus.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

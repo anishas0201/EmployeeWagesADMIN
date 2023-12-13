@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/graph.css" />
+    <link rel="stylesheet" href="assets/css/employeestatus.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body">
+
+            <div class="row" id="">
+                <div class="col-md-12">
+                    <nav class="navbar1 navbar-light bg-light">
+
+                        <div>
+
+                            <a class="navbar-brand1 " href="index.html"><img src="../assets/img/dashboard.svg" alt=""
+                                    style="margin: 0 7px 5px 0;">Dashboard</a>
+
+                            <a class="navbar-brand1 " href="employees.html"><img src="../assets/img/Vector.svg"
+                                    style="margin: 0 7px 5px 0;">Employees</a>
+
+                            <a class="navbar-brand1" href="/payrun.html"><img src="../assets/img/payrun.png"
+                                    style="margin: 0 7px 5px 0; height: 22px;">Pay Runs</a>
+
+                            <button class="btnbody btn-secondarybody dropdown-toggle active1" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../assets/img/Group 271.svg" alt=""> Approvals
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/allclaims.html">Reimbursement</a></li>
+                                <li><a class="dropdown-item" href="/allinvestment.html">Proof Of Investments</a></li>
+                                <li><a class="dropdown-item" href="/allrevision.html">Salary Revision </a></li>
+                            </ul>
+
+
+                            <a class="navbar-brand1" href="../reports.html"><img src="../assets/img/Group 270.svg"
+                                    style="margin: 0 7px 5px 0;">Reports</a>
+
+                        </div>
+
+                        <div id="greeting">
+
+                            Good to see you, Mr.Pawas Goyal&#128075;
+
+                        </div>
+
+                    </nav>
+                </div>
+                <div class="container">
+                    <br>
+                    <div class="row">
+                        <div class="col-md-3" style="padding: 0 0 0 30px;">
+                            <h3>New Claims</h3>
+                        </div>
+                        <div class="col-md-9 Buttn" style="text-align: right; padding: 0 35px;">
+
+                            <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                aria-expanded="false" aria-controls="collapseExample" id="dotdotdot">
+                                &#128473;
+                            </a>
+
+                        </div>
+                    </div>
+                    <br>
+                    <div class="col-md-12">
+
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <div class="row" style="display: flex; align-items: center;">
+                                    <div class="col-md-3">
+                                        <label> Employee Name </label>
+                                        <div class="dropdown">
+                                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false"
+                                                style="border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-color: rgba(128, 128, 128, 0.397);">
+                                                Select an Employee
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Employee 1</a></li>
+                                                <li><a class="dropdown-item" href="#">Employee 2</a></li>
+                                                <li><a class="dropdown-item" href="#">Employee 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-9" style="text-align: right;">
+                                        <a href="#" style="text-decoration: none;"> Reset </a> |
+                                        <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                            aria-expanded="false" aria-controls="collapseExample">
+                                            &#128473;
+                                        </a>
+
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <!-- <div class="row"> -->
+
+
+                <table class="table" id="emp_status_tbl">
+                    <thead id="t_head">
+                        <th scope="col" id="tbl_head">Reimbursement Type<span class="required">*</span></th>
+                        <th scope="col" id="tbl_head">Bill Date</th>
+                        <th scope="col" id="tbl_head">Bill Number</th>
+                        <th scope="col" id="tbl_head">Attachments</th>
+                        <th scope="col" id="tbl_head">Claim Amounts<span class="required">*</span></th>
+                        <th scope="col" id="tbl_head">Approved Amounts<span class="required">*</span></th>
+                        </tr>
+                    </thead>
+                </table>
+                <a href="#" style="color: rgba(0, 0, 255, 0.5); text-decoration: none; padding: 0 0 0 30px;"><img
+                        src="assets/img/plus-solid.svg" alt="" width="20px"> Add another Bill</a>
+
+
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div id="claimbutton">
+                    <a href="#"> <button type="button" class="btn btn-primary" id="savebtn"
+                            style="position:bottom-left;">New Claims</button></a>
+                    <button type="button" class="btn"id="btn_cancel">Cancel</button>
+                </div>
+                <!-- </div> -->
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/graph.js"></script>
+    <script src="assets/js/syncro.min.js"></script>
+    <script src="assets/js/PaymentStatus.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

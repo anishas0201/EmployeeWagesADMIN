@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/graph.css" />
+    <link rel="stylesheet" href="assets/css/employeestatus.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body">
+
+            <div class="row" id="">
+                <div class="col-md-12">
+                    <nav class="navbar1 navbar-light bg-light">
+
+                        <div>
+
+                            <a class="navbar-brand1 " href="index.html"><img src="../assets/img/dashboard.svg" alt=""
+                                    style="margin: 0 7px 5px 0;">Dashboard</a>
+
+                            <a class="navbar-brand1 " href="employees.html"><img src="../assets/img/Vector.svg"
+                                    style="margin: 0 7px 5px 0;">Employees</a>
+
+                            <a class="navbar-brand1" href="/payrun.html"><img src="../assets/img/payrun.png"
+                                    style="margin: 0 7px 5px 0; height: 22px;">Pay Runs</a>
+                            <button class="btnbody btn-secondarybody dropdown-toggle " type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../assets/img/Group 271.svg" alt=""> Approvals
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/allclaims.html">Reimbursement</a></li>
+                                <li><a class="dropdown-item" href="/allinvestment.html">Proof Of Investments</a></li>
+                                <li><a class="dropdown-item" href="/allrevision.html">Salary Revision </a></li>
+                            </ul>
+
+
+                            <a class="navbar-brand1 active1" href="../reports.html"><img
+                                    src="../assets/img/Group 270.svg" style="margin: 0 7px 5px 0;">Reports</a>
+
+                        </div>
+
+                        <div id="greeting">
+
+                            Good to see you, Mr.Pawas Goyal&#128075;
+
+                        </div>
+
+                    </nav>
+                </div>
+                <div class="container-fluid">
+                    <br>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 id="Reportsheading" style="margin-left: 2%;">Reports</h3>
+                            <br>
+                        </div>
+
+                    </div>
+                    <div class="card" id="card_padding" style="margin-left: 2%;margin-right: 2%;">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <h4><b>Payroll Overview</b></h4>
+                                <br>
+
+                                <div>
+                                    <a href="payroll_summary.html" id="reportspgs">
+                                        <img src="/assets/img/rightarrow.png" alt=">" id="rightarrow">
+                                        Payroll Summary
+                                    </a>
+                                </div>
+                                <br>
+                                <div>
+                                    <a href="salary_register.html" id="reportspgs">
+                                        <img src="/assets/img/rightarrow.png" alt=">" id="rightarrow">
+                                        Salary Register - Monthly
+                                    </a>
+                                </div>
+                                <br>
+                                <div>
+                                    <a href="#" id="reportspgs">
+                                        <img src="/assets/img/rightarrow.png" alt=">" id="rightarrow">
+                                        Employee's Salary Statement
+                                    </a>
+                                </div>
+                                <br>
+                                <div>
+                                    <a href="#" id="reportspgs">
+                                        <img src="/assets/img/rightarrow.png" alt=">" id="rightarrow">
+                                        Employee's Pay Summary
+                                    </a>
+                                </div>
+                                <br>
+
+                            </div>
+                            <div class="col-md-4">
+                                <h4><B>Statutory Reports</B></h4>
+                                <br>
+
+
+                                <div>
+                                    <a href="#" id="reportspgs">
+                                        <img src="/assets/img/rightarrow.png" alt=">" id="rightarrow">
+                                        ESI Summary
+                                    </a>
+                                </div>
+                                <br>
+                                <div>
+                                    <a href="#" id="reportspgs">
+                                        <img src="/assets/img/rightarrow.png" alt=">" id="rightarrow">
+                                        ESIC Return Report
+                                    </a>
+                                </div>
+                                <br>
+
+                            </div>
+
+                            <div class="col-md-4">
+                                <h4><b>Employee Reports</b></h4>
+                                <br>
+
+                                <div>
+                                    <a href="employee_ctc_details.html" id="reportspgs">
+                                        <img src="/assets/img/rightarrow.png" alt=">" id="rightarrow">
+                                        Emplopyee's CTC Details
+                                    </a>
+                                </div>
+                                <br>
+                                <div>
+                                    <a href="#" id="reportspgs">
+                                        <img src="/assets/img/rightarrow.png" alt=">" id="rightarrow">
+                                        Reimbursement Summary
+                                    </a>
+                                </div>
+                                <br>
+
+                                <div>
+                                    <a href="#" id="reportspgs">
+                                        <img src="/assets/img/rightarrow.png" alt=">" id="rightarrow">
+                                        Employee's Full and Final Settlement
+                                    </a>
+                                </div>
+                                <br>
+                                <div>
+                                    <a href="#" id="reportspgs">
+                                        <img src="/assets/img/rightarrow.png" alt=">" id="rightarrow">
+                                        Salary Revision Report
+                                    </a>
+                                </div>
+                                <br>
+
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="row">
+
+                            <div class="col-md-4">
+                                <br><br>
+                                <h4 id="Declerationsinvestigationtxt"><b>Declerations & Investmentments</b></h4>
+                                <br>
+
+                                
+                                <div>
+                                    <a href="#" id="reportspgs">
+                                        <img src="/assets/img/rightarrow.png" alt=">" id="rightarrow">
+                                        Investment Decleration Report
+                                    </a>
+                                </div>
+                                <br>
+                                <div>
+                                    <a href="#" id="reportspgs">
+                                        <img src="/assets/img/rightarrow.png" alt=">" id="rightarrow">
+                                        Proof Of Investment Report
+                                    </a>
+                                </div>
+                                <br>
+                                <div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <br><br>
+                                <h4><b>Deduction Reports</b></h4>
+                                <br>
+
+                                <div>
+                                    <a href="#" id="reportspgs">
+                                        <img src="/assets/img/rightarrow.png" alt=">" id="rightarrow">
+                                        Deduction Summary
+                                    </a>
+                                </div>
+                                <br>
+                                <div>
+                                    <a href="#" id="reportspgs">
+                                        <img src="/assets/img/rightarrow.png" alt=">" id="rightarrow">
+                                        Post-Tax Deduction Summary
+                                    </a>
+                                </div>
+                                <br>
+                                <div>
+                                    <a href="#" id="reportspgs">
+                                        <img src="/assets/img/rightarrow.png" alt=">" id="rightarrow">
+                                        Pre-Tax Deduction Summary
+                                    </a>
+                                </div>
+                                <br>
+                                <div>
+
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <br><br>
+                                <h4><b>Taxes and Forms</b></h4>
+                                <br>
+
+                                <div>
+                                    <a href="#" id="reportspgs">
+                                        <img src="/assets/img/rightarrow.png" alt=">" id="rightarrow">
+                                        Tax Deduction Summary
+                                    </a>
+                                </div>
+                                <br>
+                             
+
+                            </div>
+                        </div>
+                        <br><br>
+                       
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/include.js"></script>
+        <script src="assets/js/graph.js"></script>
+        <script src="assets/js/syncro.min.js"></script>
+        <script src="assets/js/PaymentStatus.js"></script>
+        <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

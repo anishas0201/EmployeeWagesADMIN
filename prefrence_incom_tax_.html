@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body" style="width: 100%;">
+            <div class="container-fluid">
+                <div class="row" id="">
+                    <div class="col-md-2" id="pref_side1" style="position: fixed;">
+                        <ul class="nav flex-column" id="preference_sidebar">
+                            <h5 style="padding-left: 10%; padding-top: 6%;">Preferences</h5>
+                            <li class="nav-item" id="preference_li">
+                                <a class="nav-link" id="pref_anchor" href="preference_employee-portal.html">Employee Portal</a>
+                              </li>
+                              <li class="nav-item" id="preference_li">
+                                <a class="nav-link " id="pref_anchor" href="preference_fbp.html">Flexible Benefit Plan</a>
+                              </li>
+                              <li class="nav-item" id="preference_li">
+                                <a class="nav-link" id="pref_anchor" href="preference_reimbursementClaim.html">Reimbursement Claims</a>
+                              </li>    
+                              <li class="nav-item" id="preference_li">
+                                  <a class="nav-link active11" id="pref_anchor" href="prefrence_incom_tax_.html">Income Tax Declaration</a>
+                                </li>
+                                <li class="nav-item" id="preference_li">
+                                  <a class="nav-link" id="pref_anchor" href="prefrence_poi.html">Proof Of Investment</a>
+                                </li> 
+                                <li class="nav-item" id="preference_li">
+                                  <a class="nav-link" id="pref_anchor" href="preference_employeeCustom.html">Employee Custom Field</a>
+                                </li>
+                                <li class="nav-item" id="preference_li">
+                                  <a class="nav-link" id="pref_anchor" href="preference_senderEmail.html">Sender Email Preferences</a>
+                                </li>                 
+                        </ul>
+                    </div>
+                    <div class="col-md-10" style="padding: 0; margin-left: 18%;">
+                        <div id="main_body_div">
+                            <h3 id="it_dec">
+                                IT Declaration Prefrence
+                            </h3>
+                            <div class="card" style="margin: 10px;">
+                                <div id="body_content_for_prefrence">
+                                    <p id="fot_font_size">
+                                        Employees can declare their tax saving investments and expense detaiks through
+                                        the
+                                        employee portal <br>
+                                        once you enable this option.
+                                    </p>
+                                    <div>
+                                        <img src="assets/img/cartoon-1294877_1280.png" alt="Idea bulb"
+                                            style="width: 4%;">
+                                        &nbsp;
+
+                                        Learn how to manage Investments Declaration.
+                                        <a href="#" style="text-decoration: none; color: rgb(0 116 255 / 77%);">
+                                            IT Declaration Help Document</a>
+                                    </div>
+
+                                    <div>
+                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                        Help your employees submit IT Declaration on time.
+                                        <a href="#" style="text-decoration: none; color: rgb(0 116 255 / 77%);">
+                                            Download and share</a> this Declaration ebook.
+                                    </div>
+
+                                    <div class="card" style=" box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);   margin: 20px 0 0 0;">
+                                        <div id="pref_cotent_for_center">
+                                            <center>
+                                                <img src="assets/img/poi_locked.png" alt="" id="poi_locked">
+                                                <br><br>
+                                                <h4>
+                                                    IT Declarations is locked
+                                                </h4>
+
+
+                                                You are yet to enable the submission of IT declaration for your
+                                                employees<br>
+                                                through their respective portals. Release IT Declaration or submit it on
+                                                their
+                                                <br>
+                                                behalf under Employees > Employee profile > Investments > IT
+                                                Declaration. <br><br>
+                                                <a href="#">
+                                                    <button type="button" class="btn" id="it_dec_btn">Release IT
+                                                        Declaration</button>
+                                                </a>
+                                                
+                                                <hr>
+
+                                            </center>
+                                           
+                                            <b>Other Configuratons</b>
+                                            <br><br>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckChecked" checked>
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                    Allow employees to switch tax regimes
+                                                </label>
+                                            </div>
+                                        
+                                            <hr>
+                                            
+                                            <button type="button" id="savebtn"
+                                                class="btn btn-primary">Save</button>
+                                                <br><br>
+                                        </div>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

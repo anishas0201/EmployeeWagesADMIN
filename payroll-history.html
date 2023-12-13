@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/graph.css" />
+    <link rel="stylesheet" href="assets/css/employeestatus.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body" style="width: 100%;">
+            <div class="row" id="">
+                <div class="col-md-12">
+                    <nav class="navbar1 navbar-light bg-light">
+
+                        <div>
+
+                            <a class="navbar-brand1 " href="index.html"><img src="../assets/img/dashboard.svg" alt=""
+                                    style="margin: 0 7px 5px 0;">Dashboard</a>
+
+                            <a class="navbar-brand1 " href="employees.html"><img src="../assets/img/Vector.svg"
+                                    style="margin: 0 7px 5px 0;">Employees</a>
+
+                            <a class="navbar-brand1 active1" href="/payrun.html"><img src="../assets/img/payrun.png"
+                                    style="margin: 0 7px 5px 0; height: 22px;">Pay Runs</a>
+                            <button class="btnbody btn-secondarybody dropdown-toggle " type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../assets/img/Group 271.svg" alt=""> Approvals
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/allclaims.html">Reimbursement</a></li>
+                                <li><a class="dropdown-item" href="/allinvestment.html">Proof Of Investments</a></li>
+                                <li><a class="dropdown-item" href="/allrevision.html">Salary Revision </a></li>
+                            </ul>
+
+
+                            <a class="navbar-brand1 " href="../reports.html"><img src="../assets/img/Group 270.svg"
+                                    style="margin: 0 7px 5px 0;">Reports</a>
+
+                        </div>
+
+                        <div id="greeting">
+
+                            Good to see you, Mr.Pawas Goyal&#128075;
+
+                        </div>
+
+                    </nav>
+                </div>
+                <div class="container-fluid" style="padding-right:5%;">
+                    <br>
+                    <div class="row">
+
+                        <br>
+                        <div class="card" id="card_padding" style="margin-left: 2%;margin-right: 2%;">
+                            <div class="card-header" style="background-color: white;">
+                                <div class="row">
+                                    <div class="col-md-10">
+                                        <ul class="nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="payrun.html" id="nav_epf1">Run Payroll</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="payroll-history.html" id="nav_epf">Payroll
+                                                    History</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-2">
+                                        <div class="col-md-9 Buttn" style="text-align: left;">
+                                            <div class="dropdown">
+                                                <button class="btn dropdown-toggle" type="button"
+                                                    data-bs-toggle="dropdown" aria-expanded="false"
+                                                    id="reimbursementdropdown"> <img src="/assets/img/funnel.svg"
+                                                        alt="Filter"> <span>Payroll Type : </span>
+                                                    <b>All </b>
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Regular Payroll</a></li>
+                                                    <li><a class="dropdown-item" href="#">Past Payroll</a></li>
+                                                    <li><a class="dropdown-item" href="#">Final Settlement Payroll</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+
+
+                            <table class="table table-hover">
+                                <tr style="background-color: #cccccc;">
+                                    <td style="border-bottom: 1px solid #cccccc;">
+                                        <b>
+                                            Payment Date
+                                        </b>
+                                    </td>
+                                    <td style="border-bottom: 1px solid #cccccc;">
+                                        <b>
+                                            Payroll Type
+                                        </b>
+                                    </td>
+                                    <td style="border-bottom: 1px solid #cccccc;">
+                                        <b>
+                                            Details
+                                        </b>
+                                    </td>
+                                    <td style="border-bottom: 1px solid #cccccc;"></td>
+                                    <td style="border-bottom: 1px solid #cccccc;"></td>
+                                    <td style="border-bottom: 1px solid #cccccc;"></td>
+                                    <td style="border-bottom: 1px solid #cccccc;"></td>
+                                    <td style="border-bottom: 1px solid #cccccc;"></td>
+                                    <td style="border-bottom: 1px solid #cccccc;"></td>
+                                    <td style="border-bottom: 1px solid #cccccc;"></td>
+                                    <td style="border-bottom: 1px solid #cccccc;"></td>
+                                    <td style="border-bottom: 1px solid #cccccc;"></td>
+                                    <td style="border-bottom: 1px solid #cccccc;"></td>
+                                    <td style="border-bottom: 1px solid #cccccc;"></td>
+                                    <td style="border-bottom: 1px solid #cccccc;"></td>
+                                    <td style="border-bottom: 1px solid #cccccc;"></td>
+                                    <td style="border-bottom: 1px solid #cccccc;"></td>
+                                    <td style="border-bottom: 1px solid #cccccc;"></td>
+                                </tr>
+                                <tr>
+                                    <td id="fot_font_size">09/09/2023</td>
+                                    <td id="fot_font_size">Regular Payroll</td>
+                                    <td id="fot_font_size">01/08/2023 - 31/08/2023</td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td> <span
+                                            style="color: green; font-size: 16px; background-color: #ffff001f; padding: 10%;">
+                                            Paid</span>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="fot_font_size">10/08/2023</td>
+                                    <td id="fot_font_size">Regular Payroll</td>
+                                    <td id="fot_font_size">01/07/2023 - 31/07/203</td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+                                    <td> <span
+                                            style="color: green; font-size: 16px; background-color: #ffff001f; padding: 10%;">
+                                            Paid</span>
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="fot_font_size">31/07/2023</td>
+                                    <td id="fot_font_size" style="padding: 2px 0 0 7px;">Final Settlement Payroll</td>
+
+                                    <td id="fot_font_size">01/06/2023 - 30/06/2023
+
+                                        <p style="font-size: 12px; color: gray;margin: 0px;">Employee :</p>
+
+                                    </td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td> <span
+                                            style="color: green; font-size: 16px; background-color: #ffff001f; padding: 10%;">
+                                            Paid</span>
+
+                                    </td>
+
+
+
+                                </tr>
+
+                                <tr>
+
+                                    <td id="fot_font_size">10/07/2023</td>
+
+                                    <td id="fot_font_size">Final Settlement Payroll</td>
+
+                                    <td id="fot_font_size" style="padding: 2px 0 0 7px;">01/05/2023 - 27/05/2023
+
+                                        <p style="font-size: 12px; color: gray;margin: 0px;">Employee :</p>
+
+                                    </td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td> <span
+                                            style="color: green; font-size: 16px; background-color: #ffff001f; padding: 10%;">
+                                            Paid</span>
+
+                                    </td>
+
+
+                                </tr>
+
+                                <tr>
+
+                                    <td id="fot_font_size">10/07/2023</td>
+
+                                    <td id="fot_font_size">Regular Payroll</td>
+
+                                    <td id="fot_font_size">01/06/2023 - 30/06/2023
+
+                                        <!-- <p style="font-size: 12px; color: gray;">Employee :</p> -->
+
+                                    </td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+                                    <td id="fot_font_size"></td>
+
+                                    <td> <span
+                                            style="color: green; font-size: 16px; background-color: #ffff001f; padding: 10%;">
+                                            Paid</span>
+
+                                    </td>
+
+
+
+                                </tr>
+
+                                <tr>
+
+                                    <td id="fot_font_size">10/07/2023</td>
+
+                                    <td id="fot_font_size" >Final Settlement Payroll</td>
+
+                                    <td id="fot_font_size" style="padding: 2px 0 0 7px;">01/05/2023 - 26/05/2023
+
+                                        <p style="font-size: 12px; color: gray;margin: 0px;">Employee :</p>
+
+                                    </td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td> <span
+                                            style="color: green; font-size: 16px; background-color: #ffff001f; padding: 10%;">
+                                            Paid</span>
+
+                                    </td>
+
+
+
+                                </tr>
+
+
+
+                                <tr>
+
+                                    <td id="fot_font_size">01/07/2023</td>
+
+                                    <td id="fot_font_size">Final Settlement Payroll</td>
+
+                                    <td id="fot_font_size" style="padding: 2px 0 0 7px;">01/07/20233 - 01/07/2023
+
+                                        <p style="font-size: 12px; color: gray; margin: 0px;">Employee :</p>
+
+                                    </td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td> <span
+                                            style="color: green; font-size: 16px; background-color: #ffff001f; padding: 10%;">
+                                            Paid</span>
+
+                                    </td>
+
+
+
+                                </tr>
+
+
+
+                                <tr>
+
+                                    <td id="fot_font_size">10/06/2023</td>
+
+                                    <td id="fot_font_size">Regular Payroll</td>
+
+                                    <td id="fot_font_size">01/05/20233 - 31/05/2023
+
+                                        <!-- <p style="font-size: 12px; color: gray;">Employee :</p> -->
+
+                                    </td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td> <span
+                                            style="color: green; font-size: 16px; background-color: #ffff001f; padding: 10%;">
+                                            Paid</span>
+
+                                    </td>
+                                    </td>
+
+
+
+                                </tr>
+
+
+
+                                <tr>
+
+                                    <td id="fot_font_size">10/05/2023</td>
+
+                                    <td id="fot_font_size">Regular Payroll</td>
+
+                                    <td id="fot_font_size">01/04/20233 - 30/04/2023
+
+                                        <!-- <p style="font-size: 12px; color: gray;">Employee :</p> -->
+
+                                    </td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td id="fot_font_size"></td>
+
+                                    <td> <span
+                                            style="color: green; font-size: 16px; background-color: #ffff001f; padding: 10%;">
+                                            Paid</span>
+
+                                    </td>
+
+
+
+                                </tr>
+
+
+
+
+
+
+
+
+
+                            </table>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/include.js"></script>
+        <script src="assets/js/graph.js"></script>
+        <script src="assets/js/syncro.min.js"></script>
+        <script src="assets/js/PaymentStatus.js"></script>
+        <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

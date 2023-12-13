@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Employee</title>
+
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap-5.min.css">
+
+    <link rel="stylesheet" href="dist/css/admin.min.css">
+
+    <link rel="stylesheet" href="dist/css/style.css">
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+
+    <!-- <link rel="stylesheet" href="plugins/bootstrap/js/bootstrap-5.min.js"> -->
+
+    <link rel="stylesheet" href="plugins/datatables-responsive/css/">
+
+    <link rel="stylesheet" href="plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
+    <!--post editor start-->
+
+    <link rel="stylesheet" href="plugins/sceditor/minified/themes/default.min.css" id="theme-style" />
+
+    <!--post editor end-->
+
+</head>
+
+
+
+<body>
+
+    <!-- <div import="includes/header.html"></div> -->
+
+
+
+    <!----------------------------------------------------------------------------  -->
+
+    <div class="modal fade" id="SearchEmployee" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog  modal-xl">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title" id="exampleModalLabel">Search Employee</h5>
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                </div>
+
+                <div class="modal-body" style="padding: 20px 80px;">
+
+                    <div class="row">
+
+                        <div class="col-md-2">
+
+                            <label for="srchEmp"> Employee Name</label>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <input type="text" class="form-control" id="addemployees" placeholder="">
+
+                        </div>
+
+                        <div class="col-md-2">
+
+                            <label for="srchEmp"> Employee ID</label>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <input type="text" class="form-control" id="addemployees" placeholder="">
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+
+                        <div class="col-md-2">
+
+                            <label for="srchEmp">Work Email</label>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <input type="text" class="form-control" id="addemployees" placeholder="">
+
+                        </div>
+
+                        <div class="col-md-2">
+
+                            <label for="srchEmp">Mobile Number</label>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <input type="text" class="form-control" id="addemployees" placeholder="">
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+
+                        <div class="col-md-2">
+
+                            <label for="srchEmp">Employee Status</label>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <select class="dropdown_box form-control" id="addempdropdown1">
+
+                                <option value="" disabled selected hidden>Select</option>
+
+                                <option>1</option>
+
+                                <option>2</option>
+
+                                <option>3</option>
+
+                                <option>4</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="col-md-2">
+
+                            <label for="srchEmp">Portal Status</label>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <select class="dropdown_box form-control" id="addempdropdown1">
+
+                                <option value="" disabled selected hidden>Select</option>
+
+                                <option>1</option>
+
+                                <option>2</option>
+
+                                <option>3</option>
+
+                                <option>4</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+
+                        <div class="col-md-2">
+
+                            <label for="srchEmp">Date Of Joining</label>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <input type="date" class="form-control">
+
+                        </div>
+
+                        <div class="col-md-2">
+
+                            <label for="srchEmp">Last Working Date</label>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <input type="date" class="form-control">
+
+                        </div>
+
+                    </div>
+
+                    <br>
+
+                    <div class="row">
+
+                        <div class="col-md-2">
+
+                            <label for="srchEmp">Payment Mode</label>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <select class="dropdown_box form-control" id="addempdropdown1">
+
+                                <option value="" disabled selected hidden>Select</option>
+
+                                <option>1</option>
+
+                                <option>2</option>
+
+                                <option>3</option>
+
+                                <option>4</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="col-md-2">
+
+                            <label for="srchEmp">Department</label>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <select class="dropdown_box form-control" id="addempdropdown1">
+
+                                <option value="" disabled selected hidden>Select</option>
+
+                                <option>1</option>
+
+                                <option>2</option>
+
+                                <option>3</option>
+
+                                <option>4</option>
+
+                            </select>
+
+                        </div>
+
+                    </div><br>
+
+                    <div class="row">
+
+                        <div class="col-md-2">
+
+                            <label for="srchEmp">Designation</label>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <select class="dropdown_box form-control" id="addempdropdown1">
+
+                                <option value="" disabled selected hidden>Select</option>
+
+                                <option>1</option>
+
+                                <option>2</option>
+
+                                <option>3</option>
+
+                                <option>4</option>
+
+                            </select>
+
+                        </div>
+
+                        <div class="col-md-2">
+
+                            <label for="srchEmp">Work Location</label>
+
+                        </div>
+
+                        <div class="col-md-4">
+
+                            <select class="dropdown_box form-control" id="addempdropdown1">
+
+                                <option value="" disabled selected hidden>Select</option>
+
+                                <option>1</option>
+
+                                <option>2</option>
+
+                                <option>3</option>
+
+                                <option>4</option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="modal-footer model_foot">
+
+                    <div class="row">
+
+                        <div class="COL-MD-12">
+
+                            <button type="button" class="btn btn-primary " id="savebtn">Save </button>
+
+                            <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-gradient">
+
+        <div class="container-fluid">
+
+            <div class="col-md-2">
+
+                <!-- <a class="navbar-brand" href="#">Employee wages</a> -->
+
+                <a href="/index.html"><img src="../assets/img/Empwageslogo.png" alt="" width="180px" height="50px"></a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"><img src="../assets/img/hamburger.png" width="20px"
+                            height="20px"></span>
+
+                </button>
+
+            </div>
+
+            <div class="col-md-3">
+
+                <form class="d-flex">
+
+                    <div class="modalbtn">
+
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#SearchEmployee">
+
+                            <img src="../assets/img/searchnormal1.svg" alt="searchlogo">
+
+                        </button>
+
+                    </div>
+
+                    <input class="form-control me-2" type="search" placeholder="Search Employees" aria-label="Search"
+                        id="brdr">
+
+                </form>
+
+            </div>
+
+            <!-- <div class="col-md-"></div> -->
+
+            <div class="col-md-3"></div>
+
+            <div class="col-md-4">
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent" style="    float: right;">
+
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="align-items: center;">
+
+                        <li class="nav-item">
+
+                            <a class="nav-link active" aria-current="page" href="#"><img src="../assets/img/278.svg"
+                                    alt="">
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="#"><img src="../assets/img/279.svg" alt=""></a>
+
+                        </li>
+
+                        <li class="nav-item">
+
+                            <a class="nav-link" href="#" id="header280"><img src="../assets/img/280.svg" alt="">
+
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+
+                                &nbsp;Cylsys Software Solution&nbsp;
+
+                                <img src="../assets/img/profiledownarrow.svg" alt=""> &nbsp;
+
+                                <img src="../assets/img/Group 17.svg" alt="">
+
+                            </a>
+
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                                <!-- <li><a class="dropdown-item" href="#">Cylsys</a></li> -->
+
+                                <div id="profiledropdown">
+
+                                    <div class="row">
+
+                                        <div class="col-md-12">
+
+                                            <a class="btn " data-bs-toggle="collapse" href="#collapseExample"
+                                                role="button" aria-expanded="false" aria-controls="collapseExample"
+                                                id="profilepicandbackbtn">
+
+                                                &#128473;
+
+                                            </a>
+
+                                        </div>
+
+                                        <div class="col-md-12">
+
+                                            <center> <img src="../assets/img/Group 17.svg" alt="" id="profilepic">
+
+                                            </center>
+
+                                            <br>
+
+                                        </div>
+
+                                        <div class="col-md-12">
+
+                                            <CEnter>
+
+                                                <h6 style="font-weight: 600;">JAGRATITHAKUR23</h6>
+
+                                            </CEnter>
+
+                                            <div>
+
+                                                <center>
+
+                                                    <p id="dropDownTxt">User ID: 0022949022</p>
+
+                                                </center>
+
+                                                <center>
+
+                                                    <p id="dropDownTxt">jagratithakur23@gmail.com</p>
+
+                                                </center>
+
+                                            </div>
+
+                                            <br>
+
+                                            <center>
+
+                                                <a href="#" id="myacc"> My Account</a>&nbsp;|&nbsp;<a href="/login.html"
+                                                    id="signout">Sign Out</a>
+
+                                            </center>
+
+                                        </div>
+
+                                        <div>
+
+                                            <hr>
+
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="col-md-7">
+
+                                                <p id="dropDownTxt">MY ORGANISATIONS</p>
+
+                                            </div>
+
+                                            <div class="col-md-5">
+
+                                                <a href="#" id="myacc" style="float: right;"> <img
+                                                        src="../assets/img/gear-solid.svg" alt="" style="width: 15px; ">
+
+                                                    &nbsp;Manage</a>
+
+                                            </div>
+
+                                            <div>
+
+                                                <hr>
+
+                                            </div>
+
+                                            <div class="row">
+
+                                                <div class="col-md-10">
+
+                                                    <h6 style="font-weight: 600;">MY Fund Bucket</h6>
+
+                                                    <p id="dropDownTxt"> Organisation ID : 60022949681</p>
+
+                                                    <p id="dropDownTxt">Trail</p>
+
+                                                </div>
+
+                                                <div class="col-md-2">
+
+                                                    <img src="../assets/img/check-solid.svg" alt=""
+                                                        style="width: 15px;float: right;">
+
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </ul>
+
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!----------------------------------------------------------------------------  -->
+
+    <div class="wrapper">
+
+        <div import="includes/sidebar.html"></div>
+
+        <div class="main-body">
+
+            <div class="container-fluid">
+
+                <div class="row" id="">
+
+                    <div class="col-md-12">
+
+                        <nav class="navbar1 navbar-light bg-light">
+
+
+
+                            <div>
+
+
+
+                                <a class="navbar-brand1 " href="index.html"><img src="../assets/img/dashboard.svg"
+                                        alt="" style="margin: 0 7px 5px 0;">Dashboard</a>
+
+
+
+                                <a class="navbar-brand1 active1" href="employees.html"><img
+                                        src="../assets/img/Vector.svg" style="margin: 0 7px 5px 0;">Employees</a>
+
+
+                                <a class="navbar-brand1" href="/payrun.html"><img src="../assets/img/payrun.png"
+                                        style="margin: 0 7px 5px 0; height: 22px;">Pay Runs</a>
+
+
+                                <button class="btnbody btn-secondarybody dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+
+                                    <img src="../assets/img/Group 271.svg" alt=""> Approvals
+
+                                </button>
+
+                                <ul class="dropdown-menu">
+
+                                    <li><a class="dropdown-item" href="/allclaims.html">Reimbursement</a></li>
+
+                                    <li><a class="dropdown-item" href="/allinvestment.html">Proof Of Investments</a>
+
+                                    </li>
+
+                                    <li><a class="dropdown-item" href="/allrevision.html">Salary Revision </a></li>
+
+                                </ul>
+
+
+
+
+
+                                <a class="navbar-brand1" href="../reports.html"><img src="../assets/img/Group 270.svg"
+                                        style="margin: 0 7px 5px 0;">Reports</a>
+
+
+
+                            </div>
+
+
+
+                            <div id="greeting">
+
+
+
+                                Good to see you, Mr.Pawas Goyal&#128075;
+
+
+
+                            </div>
+
+
+
+                        </nav>
+
+                    </div>
+
+                    <!-- <h4 style="font-family: 'roboto', sans-serif;"><b>Add Employees</b></h4> -->
+
+                    <h3 id="addemp"><u>Basic Information</u></h3>
+
+
+
+
+
+
+
+                    <div class="card" style="margin: 0 100px;">
+
+
+
+                        <div class="card-body" style="padding: 0 50px 0 50px;">
+
+                            <div class="row">
+
+                                <div class="form-group col-md-4">
+
+                                    <label id="label">Employees First Name<span class="text-danger">*</span> </label>
+
+                                    <input type="text" class="form-control" id="addemployees" placeholder="">
+
+                                </div>
+
+                                <div class="form-group col-md-4">
+
+                                    <label id="label">Middle Name <span class="text-danger"></span>
+
+                                    </label>
+
+                                    <input type="text" class="form-control" id="addemployees" placeholder="">
+
+                                </div>
+
+                                <div class="form-group col-md-4">
+
+                                    <label id="label">Last Name<span class="text-danger">*</span>
+
+                                    </label>
+
+                                    <input type="text" class="form-control" id="addemployees" placeholder="">
+
+                                </div><br>
+
+
+
+
+
+                                <div class="form-group col-md-4">
+
+                                    <label id="label">Employees ID <span class="text-danger">*</span>
+
+                                    </label>
+
+                                    <input type="text" class="form-control" id="addemployees" placeholder="">
+
+                                </div>
+
+                                <div class="form-group col-md-4">
+
+                                    <label id="label">Gender <span class="text-danger">*</span>
+
+                                    </label>
+
+
+
+                                    <select id="state" class="dropdown_box form-control" name="state">
+
+                                        <option value="" disabled selected hidden id="addempdropdown">Select</option>
+
+                                        <option>Male</option>
+
+                                        <option>Female</option>
+
+                                        <option>Other</option>
+
+
+
+                                    </select>
+
+
+
+                                </div>
+
+                                <div class="form-group col-md-4">
+
+                                    <label id="label">Date of joining
+
+                                    </label>
+
+                                    <input type="date" class="form-control" id="addemployees" placeholder="">
+
+                                </div>
+
+                                <div class="form-group col-md-4" id="brdr">
+
+                                    <label id="label">Designation
+
+                                        <span class="text-danger">*</span>
+
+                                    </label>
+
+                                    <select class="dropdown_box form-control" id="addempdropdown1">
+
+                                        <option value="" disabled selected hidden>Select</option>
+
+                                        <option>HR</option>
+
+                                        <option>Software Developer</option>
+
+                                        <option>Business Executive</option>
+
+                                        <option>UI & UX Designer</option>
+
+                                        <option>Sales</option>
+
+
+
+                                    </select>
+
+                                </div>
+
+
+
+                                <div class="form-group col-md-4">
+
+                                    <label id="label">Work location<span class="text-danger">*</span>
+
+                                    </label>
+
+                                    <select class="dropdown_box form-control" id="addempdropdown1">
+
+                                        <option value="" disabled selected hidden>Select</option>
+
+                                        <option>1</option>
+
+                                        <option>2</option>
+
+                                        <option>3</option>
+
+
+
+                                    </select>
+
+                                </div>
+
+                                <div class="form-group col-md-4">
+
+                                    <label id="label">Employee Type<span class="text-danger">*</span>
+
+                                    </label>
+
+                                    <select class="dropdown_box form-control" id="addempdropdown1">
+
+                                        <option value="" disabled selected hidden>Select</option>
+
+                                        <option>Permanent</option>
+
+                                        <option>Contract</option>
+
+                                       
+
+
+
+                                    </select>
+
+                                </div>
+
+
+
+                                <div class="col-md-12">
+
+                                    <input type="checkbox">
+
+                                    <label id="checkbox">Employee is a director/person with substantial interest in the
+
+                                        company</label><br>
+
+                                </div>
+
+
+
+                                <div class="form-group col-md-4">
+
+                                    <label id="label">Work Email<span class="text-danger">*</span>
+
+                                    </label>
+
+                                    <input type="text" class="form-control" id="addemployees" placeholder=" ">
+
+                                </div>
+
+
+
+                                <!--  <div class="form-group col-md-4">
+
+                                    <label id="label">Department<span class="text-danger">*</span>
+
+                                    </label>
+
+                                    <input type="text" class="form-control" id="addemployees" placeholder=" ">
+
+                                </div>-->
+
+
+
+                                <div class="form-group col-md-4">
+
+                                    <label id="label">Department<span class="text-danger">*</span>
+
+                                    </label>
+
+                                    <select class="dropdown_box form-control " id="addempdropdown1">
+
+                                        <option value="" disabled selected hidden>Select</option>
+
+                                        <option>Information Technology</option>
+
+                                        <option>Sales</option>
+
+                                        <option>HR</option>
+
+
+
+                                    </select>
+
+                                </div>
+
+
+
+
+
+                                <div class="form-group col-md-4"></div>
+
+
+
+                                <div class="col-md-12">
+
+                                    <input type="checkbox">
+
+                                    <label id="checkbox"><b>Employee Portal Access</b><br>The employee will be able to
+
+                                        view
+
+                                        payslips,
+
+                                        Submit their IT declaration & create reimbursement claims through the employee
+
+                                        portal</label>
+
+                                </div>
+
+                                <br><br><br>
+
+                                <hr>
+
+                                <div class="col-md-12"><br><br>
+
+                                    <input type="checkbox">
+
+                                    <label id="checkbox">
+
+                                        <b>Statutory Components</b><br>Enable the necessary benefits and tax applicable
+
+                                        for this employee.
+
+                                    </label>
+
+                                </div>
+
+                                <div class="col-md-2">
+
+                                    <br>
+
+                                    <a href="salarydetails.html"><input class="btn btn-primary" type="submit"
+                                            value="Save & Continue" id="savebtn">
+
+                                    </a>
+
+                                </div>
+
+                                <div class="col-md-1">
+
+                                    <br>
+
+                                    <a href="employees.html"><input class="btn btn-primary" type="submit" value="Cancel"
+                                            id="cancelbtn">
+
+                                    </a>
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+                            <br>
+
+                            <br>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+
+    <script src="assets/js/include.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="assets/js/sidebar.js"></script>
+
+
+
+</body>

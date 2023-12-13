@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/anisha.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/graph.css" />
+  <link rel="stylesheet" href="assets/css/employeestatus.css" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <title>Employee</title>
+</head>
+
+<body>
+  <div import="includes/header.html"></div>
+  <div class="wrapper">
+    <div import="includes/sidebar.html"></div>
+    <div class="main-body" style="width: 100%;">
+      <div class="row" id="">
+        <div class="col-md-12">
+          <nav class="navbar1 navbar-light bg-light">
+
+            <div>
+
+              <a class="navbar-brand1 " href="index.html"><img src="../assets/img/dashboard.svg" alt=""
+                  style="margin: 0 7px 5px 0;">Dashboard</a>
+
+              <a class="navbar-brand1 " href="employees.html"><img src="../assets/img/Vector.svg"
+                  style="margin: 0 7px 5px 0;">Employees</a>
+
+              <a class="navbar-brand1 active1" href="/payrun.html"><img src="../assets/img/payrun.png"
+                  style="margin: 0 7px 5px 0; height: 22px;">Pay Runs</a>
+              <button class="btnbody btn-secondarybody dropdown-toggle " type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="../assets/img/Group 271.svg" alt=""> Approvals
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/allclaims.html">Reimbursement</a></li>
+                <li><a class="dropdown-item" href="/allinvestment.html">Proof Of Investments</a></li>
+                <li><a class="dropdown-item" href="/allrevision.html">Salary Revision </a></li>
+              </ul>
+
+
+              <a class="navbar-brand1 " href="../reports.html"><img src="../assets/img/Group 270.svg"
+                  style="margin: 0 7px 5px 0;">Reports</a>
+
+            </div>
+
+            <div id="greeting">
+
+              Good to see you, Mr.Pawas Goyal&#128075;
+
+            </div>
+
+          </nav>
+        </div>
+        <div class="container-fluid" style="padding-right:5%;">
+          <br>
+          <div class="row">
+           
+            <br>
+            <div class="card" id="card_padding" style="margin-left: 2%;margin-right: 2%;">
+              <div class="card-header" style="background-color: white;">
+                <ul class="nav" >
+
+                  <li class="nav-item">
+    
+                    <a class="nav-link" href="payrun.html" id="nav_epf">Run Payroll</a>
+    
+                  </li>
+    
+                  <li class="nav-item">
+    
+                    <a class="nav-link" href="payroll-history.html" id="nav_epf1">Payroll History</a>
+    
+                  </li>
+    
+                </ul>
+              </div>
+              <div class="card-body">
+                <h5>&nbsp; Process Payrun for September 2023 <span
+                    style="border: 1px;padding: 5px; font-size: 11px;border-radius: 4px;background-color: #193F5E;color: white;">READY</span>
+                </h5><br>
+
+                <div class="card" style="padding: 2%;margin-right: 3%;">
+
+                  <div class="row">
+
+                    <div class="col-md-2">
+
+                      <p id="fot_font_size">EMPLOYEES NET PAY</p>
+
+                      <P id="fot_font_size">YET TO PROCESS</P>
+
+                    </div>
+
+                    <div class="col-md-2">
+
+                      <P id="fot_font_size">PAYMENT DATE</P>
+
+                      <P id="fot_font_size">10/10/2023</P>
+
+                    </div>
+
+                    <div class="col-md-2">
+
+                      <P id="fot_font_size">NO OF EMPLOYEES</P>
+                      <P id="fot_font_size">75 Employees</P>
+                    </div>
+
+                    <div class="col-md-4"></div>
+
+                    <div class="col-md-2">
+
+                      <a class="btn btn-primary" id="savebtn" href="payrun_1.html">Create Pay Run</a>
+
+                    </div>
+
+                    <p style="color: gray;"> <img src="assets/img/exclamation-circle.svg" alt=""> Please process and
+                      approve this payrun before 10/10/2023</p>
+
+                  </div>
+
+                </div>
+
+
+
+                <br>
+                <h5>&nbsp; Final Settlement Payroll <span
+                    style="border: 1px;padding: 5px; font-size: 11px;border-radius: 6px;background-color: #ccccccb6;">DRAFT</span></h5>
+                <br>
+
+                <div class="card" style="padding: 2%;margin-right: 3%;">
+
+                  <div class="row">
+
+                    <div class="col-md-2">
+
+                      <p id="fot_font_size">EMPLOYEES NET PAY</p>
+
+                      <P id="fot_font_size">₹ 0.00</P>
+
+                    </div>
+
+                    <div class="col-md-2">
+
+                      <P id="fot_font_size">PAYMENT DATE</P>
+
+                      <P id="fot_font_size">1/08/2023</P>
+
+                    </div>
+
+                    <div class="col-md-2">
+
+                      <P id="fot_font_size">EMPLOYEE</P>
+                      <P id="fot_font_size">Kriti Prakash Tendulkar</P>
+                    </div>
+
+                    <div class="col-md-4"></div>
+
+                    <div class="col-md-2">
+
+                      <a class="btn btn-primary" id="savebtn" href="#">View Details</a>
+
+                    </div>
+
+                    <p style="color: gray;"> <img src="assets/img/exclamation-circle.svg" alt="">This Payment is overdue
+                      by 45 days.</p>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+              <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/graph.js"></script>
+  <script src="assets/js/syncro.min.js"></script>
+  <script src="assets/js/PaymentStatus.js"></script>
+  <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

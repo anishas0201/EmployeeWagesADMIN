@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/anisha.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/graph.css" />
+
+  <style>
+    .chart-container {
+
+      max-width: 800px;
+
+      margin: 20px auto;
+    }
+
+    .chart-container {
+      max-width: 716px;
+      margin: 20px auto;
+    }
+  </style>
+
+
+  <title>Employee</title>
+</head>
+
+<body style="font-family: 'roboto', sans-serif; font-style: normal  ;">
+  <div import="includes/header.html"></div>
+
+  <div class="wrapper">
+    <div import="includes/sidebar.html"></div>
+    <div class="main-body">
+      <div class="container-fluid">
+        <div class="row" id="">
+          <div class="col-md-12">
+            <nav class="navbar1 navbar-light bg-light">
+
+              <div>
+
+                <a class="navbar-brand1 " href="index.html"><img src="../assets/img/dashboard.svg" alt=""
+                    style="margin: 0 7px 5px 0;">Dashboard</a>
+
+                <a class="navbar-brand1 active1" href="employees.html"><img src="../assets/img/Vector.svg"
+                    style="margin: 0 7px 5px 0;">Employees</a>
+
+                <a class="navbar-brand1" href="/payrun.html"><img src="../assets/img/payrun.png"
+                    style="margin: 0 7px 5px 0; height: 22px;">Pay Runs</a>
+
+                <button class="btnbody btn-secondarybody dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="../assets/img/Group 271.svg" alt=""> Approvals
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/allclaims.html">Reimbursement</a></li>
+                  <li><a class="dropdown-item" href="/allinvestment.html">Proof Of Investments</a></li>
+                  <li><a class="dropdown-item" href="/allrevision.html">Salary Revision </a></li>
+                </ul>
+
+
+                <a class="navbar-brand1" href="../reports.html"><img src="../assets/img/Group 270.svg"
+                    style="margin: 0 7px 5px 0;">Reports</a>
+
+              </div>
+
+              <div id="greeting">
+
+                Good to see you, Mr.Pawas Goyal&#128075;
+
+              </div>
+
+            </nav>
+          </div>
+
+
+
+
+          <div class="container-fluid">
+            <h3 id="salarydetails"><u>Salary Details</u></h3>
+
+            <div class="card" id="salarydetailtbl" style="margin: 0 40px; padding: 17px 25px;">
+
+              <div class="col-md-12">
+
+                <div class="row">
+
+
+
+                  <div class="col-md-4" id="annualctc">
+
+                    Annual CTC <span style="color:red;"> *</span>
+
+
+
+                  </div>
+
+                  <div class="col-md-5">
+
+                    <form>
+
+                      <div class="row">
+
+                        <div class="col-md-8 d-flex">
+
+
+
+                          <button class="mergebtn"> &#8377;
+
+                          </button>
+
+
+
+                          <input type="number" placeholder="00.00">
+                          <span> &nbsp; &nbsp;&nbsp; per year</span>
+                        </div>
+
+
+
+
+
+
+
+                      </div>
+
+                    </form>
+
+                  </div>
+
+                </div>
+
+              </div>
+
+
+
+              <table class="table table-borderless">
+
+                <thead>
+
+
+
+                  <tr id="tblbelowline">
+
+                    <th id="fontnormal">SALARY COMPONENTS</th>
+
+
+
+                    <th id="fontnormal">CALCULATION TYPE</th>
+
+
+
+                    <th id="fontnormal">MONTHLY AMOUNT</th>
+
+
+
+                    <th id="fontnormal">ANNUAL AMOUNT</th>
+
+
+
+                  </tr>
+
+
+
+                </thead>
+
+                <tbody>
+
+
+
+                  <tr>
+
+
+
+                    <td id="fot_font_size1"><b>Earnings</b></td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td id="fot_font_size1">Basic</td>
+
+                    <td id="fot_font_size1">
+
+                      <div>
+
+                        <form class="d-flex">
+
+                          <input type="number" placeholder="00.00">
+
+                          <button class="mergetblbtn">% of CTC
+
+                          </button>
+
+                        </form>
+
+                      </div>
+
+                    </td>
+
+                    <td id="fot_font_size1"><input type="text"></td>
+
+                    <td id="fot_font_size1">0</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td id="fot_font_size1">House Rent Allowance</td>
+
+                    <td id="fot_font_size1">
+
+                      <div>
+
+                        <form class="d-flex">
+
+                          <input type="number" placeholder="00.00">
+
+                          <button class="mergetblbtn">% of Basic
+
+                          </button>
+
+                        </form>
+
+                      </div>
+
+                    <td id="fot_font_size1"><input type="text"></td>
+
+                    <td id="fot_font_size1">0</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td id="fot_font_size1">Conveyance Allowance</td>
+
+                    <td id="fot_font_size1">Fixed amount</td>
+
+                    <td id="fot_font_size1"><input type="text"></td>
+
+                    <td id="fot_font_size1">0</td>
+
+                  </tr>
+
+                  <tr>
+
+                    <td id="fot_font_size1">Fixed Allowance &#9432;<br><span id="subtitle">Monthly CTC-Sum of all other
+                        components</span>
+                    </td>
+
+                    <td id="fot_font_size1">Fixed amount</td>
+
+                    <td id="fot_font_size1">0</td>
+
+                    <td id="fot_font_size1">0</td>
+
+                  </tr>
+
+                  <tr id="sumtotal">
+
+                    <td id="fot_font_size1"><b>Cost to Company</b></td>
+
+                    <td id="fot_font_size1"></td>
+
+                    <td id="fot_font_size1">&#8377;0 </td>
+
+                    <td id="fot_font_size1">&#8377;0 </td>
+
+                  </tr>
+
+                </tbody>
+
+              </table>
+
+
+
+
+
+
+
+            </div>
+
+            <hr>
+
+            <a class="btn btn-primary " href="personalinfo.html" role="button" id="savebtn" style="margin-left: 4%;
+  ">Save and
+              Continue</a>
+            <a href="addemployee.html"><button class="btn" id="btn_cancel">Cancel</button></a>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="assets/js/sidebar.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/graph.css" />
+    <link rel="stylesheet" href="assets/css/employeestatus.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body">
+
+            <div class="row" id="">
+                <div class="col-md-12">
+                    <nav class="navbar1 navbar-light bg-light">
+
+                        <div>
+
+                            <a class="navbar-brand1 " href="index.html"><img src="../assets/img/dashboard.svg" alt=""
+                                    style="margin: 0 7px 5px 0;">Dashboard</a>
+
+                            <a class="navbar-brand1 active1" href="employees.html"><img src="../assets/img/Vector.svg"
+                                    style="margin: 0 7px 5px 0;">Employees</a>
+
+                            <a class="navbar-brand1" href="/payrun.html"><img src="../assets/img/payrun.png"
+                                    style="margin: 0 7px 5px 0; height: 22px;">Pay Runs</a>
+
+                            <button class="btnbody btn-secondarybody dropdown-toggle" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="../assets/img/Group 271.svg" alt=""> Approvals
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/allclaims.html">Reimbursement</a></li>
+                                <li><a class="dropdown-item" href="/allinvestment.html">Proof Of Investments</a></li>
+                                <li><a class="dropdown-item" href="/allrevision.html">Salary Revision </a></li>
+                            </ul>
+
+
+                            <a class="navbar-brand1" href="../reports.html"><img src="../assets/img/Group 270.svg"
+                                    style="margin: 0 7px 5px 0;">Reports</a>
+
+                        </div>
+
+                        <div id="greeting">
+
+                            Good to see you, Mr.Pawas Goyal&#128075;
+
+                        </div>
+
+                    </nav>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <h3><img src="assets/img/yesbanklogo.jpg" alt="Yes Bank" id="yesBank_logo">Direct
+                                    Deposit</h3>
+                            </div>
+                            <br>
+                            <div class="card" id="card_margin">
+                                <div class="container" style="padding: 15px 0;margin: 0 25px;">
+                                    <div class="row">
+                                        <div class="col-md-8 yes_container">
+
+                                            <label class="">Customer ID<span class="yes_span">*</span></label>
+
+                                            <div>
+
+                                                <input type="text" class="form-control" id="customer_name" required
+                                                    style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+
+                                            </div><br>
+
+                                            <label class="">First Half of Password<span
+                                                    class="yes_span">*</span></label>
+
+                                            <div>
+
+                                                <input type="password" class="form-control" id="customer_name" required
+                                                    style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+
+                                            </div><br>
+
+                                            <label class="">Second Half of Password<span
+                                                    class="yes_span">*</span></label>
+
+                                            <div>
+
+                                                <input type="password" class="form-control" id="customer_name" required
+                                                    style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+
+                                            </div><br>
+
+                                            <label class="">Yes Bank Account<span class="yes_span">*</span></label>
+
+                                            <div>
+
+                                                <select id="customer_name" class="dropdown_box form-control"
+                                                    name="state"
+                                                    style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+
+                                                    <option value="" disabled selected hidden>Select</option>
+
+                                                    <option value="op1">Account 1</option>
+
+                                                    <option value="op2">Account 2</option>
+
+                                                    <option value="op3">Account 3</option>
+
+                                                    <option value="op4">Account 4</option>
+
+                                                </select>
+
+                                            </div><br>
+
+                                            <label class="">Live Balance<span class="yes_span">*</span></label>
+
+                                            <div>
+
+                                                <input type="text" class="form-control" id="customer_name" required
+                                                    style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+
+                                            </div><br>
+
+                                            <label class="">Secret PIN<span class="yes_span">*</span></label>
+
+                                            <div>
+
+                                                <input type="password" class="form-control" id="pin_field"
+                                                    placeholder="•    •    •    •    •    •  " required
+                                                    style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+
+                                            </div><br>
+
+                                            <label class="">Confirm Secret PIN<span class="yes_span">*</span></label>
+
+                                            <div>
+
+                                                <input type="password" class="form-control" id="pin_field"
+                                                    placeholder="•    •    •    •    •    • " required
+                                                    style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+
+                                            </div><br>
+
+                                            <b>Note :</b> This is a user-level integration. Other users of your
+                                            organization <br> will not be able to initiate payments
+
+                                            on behalf of you. <br> <br>
+
+                                            By clicking on <b>SAVE</b>,you agree with our <a href="#"
+                                                style="color: blue; text-decoration: none">Terms and
+                                                Conditions</a><br><br>
+
+
+
+                                            <button type="button" class="btn btn-primary" id="savebtn">Save</button>
+
+
+
+                                            <a href="configurenow.html"><button type="button" class="btn btn-light"
+                                                id="btn_cancel">Cancel</button></a>
+
+                                        </div>
+                                        <div class="col-md-4 terms_container">
+
+
+
+
+
+                                            <b>Transaction Charges</b>
+
+
+
+                                            <p id="fot_font_size">Transaction charges are applicable as per your
+                                                agreement with Yes
+
+                                                Bank.No additional fee will be charged by Zoho.</p>
+
+                                            <b>How to configure this integration?</b>
+
+                                            <ul>
+
+                                                <li id="terms">Enter the unque Customer ID of your corporate account
+                                                    after the bank enables API Banking for your account.</li>
+
+                                                <li id="terms">Enter the password provided by the bank.The bank will
+                                                    share the password in two halves,via email or SMS. If there are two
+                                                    admins for your corporate account, each admin will receive one half
+                                                    of the password.</li>
+
+                                                <li id="terms">Enter your live account balance with the exact decimal
+                                                    numbers as provided by YES Bank.Live Account Balance adds a layer of
+                                                    security while integrating your account.</li>
+
+                                                <li id="terms">Create a six-digit PIN to authorise all the transactions
+                                                    that will be initiated from Zoho Payroll.Your Bank will not provided
+                                                    this PIN. You will have to enter this PIN to initiate any tranction
+                                                    from Payroll.</li>
+
+                                                <li id="terms">Select the YES Bank account that you want to integrate.
+                                                </li>
+
+                                                <li id="terms">Click Save to integrate your YES Bank account with Zoho
+                                                    Payroll.</li>
+
+                                            </ul>
+
+
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/graph.js"></script>
+    <script src="assets/js/syncro.min.js"></script>
+    <script src="assets/js/PaymentStatus.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

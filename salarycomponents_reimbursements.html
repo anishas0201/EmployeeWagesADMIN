@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body" style="width: 100%;padding-left: 1%; padding-right: 1%;">
+            <div class="container-fluid">
+                <div class="row" id="">
+
+                    <div class="col-6">
+                        <h3>Salary Components</h3>
+                    </div>
+                    <div class="col-6" style="text-align: right;">
+                        <div class="dropdown">
+                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="addcompntbtn">
+                                Add Component
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="new-Earning.html">Earning</a></li>
+                                <li><a class="dropdown-item" href="#">Correction</a></li>
+                                <li><a class="dropdown-item" href="new_Post-tax-deduction.html">Post-Tax Deduction</a></li>
+                                <li><a class="dropdown-item" href="new-Pre-tax-deduction.html">Pre-Tax Deduction</a></li>
+                              </ul>
+                        </div>
+                    </div>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="salarycomponents_Earnings.html" id="anchorbtn">Earnings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="salarycomponents_deductions.html" id="anchorbtn">Deduction</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="salarycomponents_reimbursements.html"
+                                id="anchorbtn1">Reimbursements</a>
+                        </li>
+                    </ul>
+                    <div class="card" style="background-color: rgba(252, 219, 157, 0.671); margin-top: 1%; padding-top: 1%;">
+                        <p id="infopara"><i class="bi bi-info-circle-fill" style="color: orange;"></i>&nbsp;
+                            With these reimbursement components, employees can claim reimbursements for the
+                            components which are part of the payroll and not for other expenses reimbursements.</p>
+                    </div>
+                    <div class="container-fluid"> <br>
+                        <div class="card" id="approvalspage_margins">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th style="border-bottom: 1px solid #cccccc;" >NAME</th>
+                                    <th style="border-bottom: 1px solid #cccccc;">REIMBURSEMENT TYPE</th>
+                                    <th style="border-bottom: 1px solid #cccccc;">MAXIMUM REIMBURSEMENT AMOUNT</th>
+                                    <th style="border-bottom: 1px solid #cccccc;">STATUS</th>
+                                    <th style="border-bottom: 1px solid #cccccc;"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td id="txtblue">Fuel Reimbursement</td>
+                                     <td id="fot_font_size1">Fuel Reimbursement</td>
+                                     <td id="fot_font_size1">0 per month</td>
+                                    <td id="inactivecolor">Inactive</td>
+                                     <td id="fot_font_size1">
+                                        <div class="dropdown">
+                                            <button class="btn-group" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false" id="threedotdropdown">
+                                                <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="edit_fuel_reimbursement.html">Edit</a></li>
+                                                <li><a class="dropdown-item" href="#">Mark as Active</a></li>
+                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="txtblue">Driver Reimbursement</td>
+                                     <td id="fot_font_size1">Driver Reimbursement</td>
+                                     <td id="fot_font_size1">0 per month</td>
+                                    <td id="inactivecolor">Inactive</td>
+                                     <td id="fot_font_size1">
+                                        <div class="dropdown">
+                                            <button class="btn-group" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false" id="threedotdropdown">
+                                                <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="#">Mark as Active</a></li>
+                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="txtblue">Telephone Reimbursement</td>
+                                     <td id="fot_font_size1">Telephone Reimbursement</td>
+                                     <td id="fot_font_size1">0 per month</td>
+                                    <td id="inactivecolor">Inactive</td>
+                                     <td id="fot_font_size1">
+                                        <div class="dropdown">
+                                            <button class="btn-group" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false" id="threedotdropdown">
+                                                <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="#">Mark as Active</a></li>
+                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="txtblue">Leave Travel Allowance</td>
+                                     <td id="fot_font_size1">Leave Travel Allowance</td>
+                                     <td id="fot_font_size1">0 per month</td>
+                                    <td id="inactivecolor">Inactive</td>
+                                     <td id="fot_font_size1">
+                                        <div class="dropdown">
+                                            <button class="btn-group" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false" id="threedotdropdown">
+                                                <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="edit_leave-travel_reimbursement.html">Edit</a></li>
+                                                <li><a class="dropdown-item" href="#">Mark as Active</a></li>
+                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td id="txtblue">Vehicle Maintenance Reimbursement</td>
+                                     <td id="fot_font_size1">Vehicle Maintenance Reimbursement</td>
+                                     <td id="fot_font_size1">0 per month</td>
+                                    <td id="inactivecolor">Inactive</td>
+                                     <td id="fot_font_size1">
+                                        <div class="dropdown">
+                                            <button class="btn-group" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false" id="threedotdropdown">
+                                                <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="#">Edit</a></li>
+                                                <li><a class="dropdown-item" href="#">Mark as Active</a></li>
+                                                <li><a class="dropdown-item" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                        </div></div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

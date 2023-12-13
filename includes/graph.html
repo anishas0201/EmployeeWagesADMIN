@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stacked Bar with Line Chart</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="Chart.js_2.9.4_Chart.js"></script>
+    <script src="/assets/js/graph.js"></script>
+    <link rel="stylesheet" href="/assets/css/graph.css">
+
+
+  </head>
+<body>
+
+  
+  <canvas id="lineChart" width="500" height="200"></canvas>
+ 
+   <div class="chartbox">
+    <canvas id="myChart"></canvas>
+  </div>
+  <div style="margin-top: 100px;">
+
+     <div class="graph">
+        <div class="grossSalary">Gross Salary</div>
+        <div class="numberDiv" style="top: 62px;">
+          <span class="number" >140</span>
+          <span class="number">K</span>
+        </div>
+        <div class="numberDiv" style="top: 102px;"><span class="number" >120</span><span class="number">K</span></div>
+        <div class="numberDiv" style="top: 142px;"><span class="number" >100</span><span class="number">K</span></div>
+        <div class="numberDiv" style="top: 182px;"><span class="number" >80</span><span class="number">K</span></div>
+        <div class="numberDiv" style="top: 222px;"><span class="number" >60</span><span class="number">K</span></div>
+        <div class="numberDiv" style="top: 262px;"><span class="number" >40</span><span class="number">K</span></div>
+        <div class="numberDiv" style="top: 302px;"><span class="number" >20</span><span class="number">K</span></div>
+        <div class="numberDiv" style="top: 342px;"><span class="number" >0</span><span class="number">K</span></div>
+      <div style="left: 55px; " class="month">Jan</div>
+        <div style="left: 105px; " class="month">Feb</div>
+        <div style="left: 155px; " class="month">Mar</div>
+        <div style="left: 205px; " class="month">Apr</div>
+        <div style="left: 260px; " class="month">May</div>
+        <div style="left: 315px; " class="month">Jun</div>
+        <div style="left: 370px; " class="month">July</div>
+        <div style="left: 425px; " class="month">Aug</div>
+        <div style="left: 480px; " class="month">Sep</div>
+        <div style="width: 21px; left: 535px; " class="month">Oct</div>
+        <div style="left: 590px; " class="month">Nov</div>
+        <div style="left: 645px; " class="month">Dec</div>
+        <div style=" background: #45C5E2;" class="grossColor"></div>
+    </div>
+    <div class="texDiv">
+        <div class="taxe">Taxex</div>
+        <div style="background: #8382DE;" class="grossColor"></div>
+    </div>
+    <div class="netSalary">
+        <div class="salaryText">Net Salary</div>
+        <div class="colorBox"></div>
+    </div>
+    <div class="graphDiv" style="top: 90px;"></div>
+    <div style="top: 130px; " class="graphDiv"></div>
+    <div style=" top: 170px; " class="graphDiv"></div>
+    <div style=" top: 210px; " class="graphDiv"></div>
+    <div style=" top: 250px; " class="graphDiv"></div>
+    <div style=" top: 290px; " class="graphDiv"></div>
+    <div style=" top: 330px; " class="graphDiv"></div>
+    <div style=" top: 370px;  border: 0.50px rgba(11, 40, 53, 0.20) solid" class="graphDiv"></div>
+
+    <div class="firstgraph"></div>
+    <div class="sec_graph"></div>
+    <div class="third_graph"></div>
+    <div class="forth_graph"></div>
+    <div class="fifth_graph"></div>
+    <div class="six_graph"></div>
+    <div class="sev_graph"></div>
+    <div class="eight_graph"></div>
+    <div class="nine_graph"></div>
+    <div class="ten_graph"></div>
+    <div class="ele_graph"></div>
+<div class="two_graph"></div>
+<div class="div1"></div>
+<div class="div2"></div>
+<div class="div3"></div>
+<div class="div4"></div>
+<div class="div5"></div>
+<div class="div6"></div>
+<div class="div7"></div>
+<div class="div8"></div>
+<div class="div9"></div>
+<div class="div10"></div>
+<div class="div11"></div>
+<div class="div12"></div>
+
+<canvas id="lineChart"></canvas>
+<img src="/assets/img/line chart1.png" alt="" class="line-chart-img">
+<div class="dot1" id="dotPosition"></div>
+<div class="dot2" id="dotPosition"></div>
+<div class="dot3" id="dotPosition"></div>
+<div class="dot4" id="dotPosition"></div>
+<div class="dot5" id="dotPosition"></div>
+<div class="dot6" id="dotPosition"></div>
+<div class="dot7" id="dotPosition"></div>
+<div class="dot8" id="dotPosition"></div>
+<div class="dot9" id="dotPosition"></div>
+<div class="dot10" id="dotPosition"></div>
+<div class="dot11" id="dotPosition"></div>
+<div class="dot12" id="dotPosition"></div>
+    
+<div id="blockPopup">
+  <div class="popup-box"></div>
+  <div class="popup-text salary">Gross Salary</div>
+  <div class="popup-text gross">25,543</div>
+  <div class="popup-text tax">7662.9</div>
+  <div class="popup-text net">17,880.1</div>
+  <div class="popup-indicator"></div>
+  <div class="popup-indicator tax">
+      <div style="left: 15px; top: 2px;" class="popup-text">Tax Deduction</div>
+  </div>
+  <div class="popup-line"></div>
+  <div class="popup-text net-label">
+      <div style="left: 17px; top: 2px;" class="popup-text">Net Salary</div>
+  </div>
+  <div class="popup-text net-indicator"></div>
+</div>
+<div class="outer-container">
+  <div class="inner-container"></div>
+  <div class="inner-text">Yearly <img src="/assets/img/MicrosoftTeams-image.png" alt=""></div>
+</div>
+</div>
+
+  
+      
+</body>
+</html>

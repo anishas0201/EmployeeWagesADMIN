@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/graph.css" />
+    <link rel="stylesheet" href="assets/css/employeestatus.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+
+    <title>Employee</title>
+    <style>
+        .button {
+            border: none;
+            color: white;
+            padding: 2px 20px;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color: dodgerblue;
+        }
+    </style>
+    <script>
+        function myFunction() {
+            var checkBox = document.getElementById("myCheck");
+            var text = document.getElementById("text");
+            if (checkBox.checked == true) {
+                text.style.display = "block";
+            } else {
+                text.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body">
+
+            <div class="row" id="">
+                <div class="col-md-12">
+                    <nav class="navbar1 navbar-light bg-light">
+
+                        <div>
+                    
+                            <a class="navbar-brand1 " href="index.html"><img src="../assets/img/dashboard.svg" alt="" style="margin: 0 7px 5px 0;">Dashboard</a>
+                    
+                            <a class="navbar-brand1 active1" href="employees.html"><img src="../assets/img/Vector.svg" style="margin: 0 7px 5px 0;">Employees</a>
+                    
+                            <a class="navbar-brand1" href="/payrun.html"><img src="../assets/img/payrun.png"
+                                style="margin: 0 7px 5px 0; height: 22px;">Pay Runs</a>
+                                
+                            <button class="btnbody btn-secondarybody dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="../assets/img/Group 271.svg" alt=""> Approvals
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/allclaims.html">Reimbursement</a></li>
+                                <li><a class="dropdown-item" href="/allinvestment.html">Proof Of Investments</a></li>
+                                <li><a class="dropdown-item" href="/allrevision.html">Salary Revision </a></li>
+                            </ul>
+                    
+                    
+                            <a class="navbar-brand1" href="../reports.html"><img src="../assets/img/Group 270.svg" style="margin: 0 7px 5px 0;">Reports</a>
+                    
+                        </div>
+                    
+                        <div id="greeting">
+                    
+                            Good to see you, Mr.Pawas Goyal&#128075;
+                    
+                        </div>
+                    
+                    </nav>
+                </div>
+
+
+
+
+                <div class="container-fluid" style="margin: 0 10px;">
+
+                    <h4>Direct Deposit</h4>
+                    <div style=" 
+                                
+                                width: 100%;
+                            "></div>
+                    <div class="card" id="card_margin">
+                        <div class="card-body">
+                            
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/icici.jpg"
+                                    style="height: 80px; width: 130px; resize: horizontal;" />
+                                <div style="display: block; margin-left: 20px;">
+                                    <h5>ICICI Bank</h5>
+                                    <h6>Transfer Salaries directly to your employees bank accounts.</h6>
+                                </div>
+                                <div class="col-md-6">
+                                   <a href="icici.html"><button class="button" id="savebtn" style="float: right;">Set Up Now</button></a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin: 10px;"></div>
+                    <div class="card" id="card_margin">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/yesbanklogo.jpg"
+                                    style="height: 80px; width: 130px; resize: horizontal;" />
+                                <div style="display: block; margin-left: 20px;">
+                                    <h5>YES Bank</h5>
+                                    <h6>Transfer Salaries directly to your employees bank accounts.</h6>
+                                    <h6>Now to YES Bank?<a href="https://example.com"  style="color: blue; text-decoration: none;">Request for a New Account</a>
+                                    </h6>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="yesbank.html"><button class="button" id="savebtn" style="float: right;">Set Up Now</button></a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin: 10px;"></div>
+                    <div class="card" id="card_margin">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center">
+                                <img src="assets/img/hsbclogo.jpg"
+                                    style="height: 45px; width: 130px; resize: horizontal;" />
+                                <div style="display: block; margin-left: 20px;">
+                                    <h5>HSBC Bank</h5>
+                                    <h6>Transfer Salaries directly to your employees bank accounts.</h6>
+                                    <h6>Now to HSBC Bank?<a href="https://example.com"  style="color: blue; text-decoration: none;">Request for a New Account</a>
+                                    </h6>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="hsbc.html"><button class="button" id="savebtn" style="float: right;">Set Up Now</button></a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/include.js"></script>
+        <script src="assets/js/graph.js"></script>
+        <script src="assets/js/syncro.min.js"></script>
+        <script src="assets/js/PaymentStatus.js"></script>
+        <script src="assets/js/sidebar.js" ></script>
+</body>
+
+</html>

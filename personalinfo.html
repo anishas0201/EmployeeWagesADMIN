@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/graph.css" />
+
+    <style>
+        .chart-container {
+
+            max-width: 800px;
+
+            margin: 20px auto;
+        }
+
+        .chart-container {
+            max-width: 716px;
+            margin: 20px auto;
+        }
+    </style>
+
+
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar1 navbar-light bg-light">
+
+                            <div>
+
+                                <a class="navbar-brand1 " href="index.html"><img src="../assets/img/dashboard.svg"
+                                        alt="" style="margin: 0 7px 5px 0;">Dashboard</a>
+
+                                <a class="navbar-brand1 active1" href="employees.html"><img
+                                        src="../assets/img/Vector.svg" style="margin: 0 7px 5px 0;">Employees</a>
+
+                                <a class="navbar-brand1" href="/payrun.html"><img src="../assets/img/payrun.png"
+                                        style="margin: 0 7px 5px 0; height: 22px;">Pay Runs</a>
+
+                                <button class="btnbody btn-secondarybody dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="../assets/img/Group 271.svg" alt=""> Approvals
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/allclaims.html">Reimbursement</a></li>
+                                    <li><a class="dropdown-item" href="/allinvestment.html">Proof Of Investments</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="/allrevision.html">Salary Revision </a></li>
+                                </ul>
+
+
+                                <a class="navbar-brand1" href="../reports.html"><img src="../assets/img/Group 270.svg"
+                                        style="margin: 0 7px 5px 0;">Reports</a>
+
+                            </div>
+
+                            <div id="greeting">
+
+                                Good to see you, Mr.Pawas Goyal&#128075;
+
+                            </div>
+
+                        </nav>
+                    </div>
+                    <div class="col-md-12">
+                        <h3 id="heading"><u>Personal Info</u></h3>
+
+                    </div>
+                    <div class="col-md-12">
+                        <div class="container">
+                            <div class="card " style="padding: 20px 200px;">
+                                <div class="card-body pInfo_card">
+                                    <div class="row">
+                                        <div class="col-md-6 txt">
+                                            <label class="prsnlinfo">
+                                                <h6>Personal Email Address </h6>
+                                            </label>
+
+                                            <div>
+
+                                                <input type="email" class="input_box form-control" id="email"
+                                                    placeholder="abc@xyz.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 txt">
+                                            <label class="prsnlinfo">
+                                                <h6>Mobile Number</h6>
+                                            </label>
+                                            <div>
+                                                <input type="tel" class="input_box form-control" id="mbl_numbr">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 txt">
+                                            <label class="dob">
+                                                <h6>Date of Birth<span class="required">*</span></h6>
+                                            </label>
+                                            <div>
+                                                <input class="input_box form-control" type="date" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 txt">
+                                            <label class="prsnlinfo">
+                                                <h6>Age</h6>
+                                            </label>
+                                            <div>
+                                                <input class="input_box form-control" type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6 txt">
+                                            <label class="prsnlinfo">
+                                                <h6>Father's Name<span class="required">*</span></h6>
+                                            </label>
+                                            <div>
+                                                <input type="text" class="input_box form-control" id="fName" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 txt">
+                                            <label class="prsnlinfo">
+                                                <h6>PAN</h6>
+                                            </label>
+                                            <div>
+                                                <input type="text" id="pan" class="input_box form-control"
+                                                    placeholder="AAAAA0000A">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12 txt">
+                                            <label class="">
+                                                <h6>Residential Address</h6>
+                                            </label>
+                                            <div>
+                                                <input type="text" class="input_box form-control" id="address1"
+                                                    placeholder="Address Line-1">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 txt">
+                                            <input type="text" id="address2" class="input_box form-control"
+                                                placeholder="Address Line-2">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4 txt">
+                                            <input type="text" id="city" class="input_box form-control"
+                                                placeholder="City">
+                                        </div>
+                                        <div class="col-md-4 txt">
+                                            <select id="state" class="dropdown_box" name="state">
+                                                <option value="" disabled selected hidden>State</option>
+                                                <option value="MH">Maharashtra</option>
+                                                <option value="MP">Madhya Pradesh</option>
+                                                <option value="GJ">Gujarat</option>
+                                                <option value="RJ">Rajasthan</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-4 txt">
+                                            <input type="text" class="input_box form-control" id="pin"
+                                                placeholder="Pin Code">
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-md-6 txt">
+                                            <a class="btn btn-primary " href="paymentinfo.html" role="button"
+                                                id="savebtn">Save and
+                                                Continue</a>
+                                            <a class="btn btn-default skip_btn" href="salarydetails.html">Cancel</a>
+                                        </div>
+                                        <div class="col-md-6 txt">
+                                            <span id="mandatory" class="required">* indicates mandatory fields</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+
+</body>
+
+</html>

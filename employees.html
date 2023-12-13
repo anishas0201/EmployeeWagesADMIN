@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body">
+            <div class="container-fluid">
+                <div class="row" id="">
+                    <div class="col-md-12">
+                        <nav class="navbar1 navbar-light bg-light">
+
+                            <div>
+
+                                <a class="navbar-brand1 " href="index.html"><img src="../assets/img/dashboard.svg"
+                                        alt="" style="margin: 0 7px 5px 0;">Dashboard</a>
+
+                                <a class="navbar-brand1 active1" href="employees.html"><img
+                                        src="../assets/img/Vector.svg" style="margin: 0 7px 5px 0;">Employees</a>
+
+                                <a class="navbar-brand1" href="/payrun.html"><img src="../assets/img/payrun.png"
+                                        style="margin: 0 7px 5px 0; height: 22px;">Pay Runs</a>
+                                <button class="btnbody btn-secondarybody dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="../assets/img/Group 271.svg" alt=""> Approvals
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/allclaims.html">Reimbursement</a></li>
+                                    <li><a class="dropdown-item" href="/allinvestment.html">Proof Of Investments</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="/allrevision.html">Salary Revision </a></li>
+                                </ul>
+
+
+                                <a class="navbar-brand1" href="../reports.html"><img src="../assets/img/Group 270.svg"
+                                        style="margin: 0 7px 5px 0;">Reports</a>
+
+                            </div>
+
+                            <div id="greeting">
+
+                                Good to see you, Mr.Pawas Goyal&#128075;
+
+                            </div>
+
+                        </nav>
+                    </div>
+                    <div class="col-5">
+                        <div class="btn-group dropend">
+                            <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false" id="empsumm">
+                                <b>Employee Summary</b>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">All Employees</a></li>
+                                <li><a class="dropdown-item" href="#">Active Employees</a></li>
+                                <li><a class="dropdown-item" href="#">Incomplete Employees</a></li>
+                                <li><a class="dropdown-item" href="#">Exited Employees</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-6 text-end" id="FOR_COL-PADDING"><a href="addemployee.html">
+                            <button type="button" id="btnemp"><span>Add Employee</span></button></a>
+                    </div>
+
+                    <div class="col-md-1 text-end" id="FOR_COL-PADDING1">
+                        <div class="dropdown">
+                            <button class="btn  dropdown" id="BTN_RADIUS" type="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                <img src="/assets/img/threedot.svg" />
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Import Data</a></li>
+                                <li><a class="dropdown-item" href="#">Export Data</a></li>
+
+                            </ul>
+                        </div>
+                        <br>
+                    </div>
+
+                    <!-- <button type="button" id="btndot">
+                            <img src="/assets/img/threedot.svg" />
+                        </button> -->
+
+                    <!-- id="for_emp_tbl_padd" -->
+                    <div class="col-md-12">
+                        <div class="card" style="margin-left: 1%;margin-right: 1%;">
+                            <div class="table-responsive"><table class="table">
+                                <thead class="headsec">
+                                    <tr>
+                                        <th><input type="checkbox" /></th>
+
+                                        <th>Employees</th>
+
+                                        <th>Employees ID/City</th>
+
+                                        <th>Employees Work Email</th>
+
+                                        <th>Gross Salary</th>
+
+                                        <th>Taxes</th>
+
+                                        <th>Net Salary</th>
+
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr id="for_emp_tbl_color">
+                                        <td id="fot_font_size1"><input type="checkbox" /></td>
+
+                                        <td id="fot_font_size1">
+                                            Pankaj Tete<br />
+
+                                            <span class="disabled">Product Designer</span>
+                                        </td>
+
+                                        <td id="fot_font_size1">1201/<span class="disabled">Mumbai</span></td>
+
+                                        <td id="fot_font_size1">pankaj.tete@cylsys.com</td>
+
+                                        <td id="fot_font_size1">10,300.00</td>
+
+                                        <td id="fot_font_size1"><span class="tax">-100.31</span></td>
+
+                                        <td id="fot_font_size1">10,209.69</td>
+
+                                        <td id="fot_font_size1"><span class="btntype">Paid</span></td>
+                                    </tr>
+
+                                    <tr id="for_emp_tbl_color">
+                                        <td id="fot_font_size1"><input type="checkbox" /></td>
+
+                                        <td id="fot_font_size1">
+                                            Priyanshu sahu<br />
+
+                                            <span class="disabled">Product Designer</span>
+                                        </td>
+
+                                        <td id="fot_font_size1">1201/<span class="disabled">Mumbai</span></td>
+
+                                        <td id="fot_font_size1">priyanshu.sahu@cylsys.com</td>
+
+                                        <td id="fot_font_size1">10,300.00</td>
+
+                                        <td id="fot_font_size1"><span class="tax">-100.31</span></td>
+
+                                        <td id="fot_font_size1">10,209.69</td>
+
+                                        <td id="fot_font_size1"><span class="btnpending">Pending</span></td>
+                                    </tr>
+
+                                    <tr id="for_emp_tbl_color">
+                                        <td id="fot_font_size1"><input type="checkbox" /></td>
+
+                                        <td id="fot_font_size1">
+                                            Pavan Kalsarpe<br />
+
+                                            <span class="disabled">Product Designer</span>
+                                        </td>
+
+                                        <td id="fot_font_size1">1201/<span class="disabled">Mumbai</span></td>
+
+                                        <td id="fot_font_size1">pavan.kalsarpe@cylsys.com</td>
+
+                                        <td id="fot_font_size1">10,300.00</td>
+
+                                        <td id="fot_font_size1"><span class="tax">-100.31</span></td>
+
+                                        <td id="fot_font_size1">10,209.69</td>
+
+                                        <td id="fot_font_size1"><span class="btntype">Paid</span></td>
+                                    </tr>
+
+                                    <tr id="for_emp_tbl_color">
+                                        <td id="fot_font_size1"><input type="checkbox" /></td>
+
+                                        <td id="fot_font_size1">
+                                            Kumar Vivek<br />
+
+                                            <span class="disabled">Product Designer</span>
+                                        </td>
+
+                                        <td id="fot_font_size1">1201/<span class="disabled">Mumbai</span></td>
+
+                                        <td id="fot_font_size1">kumar.vivek@cylsys.com</td>
+
+                                        <td id="fot_font_size1">10,300.00</td>
+
+                                        <td id="fot_font_size1"><span class="tax">-100.31</span></td>
+
+                                        <td id="fot_font_size1">10,209.69</td>
+
+                                        <td id="fot_font_size1"><span class="btntype">Paid</span></td>
+                                    </tr>
+
+                                    <tr id="for_emp_tbl_color">
+                                        <td id="fot_font_size1"><input type="checkbox" /></td>
+
+                                        <td id="fot_font_size1">
+                                            Kunal Kumar sharma<br />
+
+                                            <span class="disabled">Product Designer</span>
+                                        </td>
+
+                                        <td id="fot_font_size1">1201/<span class="disabled">Mumbai</span></td>
+
+                                        <td id="fot_font_size1">kunal.sharma@cylsys.com</td>
+
+                                        <td id="fot_font_size1">10,300.00</td>
+
+                                        <td id="fot_font_size1"><span class="tax">-100.31</span></td>
+
+                                        <td id="fot_font_size1">10,209.69</td>
+
+                                        <td id="fot_font_size1"><span class="btntype">Paid</span></td>
+                                    </tr>
+
+                                    <tr id="for_emp_tbl_color">
+                                        <td id="fot_font_size1"><input type="checkbox" /></td>
+
+                                        <td id="fot_font_size1">
+                                            Uday Shimpi<br />
+
+                                            <span class="disabled">Product Designer</span>
+                                        </td>
+
+                                        <td id="fot_font_size1">1201/<span class="disabled">Mumbai</span></td>
+
+                                        <td id="fot_font_size1">uday.shimpi@cylsys.com</td>
+
+                                        <td id="fot_font_size1">10,300.00</td>
+
+                                        <td id="fot_font_size1"><span class="tax">-100.31</span></td>
+
+                                        <td id="fot_font_size1">10,209.69</td>
+
+                                        <td id="fot_font_size1"><span class="btntype">Paid</span></td>
+                                    </tr>
+                                </tbody>
+                            </table></div>
+                            
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

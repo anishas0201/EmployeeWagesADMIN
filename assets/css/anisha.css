@@ -1,0 +1,1163 @@
+:root {
+
+  --color-blue1: #0b1218;
+
+
+
+  --color-blue2: #214c6f;
+
+
+
+  --color-blue3: #08161f;
+
+
+
+  --color-blue4: #204b6d;
+
+
+
+  --color-blue5: #0a2632;
+
+
+
+  --color-blue6: #172c36;
+
+
+
+  --color-blue7: #1a4666;
+
+
+
+  --color-blue8: #092531;
+
+
+
+  --color-white: #ffffff;
+
+
+
+  --color-red1: #e3370f;
+
+
+
+  --color-green: #16c098;
+
+
+
+  --color-green2: #48a31e;
+
+
+
+  --color-green3: #dbfaf3;
+
+
+
+  --color-yellow1: #fbf1d8;
+
+
+
+  --color-yellow2: #e6af1d;
+
+
+
+  --color-skyblue: #f6fcff;
+
+
+
+  --color-grey1: #e5e8ee;
+
+
+
+  --color-grey2: #0a0a0a66;
+
+}
+
+
+
+body {
+
+  /* font-family:Roboto;  */
+
+
+
+  font-style: normal;
+
+}
+
+
+
+#navigationstrip {
+
+  margin-left: 50px;
+
+
+
+  font-size: 16px;
+
+
+
+  color: var(--color-grey2);
+
+}
+
+
+
+#goodtosee {
+
+  font-size: 20px;
+
+
+
+  margin-right: 35px;
+
+}
+
+
+
+a.navbar-brand:hover {
+
+  border: 2px solid var(--color-blue2);
+
+
+
+  border-top: none;
+
+
+
+  border-left: none;
+
+
+
+  border-right: none;
+
+}
+
+
+
+.icon {
+
+  /* height: 16px; */
+
+
+
+  width: 15px;
+
+}
+
+
+
+#summarytbl {
+
+  margin-top: 21px;
+
+  /* margin-bottom: 15px; */
+
+  margin-left: 112px;
+
+}
+
+
+
+#dropimg {
+
+  border: none;
+
+
+
+  background: none;
+
+}
+
+
+
+.addemp {
+
+  text-align: right;
+
+
+
+  padding-right: 80px;
+
+}
+
+
+
+#btnemp {
+
+  color: var(--color-white);
+
+
+
+  background-color: var(--color-blue2);
+
+
+
+  border-radius: 5px;
+
+
+
+  margin-right: 20px;
+
+}
+
+
+
+#btndot {
+
+  border: none;
+
+
+
+  background: none;
+
+}
+
+
+
+.headsec {
+
+  background-color: var(--color-skyblue);
+
+
+
+  border-bottom: 2px solid var(--color-grey1);
+
+}
+
+
+
+/*
+
+.table{
+
+ 
+
+    width: 89%;
+
+    margin-left: 158px;
+
+} */
+
+
+
+.disabled {
+
+  color: var(--color-grey2);
+
+}
+
+
+
+.tax {
+
+  color: var(--color-red1);
+
+}
+
+
+
+.btntype {
+
+  background-color: var(--color-green3);
+
+
+
+  color: #136e59;
+
+
+
+  border-radius: 5px;
+
+
+
+  padding: 1px 17px 1px 17px;
+
+}
+
+
+
+.btnpending {
+
+  background-color: var(--color-yellow1);
+
+
+
+  color: var(--color-yellow2);
+
+
+
+  border-radius: 5px;
+
+
+
+  padding: 1px 10px 1px 10px;
+
+}
+
+
+
+:root {
+
+  --color-blue1: #0b1218;
+
+
+
+  --color-blue2: #214c6f;
+
+
+
+  --color-blue3: #08161f;
+
+
+
+  --color-blue4: #204b6d;
+
+
+
+  --color-blue5: #0a2632;
+
+
+
+  --color-blue6: #172c36;
+
+
+
+  --color-blue7: #1a4666;
+
+
+
+  --color-blue8: #092531;
+
+
+
+  --color-white: #ffffff;
+
+}
+
+
+
+.navbar-gradient {
+
+  background-image: linear-gradient(to left,
+
+      var(--color-blue1),
+
+      var(--color-blue2),
+
+      var(--color-blue3),
+
+      var(--color-blue4),
+
+      var(--color-blue5));
+
+}
+
+
+
+/* .navbar-brand {
+
+ 
+
+    font-family: 'Poppins', sans-serif;
+
+ 
+
+    font-size: 17px;
+
+ 
+
+    font-weight: 700;
+
+ 
+
+    line-height: 21px;
+
+ 
+
+    letter-spacing: 0em;
+
+ 
+
+    text-align: left;
+
+ 
+
+    color: white;
+
+ 
+
+  } */
+
+
+
+#navbarDropdown {
+
+  color: white;
+
+}
+
+
+
+#header280 {
+
+  border-right: 1px solid;
+
+
+
+  border-color: white;
+
+}
+
+
+
+.btn {
+
+  background-color: white;
+
+
+
+  border-radius: 0px;
+
+
+
+  border-top-left-radius: 7px;
+
+
+
+  border-bottom-left-radius: 7px;
+
+}
+
+
+
+.btn-secondary {
+
+  color: #413b3bc7;
+
+
+
+  border-color: white;
+
+}
+
+
+
+.btn-secondary:hover {
+
+  color: rgb(248, 241, 241);
+
+
+
+  background-color: #eeeeeef8;
+
+
+
+  border-color: #ffffff;
+
+}
+
+
+
+.btn-secondary:hover {
+
+  color: rgb(255, 255, 255);
+
+
+
+  background-color: rgb(255 252 252 / 97%);
+
+
+
+  border-color: rgb(253, 254, 255);
+
+}
+
+
+
+.form-control {
+
+  display: block;
+
+
+
+  width: 100%;
+
+
+
+  padding: 0.375rem 0.75rem;
+
+
+
+  font-size: 1rem;
+
+
+
+  font-weight: 400;
+
+
+
+  line-height: 1.5;
+
+
+
+  color: #212529;
+
+
+
+  background-color: #fff;
+
+
+
+  background-clip: padding-box;
+
+
+
+  border: 1px solid #ced4da;
+
+
+
+  -webkit-appearance: none;
+
+
+
+  -moz-appearance: none;
+
+
+
+  appearance: none;
+
+
+
+  border-radius: 0px;
+
+
+
+  border-top-right-radius: 7px;
+
+
+
+  border-bottom-right-radius: 7px;
+
+
+
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+}
+
+
+
+.sidebar a {
+
+  margin: 20px 0 0 0;
+
+}
+
+
+
+.navbar1 {
+
+  position: relative;
+
+
+
+  display: flex;
+
+
+
+  flex-wrap: wrap;
+
+
+
+  align-items: center;
+
+
+
+  justify-content: space-between;
+
+
+
+  padding-top: 0.5rem;
+
+
+
+  padding-bottom: 0.5rem;
+
+}
+
+
+
+.navbar-brand1 {
+
+  padding-top: 0.3125rem;
+
+
+
+  padding-bottom: 0.3125rem;
+
+
+
+  margin-right: 1rem;
+
+
+
+  font-size: 1.25rem;
+
+
+
+  text-decoration: none;
+
+
+
+  white-space: nowrap;
+
+
+
+  margin-left: 43px;
+
+
+
+  color: rgb(173, 163, 163);
+
+
+
+  font-family: "Roboto", sans-serif;
+
+}
+
+
+
+.btnbody {
+
+  padding-top: 0.3125rem;
+
+
+
+  padding-bottom: 0.3125rem;
+
+
+
+  margin-right: 1rem;
+
+
+
+  font-size: 1.25rem;
+
+
+
+  text-decoration: none;
+
+
+
+  white-space: nowrap;
+
+
+
+  margin-left: 43px;
+
+
+
+  background-color: rgba(255, 255, 255, 0);
+
+
+
+  color: rgb(0, 0, 0);
+
+
+
+  font-family: "Roboto", sans-serif;
+
+}
+
+
+
+.btn-secondarybody {
+
+  color: rgb(173, 163, 163);
+
+
+
+  border-color: transparent;
+
+}
+
+
+
+#greeting {
+
+  font-weight: 700;
+
+
+
+  font-family: "Roboto", sans-serif;
+
+}
+
+
+
+
+
+.col-6 {
+
+  flex: 0 0 auto;
+
+  width: 50%;
+
+  padding: 11px 0 11px 0;
+
+}
+
+
+
+/* .dropdown-menu{
+
+ 
+
+  left:25%;
+
+ 
+
+}
+
+ 
+
+.dropimg{
+
+ 
+
+  display: flex;
+
+ 
+
+}
+
+ 
+
+#dropbtn{
+
+ 
+
+  background: white;
+
+ 
+
+  border: none;
+
+ 
+
+} */
+
+
+
+
+
+
+
+.mergebtn {
+
+
+
+  border: 1px solid #a2a6a3;
+
+
+
+}
+
+
+
+.mergetblbtn {
+
+
+
+  border: 1px solid #a2a6a3;
+
+
+
+  padding: 0px 25px;
+
+
+
+}
+
+
+
+#subtitle {
+
+
+
+  color: var(--color-grey2);
+  font-size: 13px;
+
+
+
+}
+
+
+
+#fontnormal {
+
+
+
+  font-weight: normal;
+
+
+
+}
+
+
+
+
+
+
+
+#tblbelowline {
+
+
+
+  border-bottom: 1px solid var(--color-grey1);
+
+
+
+}
+
+
+
+
+
+
+
+#sumtotal {
+
+
+
+  background-color: var(--color-skyblue);
+
+
+
+}
+
+
+
+#annualctc {
+
+
+
+  padding-left: 2%;
+
+
+
+}
+
+
+
+#salarydetails {
+
+  text-align: center;
+
+  color: #1E4665;
+
+  margin: 0px 0 30px 0;
+
+}
+
+#circlewithdot {
+
+  width: 15px;
+
+  height: 15px;
+
+  color: var(--color-grey1);
+
+}
+
+#anchorbtn {
+
+  background: none;
+
+  color: var(--color-blue4);
+
+}
+
+#anchorbtn:hover {
+
+  background: none;
+
+  color: black;
+
+}
+
+#anchorbtn1 {
+
+  color: black;
+
+  background: none;
+
+  border-bottom: 4px solid #1F496A;
+
+  border-radius: 0px;
+
+}
+
+#activecolor {
+
+  color: green;
+
+}
+
+#inactivecolor {
+
+  color: var(--color-grey2);
+
+}
+
+#threedotdropdown {
+
+  border: none;
+
+}
+
+#brkttxt {
+
+  font-size: 12px;
+
+  color: var(--color-grey2);
+
+}
+
+#txtblue {
+
+  color: var(--color-blue4);
+
+}
+
+#addcompntbtn {
+
+  background-color: var(--color-blue2);
+
+  color: white;
+
+  border-radius: 5px;
+
+}
+
+#infopara {
+
+  font-size: 15px;
+
+
+
+}
+
+#bulbicon {
+
+  height: 20px;
+
+
+
+}
+
+#txtreimbursementinput {
+
+  width: 70%;
+
+}
+
+#txtlabel {
+
+  color: var(--color-grey2);
+
+  font-size: 14px;
+
+  padding-left: 20px;
+
+}
+
+#rupeebox {
+
+  width: 30%;
+
+  border: 1px solid rgba(197, 195, 195, 0.815);
+
+  border-radius: 4px;
+
+}
+
+
+
+#savebtn {
+
+  background-color: var(--color-blue2);
+
+  color: white;
+
+  border-radius: 5px
+}
+
+#cancelbtn {
+
+  border: 1px solid grey;
+
+}
+
+#newformgap {
+
+  padding-bottom: 10px;
+
+}
+
+#txtearninginput {
+
+  width: 80%;
+
+}
+
+#configurestyle {
+
+  border-left: 1px solid rgb(189, 187, 187);
+
+  padding-left: 3%;
+
+}
+
+#earningtype {
+
+  border-bottom: 1px solid rgba(175, 173, 173, 0.836);
+
+}
+
+.earningnotepoint {
+
+  background-color: rgba(245, 201, 157, 0.925);
+
+  padding: 10px;
+
+}
+
+#card_body22 {
+
+  padding: 1%;
+
+}
+
+#newpretaxcard {
+
+  padding: 1%;
+
+}
+
+.notepoint {
+
+  background-color: rgba(252, 219, 157, 0.671);
+
+  padding: 6px;
+
+}
+
+/* ---------------------- */
+#card_editearning {
+  padding: 1%;
+}
+
+
+
+/* ----------------------prefernce  employee css------------  */
+
+#preference_sidebar {
+  background-color: #f5f5f5;
+
+}
+
+#pref_side13 {
+  padding: 0%;
+  border-right: 1px solid grey;
+  height: 162vh;
+}
+
+#pref_side12 {
+  padding: 0%;
+  border-right: 1px solid grey;
+  height: 126vh;
+}
+
+#pref_side1 {
+  padding: 0%;
+  border-right: 1px solid grey;
+  height: 145vh;
+}
+
+#pref_side {
+  padding: 0%;
+  border-right: 1px solid grey;
+  height: 90vh;
+}
+
+#preference_li {
+  padding: 7px 0px;
+  color: black;
+}
+
+#pref_anchor {
+  color: var(--color-grey2);
+}
+
+#pref_anchor:hover {
+  color: white;
+  background-color: var(--color-blue2);
+}
+
+#span_txt {
+  color: var(--color-grey2);
+}
+
+#messageicon {
+  height: 45px;
+  width: 40px;
+  float: right;
+}
+
+.settinglink {
+  color: blue;
+  text-decoration: none;
+}
+
+.emp-portal {
+  padding: 3%;
+}
+
+#activenote {
+  background-color: green;
+  color: white;
+  font-size: 13px;
+  padding: 3px 5px;
+  border-radius: 4px;
+}
+
+#settng_carditem {
+  padding: 15px 1px;
+}
+
+
+
+
+#salarytemplate_page {
+  margin-left: 2%;
+  margin-right: 1%;
+}
+
+#newtempid {
+  border: 1px solid grey;
+  border-radius: 4%;
+}
+
+#checkbtn11 {
+
+  border-radius: 50%;
+
+  /* background-color: transparent; */
+
+  height: 28px;
+
+  width: 28px;
+
+  border-color: black;
+
+}

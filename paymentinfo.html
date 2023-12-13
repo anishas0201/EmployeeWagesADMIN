@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/graph.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <style>
+        .chart-container {
+
+            max-width: 800px;
+
+            margin: 20px auto;
+        }
+
+        .chart-container {
+            max-width: 716px;
+            margin: 20px auto;
+        }
+
+        /* .btn-warning {
+            color: #000;
+            background-color: white ;}
+
+            .btn-warning :hover {
+                background-color: #1a4666 !important;
+                border-color: #1a4666 !important;
+            }
+         */
+
+         .btn-warning {
+    color: #000;
+    background-color: white !important;
+    border-color:#1a4666 !important;
+} 
+
+.btn-warning:hover {
+    color: #000;
+    background-color:#1a4666 !important;
+    border-color:#1a4666 !important;
+}
+
+.btn-check:focus+.btn-warning,
+.btn-warning:focus {
+    color: #000;
+    background-color:#1a4666 !important;
+    border-color:#1a4666 !important;
+    box-shadow: 0 0 0 .25rem rgba(217, 164, 6, .5)
+}
+
+.btn-check:active+.btn-warning,
+.btn-check:checked+.btn-warning,
+.btn-warning.active,
+.btn-warning:active,
+.show>.btn-warning.dropdown-toggle {
+    color: #000;
+    background-color:#1a4666 !important;
+    border-color: #1a4666 !important;
+}
+
+.btn-check:active+.btn-warning:focus,
+.btn-check:checked+.btn-warning:focus,
+.btn-warning.active:focus,
+.btn-warning:active:focus,
+.show>.btn-warning.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .25rem rgba(217, 164, 6, .5)
+}
+
+.btn-warning.disabled,
+.btn-warning:disabled {
+    color: #000;
+    background-color: #1a4666 !important;
+    border-color: #1a4666 !important;}
+
+    </style>
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <nav class="navbar1 navbar-light bg-light">
+                            <div>
+                                <a class="navbar-brand1 " href="index.html"><img src="../assets/img/dashboard.svg"
+                                        alt="" style="margin: 0 7px 5px 0;">Dashboard</a>
+
+                                <a class="navbar-brand1 active1" href="employees.html"><img
+                                        src="../assets/img/Vector.svg" style="margin: 0 7px 5px 0;">Employees</a>
+
+                                <a class="navbar-brand1" href="/payrun.html"><img src="../assets/img/payrun.png"
+                                        style="margin: 0 7px 5px 0; height: 22px;">Pay Runs</a>
+
+                                <button class="btnbody btn-secondarybody dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="../assets/img/Group 271.svg" alt=""> Approvals
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="/allclaims.html">Reimbursement</a></li>
+                                    <li><a class="dropdown-item" href="/allinvestment.html">Proof Of Investments</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="/allrevision.html">Salary Revision </a></li>
+                                </ul>
+
+                                <a class="navbar-brand1" href="../reports.html"><img src="../assets/img/Group 270.svg"
+                                        style="margin: 0 7px 5px 0;">Reports</a>
+
+                            </div>
+
+                            <div id="greeting">
+                                Good to see you, Mr.Pawas Goyal&#128075;
+                            </div>
+
+                        </nav>
+                    </div>
+                    <div class="col-md-12">
+                        <h3 id="heading"><u>Payment Info</u></h3>
+                    </div>
+                    <h6><b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; How would you like to pay this employee?</b></h6>
+                    <div class="col-md-12">
+                        <div class="container-fluid">
+                            <div class="card " style="padding: 2% 5% 0% 5%; ">
+                                <div class="card-body pInfo_card">
+
+                                    <div class="row">
+                                        <div class="col-md-1"><img src="/assets/img/Group 322.svg" alt=""
+                                                style="height: 50px; width: 50px;"></div>
+                                        <div class="col-md-9">
+                                            <h5>Direct Deposit (Automated Process)</h5>
+                                            <p>Initiate payment in Employee Payroll once the pay run is
+                                                approved</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="circlecheck">
+                                                <a href="configurenow.html"
+                                                    style="text-decoration: none; color: #0000ff91;">Configure Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+
+
+
+                                    <div class=" row">
+                                        <div class=" col-md-1">
+                                            <img src="/assets/img/bank Deposit.svg" alt=""
+                                                style="height: 50px; width: 50px; color: #ccc;">
+                                        </div>
+
+
+                                        <div class="col-md-9">
+                                            <h5>Bank Transfer ( Manual Process)</h5>
+                                            <p>Download Bank Advice and process the payment through your bank's website
+                                            </p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <div class="circlecheck">
+                                                <!-- <button type="button" class="btn btn-info" id="checkbtn11"></button> -->
+                                                <button class="btn btn-warning" type="button" data-bs-toggle="collapse"
+                                                    data-bs-target="#collapseExample" aria-expanded="false"
+                                                    id="checkbtn11" aria-controls="collapseExample">
+
+                                                </button>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="collapse" id="collapseExample">
+                                        <div class="card card-body">
+                                            <div id="text" class="container mt-3">
+                                                <form action="/action_page.php">
+                                                    <div class="mb-3 mt-3">
+                                                        <label for="accountHolder">Account Holder Name<span
+                                                                style="color: red;">*</span></label>
+                                                        <input type="accountHolder" class="form-control"
+                                                            id="accountHolder" placeholder="Enter Account Holder Name"
+                                                            name="accountHolder"
+                                                            style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label for="bankName">Bank Name<span
+                                                                style="color: red;">*</span></label>
+                                                        <input type="bankName" class="form-control" id="bankName"
+                                                            placeholder="Enter Bank Name" name="bankName"
+                                                            style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col">
+                                                            <label for="accountNumber">Account Number<span
+                                                                    style="color: red;">*</span></label>
+                                                            <input type="accountNumber" class="form-control"
+                                                                placeholder="Enter Account Number" name="accountNumber"
+                                                                style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+                                                        </div>
+                                                        <div class="col">
+                                                            <label for="reenterAccountNumber">Re-enter Account
+                                                                Number<span style="color: red;">*</span></label>
+                                                            <input type="reenterAccountNumber" class="form-control"
+                                                                placeholder="Re-enterAccountNumber"
+                                                                name="reenterAccountNumber"
+                                                                style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="col"><br>
+                                                            <label for="ifsc">IFSC Code<span
+                                                                    style="color: red;">*</span></label>
+                                                            <input type="ifsc" class="form-control"
+                                                                placeholder="AAAA00000000" name="ifsc"
+                                                                style="border-top-left-radius: 7px; border-bottom-left-radius: 7px;">
+                                                        </div>
+                                                        <div class="col"><br>
+                                                            <label for="accountType">Account Type:<span
+                                                                    style="color: red;">*</span></label><br>
+                                                            <input type="radio">
+                                                            <label for="accountType">Current</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                                            <input type="radio">
+                                                            <label for="accountType">Savings</label>
+                                                        </div>
+                                                    </div>
+                                                </form>
+
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-1"><img src="/assets/img/Cheque.svg" alt=""
+                                            style="height: 50px; width: 50px;  margin-left: 18%;"></div>
+                                    <div class="col-md-9" style="padding-left: 2%;">
+                                        <h5>Cheque</h5>
+                                    </div>
+                                    <div class="col-md-2 " style="    padding-left: 0%;">
+                                        <div class="circlecheck">
+                                            <button type="button" class="btn btn-warning" id="checkbtn11"></button>
+                                        </div>
+                                    </div>
+                                    <br><br><br><br>
+                                    <hr>
+                                </div>
+
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+
+</body>
+
+</html>

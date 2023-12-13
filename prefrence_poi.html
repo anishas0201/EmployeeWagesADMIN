@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body" style="width: 100%;">
+            <div class="container-fluid">
+                <div class="row" id="">
+                    <div class="col-md-2" id="pref_side1" style="position: fixed;">
+                        <ul class="nav flex-column" id="preference_sidebar">
+                            <h5 style="padding-left: 10%; padding-top: 6%;">Preferences</h5>
+                            <li class="nav-item" id="preference_li">
+                                <a class="nav-link" id="pref_anchor" href="preference_employee-portal.html">Employee Portal</a>
+                              </li>
+                              <li class="nav-item" id="preference_li">
+                                <a class="nav-link " id="pref_anchor" href="preference_fbp.html">Flexible Benefit Plan</a>
+                              </li>
+                              <li class="nav-item" id="preference_li">
+                                <a class="nav-link" id="pref_anchor" href="preference_reimbursementClaim.html">Reimbursement Claims</a>
+                              </li>    
+                              <li class="nav-item" id="preference_li">
+                                  <a class="nav-link" id="pref_anchor" href="prefrence_incom_tax_.html">Income Tax Declaration</a>
+                                </li>
+                                <li class="nav-item" id="preference_li">
+                                  <a class="nav-link active11" id="pref_anchor" href="prefrence_poi.html">Proof Of Investment</a>
+                                </li> 
+                                <li class="nav-item" id="preference_li">
+                                  <a class="nav-link" id="pref_anchor" href="preference_employeeCustom.html">Employee Custom Field</a>
+                                </li>
+                                <li class="nav-item" id="preference_li">
+                                  <a class="nav-link" id="pref_anchor" href="preference_senderEmail.html">Sender Email Preferences</a>
+                                </li>                 
+                        </ul>
+                    </div>
+                    <div class="col-md-10" style="padding: 0;margin-left: 18%;">
+                        <div id="main_body_div">
+                            
+                            <h3 id="it_dec">
+                                POI Prefrence
+                            </h3>
+                            <div class="card" style="margin: 10px;">
+                                <div id="body_content_for_prefrence">
+                                    <p id="fot_font_size">
+                                        Employees can submit the necessary supporting documents for their declared
+                                        investments
+                                        <br> through the employee portal once you enable this option.
+                                    </p>
+                                    <div>
+                                        <img src="assets/img/cartoon-1294877_1280.png" alt="Idea bulb"
+                                            style="width: 4%;">
+                                        &nbsp;
+
+                                        Learn how to manage Investments Proofs.
+                                        <a href="#" style="text-decoration: none; color: rgb(0 116 255 / 77%);">
+                                            POI Help Document</a>
+                                    </div>
+
+                                    <div>
+                                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                        Help your employees submit POI on time.
+                                        <a href="#" style="text-decoration: none; color: rgb(0 116 255 / 77%);">
+                                            Download and share</a> this POI ebook.
+                                    </div>
+
+                                    <div class="card" style=" box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.205);   margin: 20px 0 0 0;">
+                                        <div id="pref_cotent_for_center">
+                                            <center>
+                                                <img src="assets/img/poi_locked.png" alt="" id="poi_locked">
+                                                <br><br>
+                                                <h4>
+                                                    POI is locked
+                                                </h4>
+
+
+                                                You are yet to enable the submission of investments proofs for your
+                                                employees<br>
+                                                through their respective portals. Release POI or submit it on
+                                                their
+                                                <br>
+                                                behalf under Employees > Employee profile > Investments > IT
+                                                Declaration. <br><br>
+                                                <a href="#">
+                                                    <button type="button" class="btn" id="it_dec_btn">Release Proof Of
+                                                        Investment</button>
+                                                </a>
+                                                <br>
+                                                <br>
+                                                <hr>
+
+                                            </center>
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-9">
+                                                    <h6>Process payroll with approved POI amount from</h6>
+                                                    <p id="poi_card_txt">
+                                                        The approved POI amount will be considered for the payroll from
+                                                        <span class="highlight">March</span> onwards calculate and
+                                                        deduct income tax amount in subsequent payrolls
+                                                    </p>
+
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <div class="dropdown">
+                                                        <button class="btn  dropdown-toggle" id="months_dropdown_btn"
+                                                            type="button" data-bs-toggle="dropdown"
+                                                            aria-expanded="false">
+                                                            March
+                                                        </button>
+                                                        <ul class="dropdown-menu">
+                                                            <li><a class="dropdown-item" href="#">January</a></li>
+                                                            <li><a class="dropdown-item" href="#">February</a></li>
+                                                            <li><a class="dropdown-item" href="#">March</a></li>
+                                                            <li><a class="dropdown-item" href="#">April</a></li>
+                                                            <li><a class="dropdown-item" href="#">May</a></li>
+                                                            <li><a class="dropdown-item" href="#">June</a></li>
+                                                            <li><a class="dropdown-item" href="#">July</a></li>
+                                                            <li><a class="dropdown-item" href="#">August</a></li>
+                                                            <li><a class="dropdown-item" href="#">September</a></li>
+                                                            <li><a class="dropdown-item" href="#">October</a></li>
+                                                            <li><a class="dropdown-item" href="#">November</a></li>
+                                                            <li><a class="dropdown-item" href="#">December</a></li>
+                                                        </ul>
+
+                                                    </div>
+                                                    for upcoming years..
+                                                </div>
+                                            </div>
+                                          <br><hr>
+                                            <b>Other Configuratons</b>
+                                            <br><br>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckChecked" checked>
+                                                <label class="form-check-label" for="flexCheckChecked">
+                                                    Allow employees to switch tax regimes
+                                                </label>
+                                            </div>
+                                         
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Mandate investment proof attachments for POI submission
+                                                </label>
+                                              </div>
+                                            
+                                              <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Mandate reviewer comments for partial investment amount approval
+                                                </label>
+                                              </div>
+                                       
+                                            <hr>
+                                         
+                                            <button type="button" 
+                                                class="btn btn-primary" id="savebtn">Save</button>
+      <br>
+                                        </div>
+                                        <br>
+                                    </div>
+
+
+
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

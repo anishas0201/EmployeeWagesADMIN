@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/anisha.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/graph.css" />
+  <link rel="stylesheet" href="assets/css/employeestatus.css" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <title>Employee</title>
+</head>
+
+<body>
+  <div import="includes/header.html"></div>
+  <div class="wrapper">
+    <div import="includes/sidebar.html"></div>
+    <div class="main-body" style="width: 100%;">
+      <div class="row" id="">
+        <div class="col-md-12">
+          <nav class="navbar1 navbar-light bg-light">
+
+            <div>
+
+              <a class="navbar-brand1 " href="index.html"><img src="../assets/img/dashboard.svg" alt=""
+                  style="margin: 0 7px 5px 0;">Dashboard</a>
+
+              <a class="navbar-brand1 " href="employees.html"><img src="../assets/img/Vector.svg"
+                  style="margin: 0 7px 5px 0;">Employees</a>
+
+              <a class="navbar-brand1 active1" href="/payrun.html"><img src="../assets/img/payrun.png"
+                  style="margin: 0 7px 5px 0; height: 22px;">Pay Runs</a>
+              <button class="btnbody btn-secondarybody dropdown-toggle " type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="../assets/img/Group 271.svg" alt=""> Approvals
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/allclaims.html">Reimbursement</a></li>
+                <li><a class="dropdown-item" href="/allinvestment.html">Proof Of Investments</a>
+                </li>
+                <li><a class="dropdown-item" href="/allrevision.html">Salary Revision </a></li>
+              </ul>
+
+
+              <a class="navbar-brand1 " href="../reports.html"><img src="../assets/img/Group 270.svg"
+                  style="margin: 0 7px 5px 0;">Reports</a>
+
+            </div>
+
+            <div id="greeting">
+
+              Good to see you, Mr.Pawas Goyal&#128075;
+
+            </div>
+
+          </nav>
+        </div>
+        <div class="container-fluid">
+          <br>
+          <div class="row" style="margin-right: 3%;">
+
+
+            <br>
+            <div class="card" id="card_margin" style="margin-left: 2%;margin-right: 3%;">
+                <div class="card-header">
+                    <h4 style="margin-top: 1%;">Reimbursement Details</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-1">
+                            <img src="/assets/img/user.png" alt="User_image" style="height: 58px;" >
+                        </div>
+                        <div class="col-md-4" style="padding-left: 0%;" >
+                        <b style="font-size: 22px;color: blue; " >Rupesh Sen</b> <br> <span id="ep_id">EMP. ID:1235</span>
+                        </div>
+                    </div>
+                    <br><br>
+                   <div class="row">
+                    <div class="col-md-3"> <h5>Trip to Mumbai</h5>
+                        <b style="font-weight: 600;color: #aaa0a0;" >Duration : 20/09/2023 - 26/09/2023</b>
+                    </div>
+                    <div class="col-md-2"></div>
+                    <div class="col-md-3"><h6 style="font-weight: 700;" >Reimbursement Amount</h6><h5> <b style="font-weight: 600;color: #aaa0a0;" >₹ 2000.00</b></h5> 
+                        <a class="btn " style="color: blue;" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            View Summery
+                          </a> </div>
+                          
+
+
+                    <div class="col-md-2"><h6 style="font-weight: 700;" >Total Amount</h6><h5> <b style="font-weight: 600;color: #aaa0a0;" >₹ 2000.00</b></h5></div>
+                    <div class="col-md-2"><h6 style="font-weight: 700;" >Status</h6><span style="background-color: #ccffdd;
+                        color: #5c5c5c;
+                        padding: 4px 6px 3px 6px;
+                        border-radius: 6px;
+                      " >Pending</span> </div>
+                   </div>
+                   <!-- -----------collapse area -->
+                   <div class="collapse" id="collapseExample">
+                    <div class="card card-body" style="margin-left: 40%;margin-right: 40%;padding-bottom: 0%;" >
+                     <p>Travel Ticket Amount : ₹ 1150</p>
+                     <p>Hotel charges : ₹ 750</p>
+                     <p>Other charges : ₹ 100</p>
+                    </div>
+                  </div>
+
+
+                  <!-- ------------------------ -->
+                   <div class="row">
+                    <div class="col-md-6">
+                        <br><br>
+                        <h5>View Attechment</h5>
+                        <a href="assets/img/reimbursement-sample.png" style="text-decoration: none;color: blue;font-weight: 600;" >Show Bills</a>
+                        
+                    </div>
+                    <div class="col-md-6" style="text-align: center;" >
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6"style="font-weight: 600;color: #aaa0a0;">Total Expense Amount </div>
+                            <div class="col-md-6"style="font-weight: 600;color: #aaa0a0;">₹ 2000.00</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6"style="font-weight: 600;color: #aaa0a0;">Non-reimbursable Amount </div>
+                            <div class="col-md-6"style="font-weight: 600;color: #aaa0a0;">₹ 0.00</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6"style="font-weight: 600;color: #aaa0a0;">Applied Advance Amount </div>
+                            <div class="col-md-6"style="font-weight: 600;color: #aaa0a0;">₹ 0.00</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6"><b>Total Reimbursement Amount</b> </div>
+                            <div class="col-md-6"><b>₹ 2000.00</b></div>
+                        </div>
+                    </div>
+                    
+                   </div>
+                   <br>
+                          <a class="btn" id="savebtn" href="reImbursement.html">Back</a>
+                </div>
+
+            </div>
+             <br>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/graph.js"></script>
+  <script src="assets/js/syncro.min.js"></script>
+  <script src="assets/js/PaymentStatus.js"></script>
+  <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

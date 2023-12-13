@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body" style="width: 100%;padding-left: 1%;">
+            <div class="container-fluid">
+                <div class="row" id="">
+                    <div class="col-6">
+                        <h3>New Earning</h3>
+                    </div>
+                    <div class="col-6" style="text-align: right;">
+                        <span id="txtblue"><img src="assets/img/bulbicon.png" id="bulbicon"> Page Tips</span>
+                    </div>
+                </div>
+                <div class="card"  id="newpretaxcard">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="input" id="newformgap">
+                                <label class="" for="inputGroupSelect01" id="txtreimbursementinput">Earning Type</label>
+                                <select class="form-select" id="txtreimbursementinput">
+                                    <option selected>Select</option>     
+                                    <option value="1">Basic</option>
+                                    <option value="2">House Rent Allowance</option>
+                                    <option value="3">Dearness Allowance</option>
+                                    <option value="4">Bonus</option>
+                                </select>
+                            </div>                        
+                            <hr>
+                            <div class="col-md-12 d-flex">
+                                <div class="col-md-6">
+                                    <button type="button" class="btn" id="savebtn">Save</button>
+                                    <a type="button" class="btn" href="salarycomponents_Earnings.html" id="btn_cancel">Cancel</a>
+    
+                                </div>
+                                <div class="col-md-6" style="text-align: right;">
+                                    <span style="color: red; font-size: 14px;">* indicates mandatory fields</span>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+                    </div>
+                </div>
+             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

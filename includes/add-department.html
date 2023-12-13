@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/graph.css" />
+    <link rel="stylesheet" href="assets/css/employeestatus.css" />
+    <link rel="stylesheet" href="hrmsassets/css/admin.min.css" />
+    <link rel="stylesheet" href="hrmsassets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body" style="width: 100%;">
+
+            <div class="row" id="">
+                <div class="content-wrapper" style="height: auto; margin:1px;">
+                    <div class="content-header">
+                        <div class="container-fluid">
+                            <div class="row mb-2">
+                                <div class="col-sm-12">
+                                    <h3 class="m-0">Department Details</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <form method="post" [formGroup]="departmentForm" (ngSubmit)="submitData()">
+                            <div class="active tab-pane" id="info">
+                                <div class="card card-default">
+                                    <div class="card-header" style="background-color:white;">
+
+                                        <div class="form-group row " style="margin: 1%">
+                                            <div class="col-md-2"></div>
+                                            <label class="col-md-2">
+                                                <p id="for_txt_bold_and_weight">Department Name <span
+                                                        class="text-danger">*</span></p>
+                                            </label>
+                                            <div class="col-md-6">
+
+                                                <input type="text" class="form-control"
+                                                    formControlName="department_name"
+                                                    placeholder="Enter department name"
+                                                    [ngClass]="{ 'is-invalid': submitted && f.department_name.errors }">
+                                                <div *ngIf="submitted && f.department_name.errors"
+                                                    class="invalid-feedback">
+                                                    <div *ngIf="f.department_name.errors.required">Department name is
+                                                        required.</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2"></div>
+
+                                        </div>
+
+                                        <div class="form-group row " style="margin: 1%">
+                                            <div class="col-md-2"></div>
+
+                                            <label class="col-md-2">
+                                                <p id="for_txt_bold_and_weight">Mail Alias</p>
+                                            </label>
+                                            <div class="col-md-6">
+                                                <input type="text" class="form-control" placeholder="Enter Mail Alias"
+                                                    id="fn" formControlName="mail_alias"
+                                                    [ngClass]="{ 'is-invalid': submitted && f.mail_alias.errors }">
+                                                <div *ngIf="submitted && f.mail_alias.errors" class="invalid-feedback">
+                                                    <div *ngIf="f.mail_alias.errors?.['pattern']">
+                                                        Please enter valid email address.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2"></div>
+
+                                        </div>
+
+                                        <div class="form-group row " style="margin: 1%">
+                                            <div class="col-md-2"></div>
+
+                                            <label class="col-md-2 ">
+                                                <p id="for_txt_bold_and_weight">Department Lead</p>
+                                            </label>
+                                            <div class="col-md-6">
+                                                <select class="form-select" id="Department Lead"
+                                                    formControlName="department_lead_id"
+                                                    [ngClass]="{ 'is-invalid': submitted && f.department_lead_id.errors }">
+
+                                                    <option value="" disabled [selected]="true">Select Department Lead
+                                                    </option>
+                                                    <!-- <option>{{emp_name}}</option> -->
+                                                    <ng-container *ngFor="let deptLead of allemployeedata">
+                                                        <option *ngIf="deptLead.employee_id !== null"
+                                                            [value]="deptLead.employee_id">
+                                                            <p id="for_txt_bold_and_weight"></p>Department lead 1
+                                                        </option>
+                                                    </ng-container>
+                                                </select>
+
+                                                <div *ngIf="submitted && f.department_lead_id.errors"
+                                                    class="invalid-feedback">
+                                                    <div *ngIf="f.department_lead_id.errors.required"> Department lead
+                                                        is
+                                                        required.</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2"></div>
+
+                                        </div>
+
+                                        <div class="form-group row" style="margin: 1%">
+                                            <div class="col-md-2"></div>
+
+                                            <label class="col-md-2">
+                                                <p id="for_txt_bold_and_weight">Parent Department</p>
+                                            </label>
+
+                                            <div class="col-md-6">
+                                                <select class="form-select" formControlName="parent_department_id"
+                                                    [ngClass]="{ 'is-invalid': submitted && f.parent_department_id.errors }"
+                                                    id="Parent Department">
+                                                    <option value="" disabled [selected]="true">Select Parent Department
+                                                    </option>
+
+                                                    <option *ngFor="let p_dept of parentDeptList"
+                                                        [value]="p_dept.department_id">
+                                                        Parent Department Name
+                                                    </option>
+                                                </select>
+
+                                                <div *ngIf="submitted && f.parent_department_id.errors"
+                                                    class="invalid-feedback">
+                                                    <div *ngIf="f.parent_department_id.errors.required">Parent
+                                                        department is
+                                                        required.</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2"></div>
+
+                                        </div>
+
+                                        <!-- <button type="submit" class="btn btn-primary mb-1" id="savebtn">Submit</button> -->
+                                        <!-- <a href="#" class="btn" role="button" id="savebtn" data-bs-toggle="button" aria-pressed="true">Submit</a> -->
+                                        <!-- <a href="view-department.html" class="btn " id="btn_cancel" role="button" data-bs-toggle="button" aria-pressed="true">Cancel</a> -->
+                                        <div style="margin-left: 18%;"><a class=" btn" id="savebtn"
+                                                href="view-department.html">Submit</a>
+                                            <a class="btn" id="btn_cancel" href="view-department.html">Cancel</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/graph.js"></script>
+    <script src="assets/js/syncro.min.js"></script>
+    <script src="assets/js/PaymentStatus.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

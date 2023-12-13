@@ -1,0 +1,706 @@
+<div class="modal fade" id="SearchEmployee" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog  modal-xl">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+
+                <h5 class="modal-title" id="exampleModalLabel">Search Employee</h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            </div>
+
+            <div class="modal-body" style="padding: 20px 80px;">
+
+                <div class="row">
+
+                    <div class="col-md-2">
+
+                        <label for="srchEmp"> Employee Name</label>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <input type="text" class="form-control" id="addemployees" placeholder="">
+
+                    </div>
+
+                    <div class="col-md-2">
+
+                        <label for="srchEmp"> Employee ID</label>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <input type="text" class="form-control" id="addemployees" placeholder="">
+
+                    </div>
+
+                </div>
+
+                <br>
+
+                <div class="row">
+
+                    <div class="col-md-2">
+
+                        <label for="srchEmp">Work Email</label>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <input type="text" class="form-control" id="addemployees" placeholder="">
+
+                    </div>
+
+                    <div class="col-md-2">
+
+                        <label for="srchEmp">Mobile Number</label>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <input type="text" class="form-control" id="addemployees" placeholder="">
+
+                    </div>
+
+                </div>
+
+                <br>
+
+                <div class="row">
+
+                    <div class="col-md-2">
+
+                        <label for="srchEmp">Employee Status</label>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <select class="dropdown_box form-control" id="addempdropdown1">
+
+                            <option value="" disabled selected hidden>Select</option>
+
+                            <option>1</option>
+
+                            <option>2</option>
+
+                            <option>3</option>
+
+                            <option>4</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="col-md-2">
+
+                        <label for="srchEmp">Portal Status</label>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <select class="dropdown_box form-control" id="addempdropdown1">
+
+                            <option value="" disabled selected hidden>Select</option>
+
+                            <option>1</option>
+
+                            <option>2</option>
+
+                            <option>3</option>
+
+                            <option>4</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+                <br>
+
+                <div class="row">
+
+                    <div class="col-md-2">
+
+                        <label for="srchEmp">Date Of Joining</label>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <input type="date" class="form-control">
+
+                    </div>
+
+                    <div class="col-md-2">
+
+                        <label for="srchEmp">Last Working Date</label>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <input type="date" class="form-control">
+
+                    </div>
+
+                </div>
+
+                <br>
+
+                <div class="row">
+
+                    <div class="col-md-2">
+
+                        <label for="srchEmp">Payment Mode</label>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <select class="dropdown_box form-control" id="addempdropdown1">
+
+                            <option value="" disabled selected hidden>Select</option>
+
+                            <option>1</option>
+
+                            <option>2</option>
+
+                            <option>3</option>
+
+                            <option>4</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="col-md-2">
+
+                        <label for="srchEmp">Department</label>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <select class="dropdown_box form-control" id="addempdropdown1">
+
+                            <option value="" disabled selected hidden>Select</option>
+
+                            <option>1</option>
+
+                            <option>2</option>
+
+                            <option>3</option>
+
+                            <option>4</option>
+
+                        </select>
+
+                    </div>
+
+                </div><br>
+
+                <div class="row">
+
+                    <div class="col-md-2">
+
+                        <label for="srchEmp">Designation</label>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <select class="dropdown_box form-control" id="addempdropdown1">
+
+                            <option value="" disabled selected hidden>Select</option>
+
+                            <option>1</option>
+
+                            <option>2</option>
+
+                            <option>3</option>
+
+                            <option>4</option>
+
+                        </select>
+
+                    </div>
+
+                    <div class="col-md-2">
+
+                        <label for="srchEmp">Work Location</label>
+
+                    </div>
+
+                    <div class="col-md-4">
+
+                        <select class="dropdown_box form-control" id="addempdropdown1">
+
+                            <option value="" disabled selected hidden>Select</option>
+
+                            <option>1</option>
+
+                            <option>2</option>
+
+                            <option>3</option>
+
+                            <option>4</option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="modal-footer model_foot">
+
+                <div class="row">
+
+                    <div class="COL-MD-12">
+
+                        <button type="button" class="btn btn-primary " id="savebtn">Save </button>
+
+                        <button type="button" class="btn" data-bs-dismiss="modal">Cancel</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-gradient">
+
+    <div class="container-fluid">
+
+        <div class="col-md-2">
+
+            <!-- <a class="navbar-brand" href="#">Employee wages</a> -->
+
+            <a href="/index.html"><img src="../assets/img/Empwageslogo.png" alt="" width="180px" height="50px"></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"><img src="../assets/img/hamburger.png" width="20px"
+                        height="20px"></span>
+
+            </button>
+
+        </div>
+
+        <div class="col-md-3">
+
+            <form class="d-flex">
+
+                <div class="modalbtn">
+
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#SearchEmployee">
+
+                        <img src="../assets/img/searchnormal1.svg" alt="searchlogo">
+
+                    </button>
+
+                </div>
+
+                <input class="form-control me-2" type="search" placeholder="Search Employees" aria-label="Search"
+                    id="brdr">
+
+            </form>
+
+        </div>
+
+        <!-- <div class="col-md-"></div> -->
+
+        <div class="col-md-3"></div>
+
+        <div class="col-md-4">
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="    float: right;">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="align-items: center;">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link active" aria-current="page" href="#"><img src="../assets/img/278.svg" alt="">
+
+                        </a>
+
+                    </li>
+
+
+
+                    <!-- -------------------------------------------------------droppppdownnn------------------------------------------- -->
+
+
+
+
+
+                    <!-- <li class="nav-item dropdown">
+
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+
+                            <img src="../assets/img/279.svg" alt="">
+
+                        </a>
+
+                       
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                       
+
+                            <a class="dropdown-item" href="#">Item 1</a>
+
+                            <a class="dropdown-item" href="#">Item 2</a>
+
+                            <a class="dropdown-item" href="#">Item 3</a>
+
+                        </div>
+
+                    </li> -->
+
+
+
+
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            <img src="../assets/img/279.svg" alt="">
+
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <!-- <li><a class="dropdown-item" href="#">Cylsys</a></li> -->
+
+                            <div id="profiledropdown">
+
+
+
+                                <div class="row" id="header_roow">
+
+                                    <div class="col-md-11" style="padding-top: 2%;">
+
+                                        <h6 style="color: white;">You have some new notifications.</h6>
+
+                                    </div>
+
+                                    <div class="col-md-1">
+
+                                        <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                            aria-expanded="false" aria-controls="collapseExample"
+                                            id="profilepicandbackbtn">
+
+                                            &#128473;
+
+                                        </a>
+
+                                    </div>
+
+
+
+                                </div>
+
+                                <div class="card" style="margin: 0px -11px; background-color: #d6e8f571;">
+
+                                    <div class="row" id="notifications_row">
+
+                                        <div class="col-md-1">
+
+                                            &nbsp; <img src="/assets/img/bell.svg" alt="">
+
+                                        </div>
+
+                                        <div class="col-md-11">
+
+                                            <p id="notifications_txt">
+
+                                                Explore our latest features: the ability to reverse loss of pay (LOP)
+
+                                                and process arrear payments for new employees. Learn more now.
+
+                                            </p>
+
+                                            <p id="notifications_date_and_time">
+
+                                                10/09/2023 12 : 38 PM
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="card" style="margin: 0px -11px; background-color: #d6e8f571;">
+
+                                    <div class="row" id="notifications_row">
+
+                                        <div class="col-md-1">
+
+                                            &nbsp; <img src="/assets/img/bell.svg" alt="">
+
+                                        </div>
+
+                                        <div class="col-md-11">
+
+                                            <p id="notifications_txt">
+
+                                                Our all-new Employee Expense integration helps you process business
+
+                                                expense
+
+                                                reimbursements along with salary payments in EmployeeWages Payroll.
+
+                                                Learn how.
+
+                                            </p>
+
+                                            <p id="notifications_date_and_time">
+
+                                                22/08/2023 11 : 15 AM
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+                                <div class="card" style="margin: 0px -11px; background-color: #d6e8f571;">
+
+                                    <div class="row" id="notifications_row">
+
+                                        <div class="col-md-1">
+
+                                            &nbsp; <img src="/assets/img/bell.svg" alt="">
+
+                                        </div>
+
+                                        <div class="col-md-11">
+
+                                            <p id="notifications_txt">
+
+                                                We have released new features that will provide your employees with more
+
+                                                flexibility over their contributions and help them protect their
+
+                                                privacy. Click to learn more.
+
+                                            </p>
+
+                                            <p id="notifications_date_and_time">
+
+
+
+                                                14/08/2023 10:11 AM
+
+                                            </p>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#" id="header280"><img src="../assets/img/280.svg" alt=""> &nbsp;</a>
+
+                    </li>
+
+
+
+                    <!-- -------------------------------------------------------droppppdownnn------------------------------------------- -->
+
+
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            &nbsp;Cylsys Software Solution&nbsp;
+
+                            <img src="../assets/img/profiledownarrow.svg" alt=""> &nbsp;
+
+                            <img src="../assets/img/Group 17.svg" alt="">
+
+                        </a>
+
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                            <!-- <li><a class="dropdown-item" href="#">Cylsys</a></li> -->
+
+                            <div id="profiledropdown">
+
+                                <div class="row">
+
+                                    <div class="col-md-12">
+
+                                        <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button"
+                                            aria-expanded="false" aria-controls="collapseExample"
+                                            id="profilepicandbackbtn">
+
+                                            &#128473;
+
+                                        </a>
+
+                                    </div>
+
+                                    <div class="col-md-12">
+
+                                        <center> <img src="../assets/img/Group 17.svg" alt="" id="profilepic"></center>
+
+                                        <br>
+
+                                    </div>
+
+                                    <div class="col-md-12">
+
+                                        <CEnter>
+
+                                            <h6 style="font-weight: 600;">JAGRATITHAKUR23</h6>
+
+                                        </CEnter>
+
+                                        <div>
+
+                                            <center>
+
+                                                <p id="dropDownTxt">User ID: 0022949022</p>
+
+                                            </center>
+
+                                            <center>
+
+                                                <p id="dropDownTxt">jagratithakur23@gmail.com</p>
+
+                                            </center>
+
+                                        </div>
+
+                                        <br>
+
+                                        <center>
+
+                                            <a href="#" id="myacc"> My Account</a>&nbsp;|&nbsp;<a href="/login.html"
+                                                id="signout">Sign Out</a>
+
+                                        </center>
+
+                                    </div>
+
+                                    <div>
+
+                                        <hr>
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-md-7">
+
+                                            <p id="dropDownTxt">MY ORGANISATIONS</p>
+
+                                        </div>
+
+                                        <div class="col-md-5">
+
+                                            <a href="#" id="myacc" style="float: right;"> <img
+                                                    src="../assets/img/gear-solid.svg" alt="" style="width: 15px; ">
+
+                                                &nbsp;Manage</a>
+
+                                        </div>
+
+                                        <div>
+
+                                            <hr>
+
+                                        </div>
+
+                                        <div class="row">
+
+                                            <div class="col-md-10">
+
+                                                <h6 style="font-weight: 600;">MY Fund Bucket</h6>
+
+                                                <p id="dropDownTxt"> Organisation ID : 60022949681</p>
+
+                                                <p id="dropDownTxt">Trail</p>
+
+                                            </div>
+
+                                            <div class="col-md-2">
+
+                                                <img src="../assets/img/check-solid.svg" alt=""
+                                                    style="width: 15px;float: right;">
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </ul>
+
+                    </li>
+
+                    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>

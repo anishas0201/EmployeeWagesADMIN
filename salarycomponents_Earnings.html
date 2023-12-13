@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/anisha.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+  <title>Employee</title>
+</head>
+
+<body>
+  <div import="includes/header.html"></div>
+  <div class="wrapper">
+    <div import="includes/sidebar.html"></div>
+    <div class="main-body" style="width: 100%;padding-left: 1%;">
+      <div class="container-fluid">
+        <div class="row" id="">
+
+          <div class="col-6">
+            <h3>Salary Components</h3>
+          </div>
+          <div class="col-6" style="text-align: right; padding-right: 2%;">
+            <div class="dropdown">
+              <button class="btn  dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                id="addcompntbtn">
+                Add Component
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="new-Earning.html">Earning</a></li>
+                <li><a class="dropdown-item" href="#">Correction</a></li>
+                <li><a class="dropdown-item" href="new_Post-tax-deduction.html">Post-Tax Deduction</a></li>
+                <li><a class="dropdown-item" href="new-Pre-tax-deduction.html">Pre-Tax Deduction</a></li>
+              </ul>
+            </div>
+          </div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="salarycomponents_Earnings.html" id="anchorbtn1">Earnings</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="salarycomponents_deductions.html" id="anchorbtn">Deduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="salarycomponents_reimbursements.html" id="anchorbtn">Reimbursements</a>
+            </li>
+          </ul>
+
+          <div class="container-fluid"> <br>
+            <div class="card" id="approvalspage_margins">
+              <div class="table-responsive">
+                <table class="table">
+
+                  <thead>
+                    <tr>
+                      <th scope="col" style="border-bottom: 1px solid #cccccc;">NAME</th>
+                      <th scope="col"style="border-bottom: 1px solid #cccccc;">EARNING TYPE</th>
+                      <th scope="col"style="border-bottom: 1px solid #cccccc;">CALCULATION TYPE</th>
+                      <th scope="col"style="border-bottom: 1px solid #cccccc;">CONSIDER FOR EPF</th>
+                      <th scope="col"style="border-bottom: 1px solid #cccccc;">CONSIDER FOR ESI</th>
+                      <th scope="col"style="border-bottom: 1px solid #cccccc;">STATUS</th>
+                      <th scope="col"style="border-bottom: 1px solid #cccccc;"></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td id="txtblue">Basic</td>
+                      <td id="fot_font_size1">Basic</td>
+                      <td id="fot_font_size1">Fixed; 50% of CTC</td>
+                      <td id="fot_font_size1">Yes</td>
+                      <td id="fot_font_size1">Yes</td>
+                      <td id="activecolor">Active</td>
+                       <td id="fot_font_size1">
+                        <div class="dropdown">
+                          <button class="btn-group" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="threedotdropdown">
+                            <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="edit_earnings.html">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Mark as Inactive</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td id="txtblue">House Rent Allowance</td>
+                      <td id="fot_font_size1">House Rent Allowance</td>
+                      <td id="fot_font_size1">Fixed; 50% of Basic</td>
+                      <td id="fot_font_size1">No</td>
+                      <td id="fot_font_size1">Yes</td>
+                      <td id="activecolor">Active</td>
+                       <td id="fot_font_size1">
+                        <div class="dropdown">
+                          <button class="btn-group" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="threedotdropdown">
+                            <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Mark as Inactive</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td id="txtblue">Conveyance Allowance</td>
+                       <td id="fot_font_size1">Conveyance Allowance</td>
+                       <td id="fot_font_size1">Fixed; Flat Amount</td>
+                       <td id="fot_font_size1">Yes <span id="brkttxt">(if PF Wages < 15k)</span>
+                      </td>
+                       <td id="fot_font_size1">No</td>
+                      <td id="activecolor">Active</td>
+                       <td id="fot_font_size1">
+                        <div class="dropdown">
+                          <button class="btn-group" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="threedotdropdown">
+                            <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Mark as Inactive</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td id="txtblue">Transport Allowance</td>
+                       <td id="fot_font_size1">Transport Allowance</td>
+                       <td id="fot_font_size1">Fixed; Flat Amount of 1600</td>
+                       <td id="fot_font_size1">Yes <span id="brkttxt">(if PF Wages < 15k)</span>
+                      </td>
+                       <td id="fot_font_size1">Yes</td>
+                      <td id="inactivecolor">Inactive</td>
+                       <td id="fot_font_size1">
+                        <div class="dropdown">
+                          <button class="btn-group" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="threedotdropdown">
+                            <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Mark as Active</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td id="txtblue">Travelling Allowance</td>
+                      <td id="fot_font_size1">Travelling Allowance</td>
+                      <td id="fot_font_size1">Fixed; Flat Amount</td>
+                      <td id="fot_font_size1">Yes <span id="brkttxt">(if PF Wages < 15k)</span>
+                      </td>
+                      <td id="fot_font_size1">No</td>
+                      <td id="inactivecolor">Inactive</td>
+                       <td id="fot_font_size1">
+                        <div class="dropdown">
+                          <button class="btn-group" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="threedotdropdown">
+                            <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Mark as Active</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td id="txtblue">Bonus</td>
+                       <td id="fot_font_size1">Bonus</td>
+                       <td id="fot_font_size1">Variable; Flat Amount</td>
+                       <td id="fot_font_size1">No</td>
+                       <td id="fot_font_size1">No</td>
+                      <td id="activecolor">Active</td>
+                       <td id="fot_font_size1">
+                        <div class="dropdown">
+                          <button class="btn-group" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="threedotdropdown">
+                            <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Mark as Inactive</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td id="txtblue">Commission</td>
+                      <td id="fot_font_size1">Commission</td>
+                      <td id="fot_font_size1">Variable; Flat Amount</td>
+                      <td id="fot_font_size1">No</td>
+                      <td id="fot_font_size1">Yes</td>
+                      <td id="activecolor">Active</td>
+                       <td id="fot_font_size1">
+                        <div class="dropdown">
+                          <button class="btn-group" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="threedotdropdown">
+                            <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Mark as Inactive</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td id="txtblue">Children Education Allowance</td>
+                       <td id="fot_font_size1">Children Education Allowance</td>
+                       <td id="fot_font_size1">Fixed; Flat Amount</td>
+                       <td id="fot_font_size1">Yes <span id="brkttxt">(if PF Wages < 15k)</span>
+                      </td>
+                       <td id="fot_font_size1">Yes</td>
+                      <td id="inactivecolor">Inactive</td>
+                       <td id="fot_font_size1">
+                        <div class="dropdown">
+                          <button class="btn-group" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="threedotdropdown">
+                            <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Mark as Active</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td id="txtblue">Fixed Allowance</td>
+                       <td id="fot_font_size1">Fixed Allowance</td>
+                       <td id="fot_font_size1">Fixed; Flat Amount</td>
+                       <td id="fot_font_size1">Yes <span id="brkttxt">(if PF Wages < 15k)</span>
+                      </td>
+                       <td id="fot_font_size1">Yes</td>
+                      <td id="activecolor">Active</td>
+                       <td id="fot_font_size1">
+                        <div class="dropdown">
+                          <button class="btn-group" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="threedotdropdown">
+                            <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Mark as Inactive</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td id="txtblue">Leave Encashment</td>
+                       <td id="fot_font_size1">Leave Encashment</td>
+                       <td id="fot_font_size1">Variable; Flat Amount</td>
+                       <td id="fot_font_size1">No</td>
+                       <td id="fot_font_size1">No</td>
+                      <td id="activecolor">Active</td>
+                       <td id="fot_font_size1">
+                        <div class="dropdown">
+                          <button class="btn-group" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="threedotdropdown">
+                            <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Mark as Inactive</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td id="txtblue">Gratuity</td>
+                       <td id="fot_font_size1">Gratuity</td>
+                       <td id="fot_font_size1">Variable; Flat Amount</td>
+                       <td id="fot_font_size1">No</td>
+                       <td id="fot_font_size1">No</td>
+                      <td id="activecolor">Active</td>
+                       <td id="fot_font_size1">
+                        <div class="dropdown">
+                          <button class="btn-group" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="threedotdropdown">
+                            <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Mark as Inactive</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td id="txtblue">Notice Pay</td>
+                       <td id="fot_font_size1">Notice Pay</td>
+                       <td id="fot_font_size1">Variable; Flat Amount</td>
+                       <td id="fot_font_size1">No</td>
+                       <td id="fot_font_size1">No</td>
+                      <td id="activecolor">Active</td>
+                       <td id="fot_font_size1">
+                        <div class="dropdown">
+                          <button class="btn-group" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="threedotdropdown">
+                            <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Mark as Inactive</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td id="txtblue">Hold Salary</td>
+                       <td id="fot_font_size1">Hold Salary (Non Taxable)</td>
+                       <td id="fot_font_size1">Variable; Flat Amount</td>
+                       <td id="fot_font_size1">No</td>
+                       <td id="fot_font_size1">No</td>
+                      <td id="activecolor">Active</td>
+                       <td id="fot_font_size1">
+                        <div class="dropdown">
+                          <button class="btn-group" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                            id="threedotdropdown">
+                            <img src="assets/img/3dotwithcircle.png" id="circlewithdot">
+                          </button>
+                          <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Edit</a></li>
+                            <li><a class="dropdown-item" href="#">Mark as Inactive</a></li>
+                            <li><a class="dropdown-item" href="#">Delete</a></li>
+                          </ul>
+                        </div>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/anisha.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/graph.css" />
+  <link rel="stylesheet" href="assets/css/employeestatus.css" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+
+
+  <title>Employee</title>
+</head>
+
+<body>
+  <div import="includes/header.html"></div>
+
+  <div class="wrapper">
+    <div import="includes/sidebar.html"></div>
+    <div class="main-body">
+
+      <div class="row" id="">
+        <div class="col-md-12">
+          <nav class="navbar1 navbar-light bg-light">
+
+            <div>
+
+              <a class="navbar-brand1 " href="index.html"><img src="../assets/img/dashboard.svg" alt=""
+                  style="margin: 0 7px 5px 0;">Dashboard</a>
+
+              <a class="navbar-brand1 " href="employees.html"><img src="../assets/img/Vector.svg"
+                  style="margin: 0 7px 5px 0;">Employees</a>
+
+              <a class="navbar-brand1" href="/payrun.html"><img src="../assets/img/payrun.png"
+                  style="margin: 0 7px 5px 0; height: 22px;">Pay Runs</a>
+              <button class="btnbody btn-secondarybody dropdown-toggle active1" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <img src="../assets/img/Group 271.svg" alt=""> Approvals
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="/allclaims.html">Reimbursement</a></li>
+                <li><a class="dropdown-item" href="/allinvestment.html">Proof Of Investments</a></li>
+                <li><a class="dropdown-item" href="/allrevision.html">Salary Revision </a></li>
+              </ul>
+
+
+              <a class="navbar-brand1" href="../reports.html"><img src="../assets/img/Group 270.svg"
+                  style="margin: 0 7px 5px 0;">Reports</a>
+
+            </div>
+
+            <div id="greeting">
+
+              Good to see you, Mr.Pawas Goyal&#128075;
+
+            </div>
+
+          </nav>
+        </div>
+        <div class="container">
+
+
+
+          <div class="row">
+            <div class="container">
+
+              <div class="collapse" id="collapseContent">
+
+                <div class="row header_item">
+
+                  <div class="col-md-3">1/1 Salary Revision Selected |</div>
+                  <div class="col-md-4">
+                    <a class="btn " href="#" role="button" id="apprvbtn">Approve</a>
+                    <a class="btn " href="#" role="button" id="rejbtn">Reject</a>
+                    <a class="btn " href="#" role="button" id="rejbtn">Process Later</a>
+
+                  </div>
+
+                  <!-- <div class="col-md-5 cancel_btn">
+                    <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button"
+                      aria-expanded="false" aria-controls="collapseExample">
+                      &#128473;
+                    </a>
+                  </div> -->
+
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+            <br>
+            <div class="row" style="padding: 1%;">
+              <div class="col-md-3">
+                <div class="dropdown">
+                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    id="reimbursementdropdown">
+                    <b> Pending Revision </b>
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="allrevision.html">All Revision</a></li>
+                    <li><a class="dropdown-item" href="approvedrevision.html"> Approved Revision </a></li>
+                    <li><a class="dropdown-item" href="rejectedrevision.html"> RejectedRevision </a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-md-9 Buttn" style="text-align: right; padding: 0 35px;">
+                <button type="button" class="btn btn-primary" id="savebtn">Add Claims</button>
+                <a class="btn  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="dotdotdot">
+                  • • •
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Import Reimbursement</a></li>
+                  <li><a class="dropdown-item" href="#">Export Reimbursement</a></li>
+                  <li><a class="dropdown-item" href="#">Release/Lock Reimbursement </a></li>
+                </ul>
+                <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                  aria-controls="collapseExample" id="dotdotdot">
+                  <img src="/assets/img/funnel.svg" alt="Filter">
+                </a>
+
+              </div>
+            </div>
+            <br>
+            <div class="col-md-12 filter_by">
+
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                  <div class="row" style="display: flex; align-items: center;background-color: transparent;">
+                    <div class="col-md-1">
+                      FILTER BY :
+                    </div>
+
+                    <div class="col-md-2">
+                      <img src="/assets/img/calendar.svg" alt="CALENDER">
+                      <input type="month" style="border-color: transparent;">
+                    </div>
+
+                    <div class="col-md-3" id="empdrop">
+                      <img src="/assets/img/people-fill.svg" alt="EMP">
+                      <a class="btn  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false" id="dotdotdot" style="border-color: transparent; ">
+                        Select An Employee
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Employee 1</a></li>
+                        <li><a class="dropdown-item" href="#">Employee 2</a></li>
+                        <li><a class="dropdown-item" href="#">Employee 3</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="col-md-6" style="text-align: right;">
+                      <a href="#" style="text-decoration: none;"> Reset </a> |
+                      <a class="btn " data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        &#128473;
+                      </a>
+
+                    </div>
+
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="card" id="approvalspage_margins">
+            <div class="row">
+              <div class="col-md-12 tbl_container">
+                <table class="table" style="border-top: 1px solid gray;">
+                  <thead id="emptbl">
+                    <tr>
+                      <th><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"></th>
+                      <th>EMPLOYEE NAME</th>
+                      <th>REVISION TYPE</th>
+                      <th>EFFECTIVE FROM</th>
+                      <th>PAYOUT MONTH</th>
+                      <th>STATUS</th>
+                      <th>CURRENT CTC</th>
+                      <th>REVISED CTC</th>
+
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr id="tr_row">
+                      <td id="fot_font_size1">
+                        <div class="form-check">
+                          <input class="form-check-input" type="checkbox" data-bs-toggle="collapse"
+                            data-bs-target="#collapseContent">
+                          <label class="form-check-label" for="collapseCheckbox"></label>
+                        </div>
+                      </td>
+                      <td id="fot_font_size1">Justin Lipshutz</td>
+                      <td id="fot_font_size1">Salary Revision</td>
+                      <td id="fot_font_size1">Jul-2023</td>
+                      <td id="fot_font_size1">Aug-2023</td>
+                      <td id="pending">Pending</td>
+                      <td id="fot_font_size1">3,00,000. 00</td>
+                      <td id="fot_font_size1">3,50,000. 00</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/graph.js"></script>
+  <script src="assets/js/syncro.min.js"></script>
+  <script src="assets/js/PaymentStatus.js"></script>
+  <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

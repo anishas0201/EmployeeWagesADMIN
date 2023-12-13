@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body" style="width: 100%;padding-left: 1%;">
+            <div class="container-fluid">
+                <div class="row" id="">
+                    <div class="col-6">
+                        <h3>New Pre-Tax Deduction</h3>
+                    </div>
+                    <div class="col-6" style="text-align: right;">
+                        <span id="txtblue"><img src="assets/img/bulbicon.png" id="bulbicon"> Page Tips</span>
+                    </div>
+                </div>
+                <div class="card" id="newpretaxcard">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="input" id="newformgap">
+                                <label class="" for="inputGroupSelect01" id="txtreimbursementinput" >Deduction Plan</label>
+                                <select class="form-select" id="txtreimbursementinput">   
+                                    <option selected>Select a Deduction Plan</option>                             
+                                    <option value="1">National Pension Scheme</option>
+                                    <option value="2">Other Non-Taxable Deduction</option>
+                                </select>
+                            </div>
+                            <div class="input" id="newformgap">                           
+                                <label class="" for="inputGroupSelect01" id="txtreimbursementinput" >Associate this deduction with</label>
+                                <select class="form-select" id="txtreimbursementinput">   
+                                    <option selected>Select an Investment</option>                             
+                                    <option value="1">Option 1</option>
+                                    <option value="2">Option 2</option>
+                                </select>
+                            </div>
+    
+                            <div class="input" id="newformgap">
+                                <label>Name in Payslip<span style="color: red;">*</span></label>
+                                <input type="text" class="form-control" id="txtreimbursementinput">
+                            </div>
+                            <div class="input" id="newformgap">
+                                <input class="form-check-input" type="checkbox" id="">
+                                <label class="form-check-label" for="">
+                                  Include employer's contribution in the CTC
+                                </label>                            
+                            </div>
+                            <div class="input" id="newformgap">
+                                <input class="form-check-input" type="checkbox" id="">
+                                <label class="form-check-label" for="">
+                                   Calculate on pro-rate basis
+                                </label> <br>
+                                <label id="txtlabel"> Pay will be adjusted based on employee working days</label>
+                            </div>
+                            <div class="input" id="newformgap">
+                                <input class="form-check-input" type="checkbox" id="">
+                                <label class="form-check-label" for="">
+                                    Mark this as Active
+                                </label>
+                            </div>
+                            <div class="notepoint" id="newformgap">
+                                <p id="fot_font_size"><b>Note: </b>Once you associate this deduction with an employee, you will only be able to
+                                    edit the Name in Payslip and Amount. The change will be reflected in both new & existing employees. </p>
+                            </div>
+                            <hr>
+                            <div class="col-md-12 d-flex">
+                                <div class="col-md-6">
+                                    <button type="button" class="btn" id="savebtn">Save</button>
+                                    <a type="button" class="btn" href="salarycomponents_deductions.html" id="btn_cancel">Cancel</a>
+                                </div>
+                                <div class="col-md-6" style="text-align: right;">
+                                    <span style="color: red; font-size: 14px;">* indicates mandatory fields</span>
+                                </div>
+    
+                            </div>
+    
+    
+    
+                        </div>
+                    </div>
+                </div>
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

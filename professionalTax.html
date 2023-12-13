@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/graph.css" />
+    <link rel="stylesheet" href="assets/css/employeestatus.css" />
+    <link rel="stylesheet" href="hrmsassets/css/admin.min.css" />
+    <link rel="stylesheet" href="hrmsassets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div>
+          <div class="main-body" style="width: 100%;" >
+            
+                    <div class="row">
+                        <div class="col-md-12"style="background-color: #f6f6f6;"  >
+                          <h3 style="margin: 1% 0% 0% 2%; background-color: #f6f6f6; " >Statutory Component</h3>
+                       </div>
+                        <div class="col-md-12" style="border-bottom: 1px solid rgb(228, 223, 223);" >
+                          <ul class="nav" style="margin-left: 1%;">
+
+                            <li class="nav-item">
+                
+                              <a class="nav-link" href="epf.html" id="nav_epf1" >EPF</a>
+                
+                            </li>
+                
+                            <li class="nav-item">
+                
+                              <a class="nav-link" href="esi.html" id="nav_epf1" >ESI</a>
+                
+                            </li>      
+                            <li class="nav-item">
+                              <a class="nav-link" href="professionalTax.html" id="nav_epf" >Professional Tax</a>
+          
+                            </li>     
+                            <li class="nav-item">
+                              <a class="nav-link" href="labourFund.html" id="nav_epf1" >Labour Welfare Fund</a>
+          
+                            </li>       
+                          </ul>
+                      </div>
+                      <div class="card" id="StatutoryCard">
+                        <div class="card-body">
+                      <div class="col-md-12">
+                        <h4 style="margin-top: 2%;margin-left: 2%;">Professional Tax</h4>
+                        <p style="margin-left: 2%;">This tax is levied on an employee's income by the State Government. Tax slabs differ in each State</p>
+          
+                        
+                     <div class="row">
+                      <div class="col-md-5">
+                        <div class="card  personal_info ">
+                          <div class="card-body"style="  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);">
+                              <div class="row" style="padding:1%;">
+                                  <div class="col-md-6"><h5>Gadarwara</h5></div>
+                                  <div class="col-md-6"><a href="professionalTax2.html"><img id="edit_img" src="/assets/img/edit.svg" alt=""></a></div>
+                              </div>
+                              <div class="row"  style="padding:1%;" >
+                                <div class="col-md-6"><label id="infor">PT Number</label></div>
+                                <div class="col-md-6"><label id="infor_value">-</label></div>                               
+                            </div>
+                            <div class="row" style="padding:1%;" >
+                              <div class="col-md-6"><label id="infor">State</label></div>
+                              <div class="col-md-6"><label id="infor_value">Madhya Pradesh</label></div>                               
+                          </div>
+                          <div class="row" style="padding:1%;" >
+                            <div class="col-md-6"><label id="infor">Deduction Cycle</label></div>
+                            <div class="col-md-6"><label id="infor_value">Monthly</label></div>                               
+                        </div>
+                        <div class="row" style="padding:1%;" >
+                          <div class="col-md-6"><label id="infor">PT Slabs</label></div>
+                          <div class="col-md-6"><a type="button" id="taxSlabModel"class="btn" data-bs-toggle="modal" data-bs-target="#taxGadarwara">View tax Slabs
+                        </a></div>                               
+                      </div>
+                          </div>
+                      </div>
+<!--------------------------------------------------------Model-------------------------------------------------->
+
+
+                      <div class="modal fade" id="taxGadarwara" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content" style="padding: 2%;" >
+                            <div class="modal-header"style="border-bottom:none" >
+                              <h5 class="modal-title" id="exampleModalLabel">Tax Slabs for <b> Gadarwara</b></h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <table class="table  table-hover" style="border: 1px solid #dbdbdb;" >
+                             
+                                <tbody >
+                                  <tr >
+                                   
+                                    <td scope="col" style="background-color: #cccccc;" ><b>MONTHLY GROSS SALARY(₹)</b></td>
+                                    <td scope="col" style="background-color: #cccccc;"><b>MONTHLY GROSS TAX(₹)</b></td>
+                                  </tr>
+                                  <tr>
+                                    
+                                    <td>1 - 18750</td>
+                                    <td>0</td>
+                                  </tr>
+                                  <tr>
+                                    
+                                    <td>18751 - 25000</td>
+                                    <td>125</td>
+                                  </tr>
+                                  <tr>
+                                    
+                                    <td>25001 - 33333</td>
+                                    <td>166</td>
+                                  </tr>
+                                  <tr>
+                                    
+                                    <td>25001 - 33333</td>
+                                    <td>174</td>
+                                  </tr>
+                                  <tr>
+                                    
+                                    <td>33334 - 999999999</td>
+                                    <td>208</td>
+                                  </tr>
+                                  <tr>
+                                    
+                                    <td>33334 - 999999999</td>
+                                    <td>212</td>
+                                  </tr>
+                                  
+                                </tbody>
+                              </table>
+
+
+                            </div>  </div></div></div>
+
+
+<!-------------------------------------------------------------------------------Model-------------------------->
+            
+                      </div>
+                      <div class="col-md-5">
+                        <div class="card personal_info">
+                          <div class="card-body"style="  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);">
+                              <div class="row" style="padding:1%;" >
+                                  <div class="col-md-6"><h5>Head Office</h5></div>
+                                  <div class="col-md-6"><a href="professionalTax2.html"><img id="edit_img" src="/assets/img/edit.svg" alt=""></a></div>
+                              </div>
+                              <div class="row" style="padding:1%;" >
+                                <div class="col-md-6"><label id="infor">PT Number</label></div>
+                                <div class="col-md-6"><label id="infor_value">-</label></div>                               
+                            </div>
+                            <div class="row" style="padding:1%;" >
+                              <div class="col-md-6"><label id="infor">State</label></div>
+                              <div class="col-md-6"><label id="infor_value">Madhya Pradesh</label></div>                               
+                          </div>
+                          <div class="row" style="padding:1%;" >
+                            <div class="col-md-6"><label id="infor">Deduction Cycle</label></div>
+                            <div class="col-md-6"><label id="infor_value">Monthly</label></div>                               
+                        </div>
+                        <div class="row" style="padding:1%;" >
+                          <div class="col-md-6"><label id="infor">PT Slabs</label></div>
+                          <div class="col-md-6"><a type="button" id="taxSlabModel"class="btn" data-bs-toggle="modal" data-bs-target="#taxHeadOffice">View tax Slabs
+                        </a></div>                               
+                      </div>
+                          </div>
+                      </div>
+            
+                      </div>
+                     </div>
+          
+          
+          
+          
+                    </div>
+          
+                </div>
+            </div>
+<!-------------------------------------------------------------Model-------------------------------------->
+
+            <div class="modal fade" id="taxHeadOffice" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                  <div class="modal-content" style="padding: 2%;" >
+                    <div class="modal-header"style="border-bottom:none" >
+                      <h5 class="modal-title" id="exampleModalLabel">Tax Slabs for <b> Head Office</b></h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="padding-right: 10%;">
+                      <table class="table  table-hover" style="border: 1px solid #dbdbdb;" >
+                             
+                        <tbody >
+                          <tr >
+                           
+                            <td scope="col" style="background-color: #cccccc;" ><b>MONTHLY GROSS SALARY(₹)</b></td>
+                            <td scope="col" style="background-color: #cccccc;"><b>MONTHLY GROSS TAX(₹)</b></td>
+                          </tr>
+                          <tr>
+                            
+                            <td>1 - 18750</td>
+                            <td>0</td>
+                          </tr>
+                          <tr>
+                            
+                            <td>18751 - 25000</td>
+                            <td>125</td>
+                          </tr>
+                          <tr>
+                            
+                            <td>25001 - 33333</td>
+                            <td>166</td>
+                          </tr>
+                          <tr>
+                            
+                            <td>25001 - 33333</td>
+                            <td>174</td>
+                          </tr>
+                          <tr>
+                            
+                            <td>33334 - 999999999</td>
+                            <td>208</td>
+                          </tr>
+                          <tr>
+                            
+                            <td>33334 - 999999999</td>
+                            <td>212</td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
+                    </div>
+
+   
+        <!-------------------------------------------Model---------------------------------------->
+
+
+
+
+
+                    
+
+
+
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/graph.js"></script>
+    <script src="assets/js/syncro.min.js"></script>
+    <script src="assets/js/PaymentStatus.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/sidebar.js" ></script>
+</body>
+
+</html>

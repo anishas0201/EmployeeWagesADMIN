@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/anisha.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <title>Employee</title>
+</head>
+
+<body>
+  <div import="includes/header.html"></div>
+
+  <div class="wrapper">
+    <div import="includes/sidebar.html"></div>
+    <div class="main-body" style="width: 100%;">
+      <div class="container-fluid">
+        <div class="row" id="">
+          <div class="col-md-2" id="pref_side1" style="position: fixed;">
+            <ul class="nav flex-column" id="preference_sidebar">
+              <h5 style="padding-left: 10%; padding-top: 6%;">Preferences</h5>
+              <li class="nav-item" id="preference_li">
+                <a class="nav-link" id="pref_anchor" href="preference_employee-portal.html">Employee Portal</a>
+              </li>
+              <li class="nav-item" id="preference_li">
+                <a class="nav-link " id="pref_anchor" href="preference_fbp.html">Flexible Benefit Plan</a>
+              </li>
+              <li class="nav-item" id="preference_li">
+                <a class="nav-link" id="pref_anchor" href="preference_reimbursementClaim.html">Reimbursement Claims</a>
+              </li>
+              <li class="nav-item" id="preference_li">
+                <a class="nav-link" id="pref_anchor" href="prefrence_incom_tax_.html">Income Tax Declaration</a>
+              </li>
+              <li class="nav-item" id="preference_li">
+                <a class="nav-link" id="pref_anchor" href="prefrence_poi.html">Proof Of Investment</a>
+              </li>
+              <li class="nav-item" id="preference_li">
+                <a class="nav-link active11" id="pref_anchor" href="preference_employeeCustom.html">Employee Custom
+                  Field</a>
+              </li>
+              <li class="nav-item" id="preference_li">
+                <a class="nav-link" id="pref_anchor" href="preference_senderEmail.html">Sender Email Preferences</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-10" style="padding-left: 0%;padding-right: 0%;margin-left: 18%;">
+            <h3 style="padding-left: 3%; padding-top: 2%;">Employee Custom Field</h3>
+
+            <div class="card" id="card_margin">
+              <center><img src="assets/img/poi_locked.png" alt="" id="poi_locked">
+                <br><br>
+              </center>
+              <center>
+                <h6>You haven't created any custom fields yet.</h6>
+              </center>
+              <center><a class="btn" id="savebtn" href="#" role="button">Create Custom Field</a></center>
+              <br>
+
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>

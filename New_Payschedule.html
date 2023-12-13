@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-------------------------------------------------------------- links------------------------------------------------------------------------------------ -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="stylesheet" href="assets/css/graph.css" />
+
+    <link rel="stylesheet" href="assets/css/employeestatus.css" />
+
+    <link rel="stylesheet" href="assets/css/multi_dropdown.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add some custom styles if needed */
+        .custom-range {
+            width: 80%;
+            margin: 20px auto;
+        }
+    </style>
+
+    <!-------------------------------------------------------------- links------------------------------------------------------------------------------------ -->
+
+    <title>Employee</title>
+
+</head>
+
+<body>
+    <div import="includes/header.html"></div> <!--Header here -->
+    <div class="wrapper">
+        <div import="includes/sidebar.html"></div> <!--Sidebar here -->
+        <div class="main-body" style="width: 100%;">
+            <div class="container-fluid">
+                <br>
+                <h3>Pay Schedule</h3> <!--Page Heading here -->
+
+                <!-------------------------------------------------------------- Main Body Card------------------------------------------------------------------------------------ -->
+                <div class="card" id="card_body22">
+
+
+                    <!-------------------------------------------------------------- Row 1 Start------------------------------------------------------------------------------------ -->
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="row">
+                                <div class="col-md-12 ">
+                                    <h5>This Organisation's payroll runs on this schedule. &nbsp;
+                                        <a href="#"><img src="/assets/img/pencil-fill.svg" alt=""></a>
+                                    </h5>
+                                </div>
+                            </div>
+                            <br>
+                            <h6 style="font-size: 16px; font-weight: bold;">Select your work week<span id="req">*</span>
+                            </h6>
+                            <p id="fot_font_size">The days worked in a calender week</p>
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="d-flex">
+                                        <div id="working_days1">Sun</div>
+                                        <div id="working_days">Mon</div>
+                                        <div id="working_days">Tue</div>
+                                        <div id="working_days">Wed</div>
+                                        <div id="working_days">Thu</div>
+                                        <div id="working_days">Fri</div>
+                                        <div id="working_days2">Sat</div>
+                                    </div>
+                                </div>
+                            </div><br>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h6 style="margin: 0px; font-size: 14px; font-weight: bold;">Pay employees based
+                                        on<span id="req">*
+                                        </span></h6>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="form-check  d-flex">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" >
+                                                First Payrun
+                                            </label>
+                                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" >
+                                                Second Payrun
+                                            </label>
+                                            &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" >
+                                                Third Payrun
+                                            </label>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseWidthExample" aria-expanded="false"
+                                                aria-controls="collapseWidthExample">
+                                            <!-- <input class="form-check-input" type="radio" > -->
+                                            <label class="form-check-label" >
+                                                Custom Payrun
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-10">
+                                    <div class="wrapper" style="display: block; ">
+                                        <button class="form-control toggle-next ellipsis">Select Employees</button>
+                                        <div class="checkboxes" id="Categories">
+                                            <label class="apply-selection">
+                                                <input type="checkbox" value="" class="ajax-link" />
+                                                &#x2714; Employee Selected !
+                                            </label>
+                                            <div class="inner-wrap">
+                                                <label>
+                                                    <input type="checkbox" value="all_categories" class="ckkBox all" />
+                                                    <span>Select All Employees</span>
+                                                </label><br>
+                                                <label>
+                                                    <input type="checkbox" value="all_categories" class="ckkBox val" />
+                                                    <span>(1230) Kriti Prakash Tendulkar</span>
+                                                </label><br>
+                                                <label>
+                                                    <input type="checkbox" value="new_car" class="ckkBox val" />
+                                                    <span>(1231)|
+                                                        Pankaj Vijay Tete</span>
+                                                </label><br>
+                                                <label>
+                                                    <input type="checkbox" value="used_car" class="ckkBox val" />
+                                                    <span>(1229)
+                                                        Hemant Jagdish Kamble</span>
+                                                </label><br>
+                                                <label>
+                                                    <input type="checkbox" value="oldtimer" class="ckkBox val" />
+                                                    <span>(1234)
+                                                        Uday Rajesh Shimpi</span>
+                                                </label><br>
+                                                <label>
+                                                    <input type="checkbox" value="new_car" class="ckkBox val" />
+                                                    <span>(1232)
+                                                        Priyanshu Sahu</span>
+                                                </label><br>
+                                                <label>
+                                                    <input type="checkbox" value="used_car" class="ckkBox val" />
+                                                    <span>(1233)
+
+                                                        Rahul Kumar Singh</span>
+                                                </label><br>
+                                                <label>
+                                                    <input type="checkbox" value="oldtimer" class="ckkBox val" />
+                                                    <span>(1241)
+                                                        Vivek Kumar Swami</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- -------------------- -->
+                                <div class="col-md-12">
+                                    <div class="form-group"><br>
+                                        <h6 style="margin: 0;">Select Salary</h6>
+                                        <!-- <div id="rangeValue" style="font-size: 13px; padding: 0 34%;"></div> -->
+                                        <input type="range" class="custom-range" id="customRange1" min="0" max="10"
+                                            value="0" step="1" list="tickmarks"
+                                            style="margin-bottom: 0%; margin-top: 0%; margin-left: 1%;"
+                                            onchange="updateLabel(this.value)" />
+                                        <datalist id="tickmarks">
+                                            <option value="0">0-10k</option>
+                                            <option value="1">10-20k</option>
+                                            <option value="2">20-30k</option>
+                                            <option value="3">30-40k</option>
+                                            <option value="4">40-50k</option>
+                                            <option value="5">50-60k</option>
+                                            <option value="6">60-70k</option>
+                                            <option value="7">70-80k</option>
+                                            <option value="8">80-90k</option>
+                                            <option value="9">90-100k</option>
+                                        </datalist>
+                                        <span id="rangeLabel">0-10k</span>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- -------------------------------------------------------------------------------------- -->
+                    </div>
+                    <!-------------------------------------------------------------- ---------------------------------------------------------------------------------------- -->
+                    <!--------------------------------------------------------------Custom Payrun Collapse--------------------------------------------------------------------------- -->
+                    <div class="col-md-12">
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                            <div class="card card-body shadow" style="padding-top: 5px;">
+                                <div class="row">
+                                    <div class="col-md-12" style=" background-image: linear-gradient(to left,
+                                   var(--color-blue1),
+                                   var(--color-blue2),
+                                   var(--color-blue3),
+                                   var(--color-blue4),
+                                   var(--color-blue5)); border-radius: 5px;">
+                                        <h5 style="color: white;margin: 0; padding: 1%;"><b>Custom Payrun</b></h5>
+                                    </div>
+                                    <div class="col-md-4"><br>
+                                        <p id="fot_font_size"><b>Select Custom Payrun :
+                                            </b><span id="req">*</span></p>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="" disabled="" selected="" hidden="">Select</option>
+                                            <option value="Salary">Salary </option>
+                                            <option value="Reimbursement">Reimbursement
+                                            </option>
+                                            <option value="Other">Other Expense</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4"><br>
+                                        <p id="fot_font_size"><b>Select Date : </b><span id="req">*</span>
+                                        </p>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="col-md-2">
+                                    </div>
+                                    <div class="col-md-2" style="padding-top: 3%;"><br>
+                                        <a href="#" type="button" class="btn" id="btn_cancel" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseWidthExample" aria-expanded="false"
+                                            aria-controls="collapseWidthExample">Cancel</a>
+
+                                        <a href="#" type="button" class="btn" id="savebtn" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseWidthExample" aria-expanded="false"
+                                            aria-controls="collapseWidthExample">Save</a>
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <!-------------------------------------------------------------- ---------------------------------------------------------------------------------------- -->
+                </div>
+                <!-------------------------------------------------------------Select Payrun Options------------------------------------------------------------------------- -->
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-4"><br>
+                            <div class="card" id="organisation_card1">
+                                <div class="row">
+                                    <div class="col-md-">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <p id="fot_font_size"><b>Select first Payrun : </b><span
+                                                            id="req">*</span></p>
+                                                </div>
+
+                                                <div class="col-md-6">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option value="" disabled="" selected="" hidden="">Select
+                                                        </option>
+                                                        <option value="Salary">Salary </option>
+                                                        <option value="Reimbursement">Reimbursement
+                                                        </option>
+                                                        <option value="Other">Other Expense</option>
+                                                    </select>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-12">
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="card" id="pay_Sch">
+                                                        <p id="fot_font_size">
+                                                            Salary of the month <span id="for_bold">January-2023</span>
+                                                            will be paid
+                                                            on
+                                                            10-02-2023
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4"><br>
+                            <div class="card" id="organisation_card1">
+                                <div class="row">
+                                    <div class="col-md-">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <p id="fot_font_size"><b>Start Second Payrun from </b><span
+                                                            id="req">*</span></p>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option value="" disabled="" selected="" hidden="">Select
+                                                        </option>
+                                                        <option value="Salary">Salary </option>
+                                                        <option value="Reimbursement">Reimbursement
+                                                        </option>
+                                                        <option value="Other">Other Expense</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="card" id="pay_Sch">
+                                                        <p id="fot_font_size">
+                                                            Reimbursement of the month <span
+                                                                id="for_bold">January-2023</span> will be paid
+                                                            on
+                                                            15-02-2023
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4"><br>
+                            <div class="card" id="organisation_card1">
+                                <div class="row">
+                                    <div class="col-md-">
+                                        <div class="col-md-12">
+                                            <div class="row">
+                                                <div class="col-md-7">
+                                                    <p id="fot_font_size"><b>Start Third Payrun from </b><span
+                                                            id="req">*</span></p>
+                                                </div>
+                                                <div class="col-md-5">
+                                                    <select class="form-select" aria-label="Default select example">
+                                                        <option value="" disabled="" selected="" hidden="">Select
+                                                        </option>
+                                                        <option value="Salary">Salary </option>
+                                                        <option value="Reimbursement">Reimbursement
+                                                        </option>
+                                                        <option value="Other">Other Expense</option>
+                                                        </option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <br>
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="card" id="pay_Sch">
+                                                        <p id="fot_font_size">
+                                                            Other expense of the month <span
+                                                                id="for_bold">January-2023</span> will be paid
+
+                                                            on
+                                                            20-02-2023
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------------------------------------------------------------- ---------------------------------------------------------------------------------------- -->
+
+                <div class="col-md-12">
+                    <br>
+                    <div class="row">
+                        <div id="pay_schedule_note">
+                            <p id="fot_font_size"><img src="/assets/img/cartoon-1294877_1280.png" alt="" id="idea_bulb">
+                                <b>Note:</b>
+                                &nbsp;Pay schedule cannot be edited once you process the first pay run.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/custom.js"></script>
+
+    <script src="assets/js/include.js"></script>
+
+    <script src="assets/js/graph.js"></script>
+
+    <script src="assets/js/syncro.min.js"></script>
+
+    <script src="assets/js/PaymentStatus.js"></script>
+
+    <script src="assets/js/sidebar.js"></script>
+
+    <!-- <script src="assets/js/multi_select_dropdown.js"></script> -->
+
+    <script src="assets/js/multi.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        const chBoxes =
+            document.querySelectorAll('.custom-dropdown-menu input[type="checkbox"]');
+        const dpBtn =
+            document.getElementById('customMultiSelectDropdown');
+        let mySelectedListItems = [];
+        function handleCB() {
+            mySelectedListItems = [];
+            let mySelectedListItemsText = '';
+            chBoxes.forEach((checkbox) => {
+                if (checkbox.checked) {
+                    mySelectedListItems.push(checkbox.value);
+                    mySelectedListItemsText += checkbox.value + ', ';
+                }
+            });
+
+            // Limit the displayed options to two
+            if (mySelectedListItems.length > 2) {
+                dpBtn.innerText = mySelectedListItems.length + '  Salary selected';
+            } else {
+                dpBtn.innerText =
+                    mySelectedListItems.length > 0
+                        ? mySelectedListItemsText.slice(0, -2) : 'Select';
+            }
+        }
+        chBoxes.forEach((checkbox) => {
+            checkbox.addEventListener('change', handleCB);
+        });
+    </script>
+    <script>
+        function updateLabel(value) {
+            const labels = [
+                "0-10k",
+                "10-20k",
+                "20-30k",
+                "30-40k",
+                "40-50k",
+                "50-60k",
+                "60-70k",
+                "70-80k",
+                "80-90k",
+                "90-100k",
+            ];
+
+            const rangeLabel = document.getElementById("rangeLabel");
+            rangeLabel.textContent = labels[value];
+        }
+    </script>
+
+</body>
+
+
+
+</html>

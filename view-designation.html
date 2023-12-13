@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/anisha.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/graph.css" />
+    <link rel="stylesheet" href="assets/css/employeestatus.css" />
+    <link rel="stylesheet" href="hrmsassets/css/admin.min.css" />
+    <link rel="stylesheet" href="hrmsassets/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <title>Employee</title>
+</head>
+
+<body>
+    <div import="includes/header.html"></div>
+
+    <div class="wrapper" >
+        <div import="includes/sidebar.html"></div>
+        <div class="main-body" style="width: 100%;" >
+
+            <div class="row" id="">
+
+
+                <div class="content-wrapper" style="height: auto; margin: 1px;">
+
+                    <div class="content-header">
+                        <div class="row mb-2">
+                            <div class="col-sm-12">
+                                <h3 class="m-0">Designation</h3>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="card">
+                                        <div class="card-header"style="background-color: white;">
+                                            <div class="row pt-1">
+
+                                                <div class="col-md-3">
+                                          
+                                                </div>
+
+                                                <div 
+                                                    class="col-md-12 text-right">
+                                                    <a class="btn btn-primary" id="savebtn" href="add-designation.html">+
+                                                        Add Designation</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <table id="example2" class="table  table-hover">
+                                                <thead>
+                                                    <tr style="background-color: #cccccc;">
+                                                        <th id="fot_font_size"style="border-bottom: 1px solid #cccccc;">Sr No.</th>
+                                                        <th id="fot_font_size"style="border-bottom: 1px solid #cccccc;">Designation Name </th>
+                                                        <th id="fot_font_size"style="border-bottom: 1px solid #cccccc;">Mail Alias</th>
+                                                        <th id="fot_font_size"style="border-bottom: 1px solid #cccccc;">Added By </th>
+                                                        <th id="fot_font_size"style="border-bottom: 1px solid #cccccc;">Added Time</th>
+                                                        <th id="fot_font_size"style="border-bottom: 1px solid #cccccc;">Modified By </th>
+                                                        <th id="fot_font_size"style="border-bottom: 1px solid #cccccc;">Modified Time </th>
+                                                        <th id="fot_font_size"style="border-bottom: 1px solid #cccccc;">Action</th>
+                                                    </tr>
+                                                </thead>
+
+                                                <tbody>                                                   
+                                                    <tr>
+                                                        <td id="fot_font_size1">1.</td>
+                                                        <td id="fot_font_size1">IT</td>
+                                                        <td id="fot_font_size1"></td>
+                                                        <td id="fot_font_size1">Rupesh Sen</td>
+                                                        <td id="fot_font_size1">22-July-2023 12:53PM</td>
+                                                        <td id="fot_font_size1">Rupesh Sen</td>
+                                                        <td id="fot_font_size1">23-July-2023 12:53PM</td>
+
+                                                         <td id="fot_font_size1">
+                                                            <span class="pull-right">
+                                                                <a href="add-designation.html" *ngIf="userPermission['Designation_details']?.update"
+                                                                    title="Edit"
+                                                                    [routerLink]="['/setting/designation/edit-designation/'+ d.designation_id]">
+                                                                    <i class="fa fa-edit"
+                                                                        style="color:rgb(7, 136, 241)"></i>
+                                                                </a>
+                                                                &nbsp;
+                                                                <a *ngIf="userPermission['Designation_details']?.delete"
+                                                                    title="Delete" class="cursor-pointer"
+                                                                    (click)="deleteDesig(d.designation_id)">
+                                                                    <i class="fa fa-trash"
+                                                                        style="color:rgb(7, 136, 241)"></i>
+                                                                </a>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td id="fot_font_size1">2.</td>
+                                                        <td id="fot_font_size1">HR</td>
+                                                        <td id="fot_font_size1"></td>
+                                                        <td id="fot_font_size1">Jagriti Thakur</td>
+                                                        <td id="fot_font_size1">22-July-2023 12:53PM</td>
+                                                        <td id="fot_font_size1">Jagriti Thakur</td>
+                                                        <td id="fot_font_size1">23-July-2023 12:53PM</td>
+
+                                                         <td id="fot_font_size1">
+                                                            <span class="pull-right">
+                                                                <a href="add-designation.html" *ngIf="userPermission['Designation_details']?.update"
+                                                                    title="Edit"
+                                                                    [routerLink]="['/setting/designation/edit-designation/'+ d.designation_id]">
+                                                                    <i class="fa fa-edit"
+                                                                        style="color:rgb(7, 136, 241)"></i>
+                                                                </a>
+                                                                &nbsp;
+                                                                <a *ngIf="userPermission['Designation_details']?.delete"
+                                                                    title="Delete" class="cursor-pointer"
+                                                                    (click)="deleteDesig(d.designation_id)">
+                                                                    <i class="fa fa-trash"
+                                                                        style="color:rgb(7, 136, 241)"></i>
+                                                                </a>
+                                                            </span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="text-right mr-3 pb-2" style="margin-left: 2%;" >
+                                            <a href="#" class="btn" role="button" id="savebtn" data-bs-toggle="button" aria-pressed="true">Previous</a>
+                                            <a href="#" class="btn " id="savebtn" role="button" data-bs-toggle="button" aria-pressed="true">Next</a>
+                                            
+
+                                            <!-- <button (click)="previousPage()">Previous</button>
+                                            <button (click)="nextPage()">Next</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/include.js"></script>
+        <script src="assets/js/graph.js"></script>
+        <script src="assets/js/syncro.min.js"></script>
+        <script src="assets/js/PaymentStatus.js"></script>
+        <script src="assets/js/bootstrap.bundle.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script src="assets/js/include.js"></script>
+        <script src="assets/js/sidebar.js" ></script>
+</body>
+
+</html>

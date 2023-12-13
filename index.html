@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/anisha.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/graph.css" />
+  <link rel="stylesheet" href="assets/css/employeestatus.css" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+  crossorigin="anonymous"></script>
+  
+
+
+  <title>Employee</title>
+</head>
+
+<body>
+  <div import="includes/header.html"></div>
+
+  <div class="wrapper">
+    <div import="includes/sidebar.html"></div>
+    <div class="main-body" >
+
+      <div class="row" id="" >
+        <div class="col-md-12" >
+          <div import="includes/bodyheader.html"></div>
+        </div>
+        <div class="col-md-7" >
+         <p id="payroll_summary_txt">
+          &nbsp;Payroll Summary
+         </p>
+          <div class="card graph_card"  >
+            <!-- <div import="includes/graph.html"></div> -->
+
+            <!-- graph .htm startde-------------------------------------------------------------------------------------- -->
+            <canvas id="lineChart" width="500" height="200"></canvas>
+
+            <div class="chartbox ">
+              <canvas id="myChart"></canvas>
+            </div>
+            <div style="margin-top: 100px;">
+
+              <div class="graph" >
+                <div class="grossSalary">Gross Salary</div>
+                <div class="numberDiv" style="top: 62px;">
+                  <span class="number">140</span>
+                  <span class="number">K</span>
+                </div>
+                <div class="numberDiv" style="top: 102px;"><span class="number">120</span><span class="number">K</span>
+                </div>
+                <div class="numberDiv" style="top: 142px;"><span class="number">100</span><span class="number">K</span>
+                </div>
+                <div class="numberDiv" style="top: 182px;"><span class="number">80</span><span class="number">K</span>
+                </div>
+                <div class="numberDiv" style="top: 222px;"><span class="number">60</span><span class="number">K</span>
+                </div>
+                <div class="numberDiv" style="top: 262px;"><span class="number">40</span><span class="number">K</span>
+                </div>
+                <div class="numberDiv" style="top: 302px;"><span class="number">20</span><span class="number">K</span>
+                </div>
+                <div class="numberDiv" style="top: 342px;"><span class="number">0</span><span class="number">K</span>
+                </div>
+                <div style="left: 55px; " class="month">Jan</div>
+                <div style="left: 105px; " class="month">Feb</div>
+                <div style="left: 155px; " class="month">Mar</div>
+                <div style="left: 205px; " class="month">Apr</div>
+                <div style="left: 260px; " class="month">May</div>
+                <div style="left: 315px; " class="month">Jun</div>
+                <div style="left: 370px; " class="month">July</div>
+                <div style="left: 425px; " class="month">Aug</div> 
+                <div style="left: 480px; " class="month">Sep</div>
+                <div style="width: 21px; left: 535px; " class="month">Oct</div>
+                <div style="left: 590px; " class="month">Nov</div>
+                <div style="left: 645px; " class="month">Dec</div>
+                <div style=" background: #45C5E2;" class="grossColor"></div>
+              </div>
+              <div class="texDiv">
+                <div class="taxe">Taxes</div>
+                <div style="background: #8382DE;" class="grossColor"></div>
+              </div>
+              <div class="netSalary">
+                <div class="salaryText">Net Salary</div>
+                <div class="colorBox"></div>
+              </div>
+              <div class="graphDiv" style="top: 90px;"></div>
+              <div style="top: 130px; " class="graphDiv"></div>
+              <div style=" top: 170px; " class="graphDiv"></div>
+              <div style=" top: 210px; " class="graphDiv"></div>
+              <div style=" top: 250px; " class="graphDiv"></div>
+              <div style=" top: 290px; " class="graphDiv"></div>
+              <div style=" top: 330px; " class="graphDiv"></div>
+              <div style=" top: 370px;  border: 0.50px rgba(11, 40, 53, 0.20) solid" class="graphDiv"></div>
+
+              <div class="firstgraph"></div>
+              <div class="sec_graph"></div>
+              <div class="third_graph"></div>
+              <div class="forth_graph"></div>
+              <div class="fifth_graph"></div>
+              <div class="six_graph"></div>
+              <div class="sev_graph"></div>
+              <div class="eight_graph"></div>
+              <div class="nine_graph"></div>
+              <div class="ten_graph"></div>
+              <div class="ele_graph"></div>
+              <div class="two_graph"></div>
+              <div class="div1"></div>
+              <div class="div2"></div>
+              <div class="div3"></div>
+              <div class="div4"></div>
+              <div class="div5"></div>
+              <div class="div6"></div>
+              <div class="div7"></div>
+              <div class="div8"></div>
+              <div class="div9"></div>
+              <div class="div10"></div>
+              <div class="div11"></div>
+              <div class="div12"></div>
+
+              <canvas id="lineChart"></canvas>
+              <img src="/assets/img/line chart1.png" alt="" class="line-chart-img">
+              <div id="dot1" class="dotPosition"></div>
+              <div id="dot2" class="dotPosition"></div>
+              <div id="dot3" class="dotPosition"></div>
+              <div id="dot4" class="dotPosition"></div>
+              <div id="dot5" class="dotPosition"></div>
+              <div id="dot6" class="dotPosition"></div>
+              <div id="dot7" class="dotPosition"></div>
+              <div id="dot8" class="dotPosition"></div>
+              <div id="dot9" class="dotPosition"></div>
+              <div id="dot10" class="dotPosition"></div>
+              <div id="dot11" class="dotPosition"></div>
+              <div id="dot12" class="dotPosition"></div>
+
+              <div id="blockPopup">
+                <div class="popup-box"></div>
+                <div class="popup-text salary">Gross Salary</div>
+                <div class="popup-text gross">25,543</div>
+                <div class="popup-text tax">7662.9</div>
+                <div class="popup-text net">17,880.1</div>
+                <div class="popup-indicator"></div>
+                <div class="popup-indicator tax">
+                  <div style="left: 15px; top: 2px;" class="popup-text">Tax Deduction</div>
+                </div>
+                <div class="popup-line"></div>
+                <div class="popup-text net-label">
+                  <div style="left: 17px; top: 2px;" class="popup-text">Net Salary</div>
+                </div>
+                <div class="popup-text net-indicator"></div>
+              </div>
+              <div class="outer-container">
+                <!-- <div class="inner-container"></div> -->
+                <div class="inner-text">
+                  
+                  <!-- <div class="dropdown">
+                    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" style="    font-size: 13px;
+                    padding-top: 0;
+                    background: white;
+                    padding-bottom: 0;" data-bs-toggle="dropdown" aria-expanded="false">
+                      Yearly
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#">Yearly</a></li>
+                      <li><a class="dropdown-item" href="#">Half Yearly</a></li>
+                      <li><a class="dropdown-item" href="#">Quaterly</a></li>
+                    </ul>
+                  </div> -->
+                  <select class="form-select" aria-label="Default select example"style="font-size: 13px;border: 1px;margin:1px 10px;">
+                    <option selected>Yearly</option>
+                    <option value="1">Half Yearly</option>
+                    <option value="2">Quaterly</option>
+                    
+                  </select>
+
+                 <!-- <img src="/assets/img/MicrosoftTeams-image.png" alt=""> -->
+                  </div> 
+              </div>
+            </div>
+
+          </div>
+          <!-- --------------------------------------=============================================================================== -->
+        </div>
+
+        <div class="col-md-5">
+
+         
+          <div data-stepped-bar style="margin-left: 8%;
+          margin-right: 5%; ">
+          </div>
+          <div data-stepped-chart style="margin: 10px;">
+          </div>
+          <div import="includes/dataStepped.html"></div>
+
+
+        </div>
+      </div>
+      
+
+      <div class="col-md-12">
+
+        <div class="card emptbl_card" style="
+        margin: 1% 1%;"> <br>
+          <!-- <div class="container" id="main_container"> -->
+
+          <div class="row main_row">
+            <div class="col-6 ">
+              <p id="para">Employee Status</p>
+
+            </div>
+            <div class="col-6 filter">
+             
+
+              <div class="dropdown shortbtn">
+                <button class="btn" type="button" id="filternshort" data-bs-toggle="dropdown" aria-expanded="false">
+                  Filter & Sort<span class=""><img src="/Assets/img/filterShort.svg"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <li><a class="dropdown-item" href="#">Name</a></li>
+                  <li><a class="dropdown-item" href="#">Department</a></li>
+                  <li><a class="dropdown-item" href="#">Age</a></li>
+                  <li><a class="dropdown-item" href="#">Status</a></li>
+                </ul>
+              </div>
+            </div>
+      <div class="row">
+            
+
+              <table class="table" id="emp_status_tbl">
+                <thead id="t_head">
+                  <th scope="col" id="tbl_head">Employee name</th>
+                  <th scope="col" id="tbl_head">Department</th>
+                  <th scope="col" id="tbl_head">Age</th>
+                  <th scope="col" id="tbl_head">Disipline</th>
+                  <th scope="col" id="tbl_head" style="text-align: center;" >Status</th>
+                  </tr>
+                </thead>
+                <tbody id="t_body">
+                  <tr id="tbody_element">
+                    <td id="emp_name">Arti Pawar</td><br>
+                    <td id="emp_content">Marketing</td><br>
+                    <td id="emp_content">22</td><br>
+                    <td id="emp_content"><span id="sp">+</span>100%</td><br>
+                    <td id="status"><span id="permanent">Permanent</span></td><br>
+                  </tr>
+                  <tr id="tbody_element">
+                    <td id="emp_name">Rahul Chelani</td>
+                    <td id="emp_content">Finance</td>
+                    <td id="emp_content">24</td>
+                    <td id="emp_content"><span id="sp">+</span>95%</td>
+                    <td id="status"><span id="contract">Contract</span></td>
+                  </tr>
+                  <tr id="tbody_element">
+                    <td id="emp_name">Kajal Kurmi</td>
+                    <td id="emp_content">Sales</td>
+                    <td id="emp_content">28</td>
+                    <td id="emp_content"><span id="sp">+</span>89%</td>
+                    <td id="status"><span id="permanent">Permanent</span></td>
+                  </tr>
+                  <tr id="tbody_element">
+                    <td id="emp_name">Priyanshu sahu</td>
+                    <td id="emp_content">Finance</td>
+                    <td id="emp_content">26</td>
+                    <td id="emp_content"><span id="sp">+</span>91%</td>
+                    <td id="status"><span id="contract">Contract</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          
+          </div>
+          <!-- </div> -->
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/graph.js"></script>
+  <script src="assets/js/syncro.min.js"></script>
+  <script src="assets/js/PaymentStatus.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script src="assets/js/include.js"></script>
+  <script src="assets/js/sidebar.js" ></script>
+  
+</body>
+
+</html>

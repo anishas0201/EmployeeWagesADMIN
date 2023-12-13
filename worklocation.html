@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/anisha.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/graph.css" />
+  <link rel="stylesheet" href="assets/css/employeestatus.css" />
+  <link rel="stylesheet" href="hrmsassets/css/admin.min.css" />
+  <link rel="stylesheet" href="hrmsassets/css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+
+  <title>Employee</title>
+</head>
+
+<body>
+  <div import="includes/header.html"></div>
+
+  <div class="wrapper wrap_cont">
+    <div import="includes/sidebar.html"></div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12" style="padding: 1%;">
+          <h3>Branches Address</h3>
+        </div>
+
+      </div>
+      <div class="card" id="card_margin">
+        <div class="row">
+          <div class="col-md-12 text-right" style="margin: 2%;"><a class="btn btn-primary" id="savebtn"
+              href="add-worklocation.html">+ Add Work Location</a></div>
+        </div>
+        <div class="row">
+          <div class="col-md-12" style="padding-left: 3%;padding-right: 3%;">
+            <table id="example2" class="table  table-hover" style="border-radius: 7px;">
+              <thead>
+                <tr style="background-color: #cccccc;">
+
+                  <th id="fot_font_size" style="border-bottom: 1px solid #cccccc;">Sr No.</th>
+                  <th id="fot_font_size" style="border-bottom: 1px solid #cccccc;">Location Name </th>
+
+                  <th id="fot_font_size" style="border-bottom: 1px solid #cccccc;">Added By </th>
+                  <th id="fot_font_size" style="border-bottom: 1px solid #cccccc;">Added Time</th>
+
+                  <th id="fot_font_size" style="border-bottom: 1px solid #cccccc;">Action</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+
+                  <td id="fot_font_size1">1.</td>
+                  <td id="fot_font_size1"><a>
+                      <p id="fot_font_size1">Gadarwara</p>
+                    </a></td>
+
+                  <td id="fot_font_size1">
+                    <p id="fot_font_size1">
+                      Rupesh Sen
+                    </p>
+                  </td>
+                  <td id="fot_font_size1">
+                    <p id="fot_font_size1">
+                      22-July-2023 12:53PM
+                    </p>
+                  </td>
+
+                  <td id="fot_font_size1">
+                    <span>
+                      <a href="add-worklocation.html" title="Edit" (click)="editLocation(locations)">
+                        <i class="fa fa-edit cursor-pointer" style="color:rgb(7, 136, 241)"></i></a>
+                      &nbsp;
+                      <a title="Delete">
+                        <i class="fa fa-trash cursor-pointer" style="color:rgb(7, 136, 241)"></i></a>
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="div" style="margin: 2%;"><button class="btn btn-primary" id="savebtn">Previous</button>
+
+            <button class="btn btn-primary" id="savebtn">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 
+    <div class="main-body">
+
+      <div class="row" id="">
+        
+        <div class="wrapper">
+
+          <div class="content-wrapper" style="height: auto; margin:1px;">
+            <div class="content-header">
+              <div class="row mb-2">
+                <div class="col-sm-12">
+                  <h1 class="m-0">Branches Address</h1>
+                </div>
+              </div>
+
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="card">
+                      <div class="card-header">
+                        <div class="row pt-1">
+
+
+
+                          <div class="col-md-12 text-right">
+                            <a class="btn btn-primary" href="add-worklocation.html">+ Add Work Location</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card-body">
+                        <table id="example2" class="table table-bordered table-hover">
+                          <thead>
+                            <tr>
+
+                              <th>S No.</th>
+                              <th>Location Name </th>
+
+                              <th>Added By </th>
+                              <th>Added Time</th>
+
+                              <th>Action</th>
+                            </tr>
+                          </thead>
+
+                          <tbody>
+                            <tr>
+
+                               <td id="fot_font_size1">1.</td>
+                               <td id="fot_font_size1"><a>Gadarwara</a></td>
+
+                               <td id="fot_font_size1">Sayali Ashish Anande</td>
+                               <td id="fot_font_size1">22-Sep-2022 12:53PM</td>
+                              <!--  <td id="fot_font_size1">{{locations.updated_by}}</td>
+                         <td id="fot_font_size1">{{locations.updated_date | date :'medium'}}</td> 
+                               <td id="fot_font_size1">
+                                <span>
+                                  <a title="Edit" (click)="editLocation(locations)">
+                                    <i class="fa fa-edit cursor-pointer" style="color:rgb(7, 136, 241)"></i></a>
+                                  &nbsp;
+                                  <a title="Delete">
+                                    <i class="fa fa-trash cursor-pointer" style="color:rgb(7, 136, 241)"></i></a>
+                                </span>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+
+                      <div class="text-right mr-3 pb-2" *ngIf="items.length > 0">
+                        <button class="btn btn-primary">Previous</button>
+
+                        <button class="btn btn-primary">Next</button>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/graph.js"></script>
+    <script src="assets/js/syncro.min.js"></script>
+    <script src="assets/js/PaymentStatus.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/sidebar.js"></script>
+</body>
+
+</html>
